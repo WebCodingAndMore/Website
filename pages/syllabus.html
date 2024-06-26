@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Coding And More</title>
+    <title>Syllabus</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/img/site.webmanifest">
 </head>
 <body>
-    <h1>Web Coding and More</h1>
-    <a href="/pages/syllabus.html">Syllabus</a>
+    <div id="content"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script>
+        const markdownContent = `
+# Hello World
+
+This is a markdown file rendered in HTML.
+
+- Item 1
+- Item 2
+- Item 3
+
+**Bold Text**
+`;
+
+        document.getElementById('content').innerHTML = marked(markdownContent);
+    </script>
 </body>
 </html>

@@ -129,4 +129,17 @@ ul li {
     margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    
+    color: rgb(105, 105, 105);
+    font-size: small;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    width: 50px;
+    text-align: right;
 }

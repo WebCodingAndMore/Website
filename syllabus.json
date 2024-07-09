@@ -1,7 +1,7 @@
 {
     "semesters": [
       {
-        "title": "Fall",
+        "title": "First",
         "sections": [
           {
             "title": "Hosting a Website",
@@ -10,19 +10,22 @@
                 "title": "Intros & Pico Setup",
                 "subTitle": "Learn how to create and host a website",
                 "description": "In this class we will use the Raspberry Pi Pico W to create and host a website following this tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>.",
-                "date": "8/13"
+                "date": "2024-08-13",
+                "notes": ["Here is an <a href=\"https://hexed.it\">online hex editor</a> that let's you see how text is actually stored on a computer.", "Configure Pico W"]
               },
               {
                 "title": "Work through Tutorial",
                 "subTitle": "Hands-on tutorial with Raspberry Pi Pico",
                 "description": "Work through the official Raspberry Pi Pico W tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\" target=\"_blank\">Getting started with your Raspberry Pi Pico W</a>.",
-                "date": "8/20"
+                "date": "2024-08-20",
+                "notes": ["Complete the tutorial steps", "Document the process"]
               },
               {
                 "title": "Deploying Your Site",
                 "subTitle": "Deploying your first website live",
                 "description": "Learn how to deploy your website live using the tools and concepts covered in previous classes.",
-                "date": "8/27"
+                "date": "2024-08-27",
+                "notes": ["Prepare deployment", "Go live"]
               }
             ]
           },
@@ -33,19 +36,22 @@
                 "title": "Basics of Game Design",
                 "subTitle": "Introduction to game design principles",
                 "description": "Learn the fundamentals of game design including mechanics, dynamics, and aesthetics.",
-                "date": "9/3"
+                "date": "2024-09-03",
+                "notes": ["Design a simple game", "Create a game storyboard"]
               },
               {
                 "title": "Introduction to Game Engines",
                 "subTitle": "Overview of popular game engines",
                 "description": "Get an introduction to popular game engines such as Unity and Unreal Engine.",
-                "date": "9/10"
+                "date": "2024-09-10",
+                "notes": ["Install Unity", "Create a basic game project"]
               },
               {
                 "title": "Creating Your First Game",
                 "subTitle": "Step-by-step guide to creating a game",
                 "description": "Follow a step-by-step guide to create your first game using a game engine.",
-                "date": "9/17"
+                "date": "2024-09-17",
+                "notes": ["Develop the game", "Test and debug"]
               }
             ]
           },
@@ -56,19 +62,22 @@
                 "title": "Understanding Databases",
                 "subTitle": "Introduction to database concepts",
                 "description": "Learn the fundamental concepts of databases, including data modeling and relational databases.",
-                "date": "9/24"
+                "date": "2024-09-24",
+                "notes": ["Design a database schema", "Create ER diagrams"]
               },
               {
                 "title": "SQL Basics",
                 "subTitle": "Fundamentals of SQL",
                 "description": "Learn the basics of SQL, the standard language for interacting with relational databases.",
-                "date": "10/1"
+                "date": "2024-10-01",
+                "notes": ["Write SQL queries", "Practice CRUD operations"]
               },
               {
                 "title": "Using Databases with Apps",
                 "subTitle": "Integrating databases with applications",
                 "description": "Learn how to integrate databases with web applications using SQL and server-side scripting languages.",
-                "date": "10/15"
+                "date": "2024-10-15",
+                "notes": ["Connect database to a web app", "Perform database operations through the app"]
               }
             ]
           },
@@ -79,19 +88,22 @@
                 "title": "Introduction to Cloud Services",
                 "subTitle": "Overview of cloud computing",
                 "description": "Learn the basics of cloud computing, including different types of cloud services and deployment models.",
-                "date": "10/22"
+                "date": "2024-10-22",
+                "notes": ["Research cloud providers", "Set up a cloud account"]
               },
               {
                 "title": "Cloud Storage Solutions",
                 "subTitle": "Exploring different cloud storage options",
                 "description": "Understand the various cloud storage solutions available and how to use them effectively.",
-                "date": "10/29"
+                "date": "2024-10-29",
+                "notes": ["Configure cloud storage", "Upload and manage files"]
               },
               {
                 "title": "Deploying Apps in the Cloud",
                 "subTitle": "How to deploy applications in the cloud",
                 "description": "Learn how to deploy web applications in the cloud using popular cloud platforms.",
-                "date": "11/5"
+                "date": "2024-11-05",
+                "notes": ["Deploy a web app", "Monitor cloud resources"]
               }
             ]
           },
@@ -102,26 +114,29 @@
                 "title": "Basics of Robotics",
                 "subTitle": "Introduction to robotics",
                 "description": "Learn the fundamental concepts of robotics, including types of robots and their applications.",
-                "date": "11/12"
+                "date": "2024-11-12",
+                "notes": ["Research different robots", "Plan a robot project"]
               },
               {
                 "title": "Programming Robots",
                 "subTitle": "Programming fundamentals for robotics",
                 "description": "Understand the basics of programming robots, including sensors, actuators, and control systems.",
-                "date": "11/19"
+                "date": "2024-11-19",
+                "notes": ["Write robot control code", "Test robot functionalities"]
               },
               {
                 "title": "Building a Simple Robot",
                 "subTitle": "Hands-on project to build a robot",
                 "description": "Participate in a hands-on project to build and program a simple robot.",
-                "date": "12/3"
+                "date": "2024-12-03",
+                "notes": ["Assemble a robot kit", "Program and test the robot"]
               }
             ]
           }
         ]
       },
       {
-        "title": "Spring",
+        "title": "Second",
         "sections": [
           {
             "title": "3D Animation",
@@ -130,19 +145,22 @@
                 "title": "Introduction to 3D Animation",
                 "subTitle": "Basics of 3D animation",
                 "description": "Learn the basic concepts of 3D animation, including keyframing and rigging.",
-                "date": "1/7"
+                "date": "2025-01-07",
+                "notes": ["Create a simple animation", "Animate a 3D model"]
               },
               {
                 "title": "Creating 3D Models",
                 "subTitle": "Techniques for creating 3D models",
                 "description": "Explore techniques for creating detailed 3D models using software like Blender.",
-                "date": "1/14"
+                "date": "2025-01-14",
+                "notes": ["Design a 3D model", "Export the model"]
               },
               {
                 "title": "Animating Your Models",
                 "subTitle": "Animating 3D models",
                 "description": "Learn how to animate your 3D models and bring them to life.",
-                "date": "1/21"
+                "date": "2025-01-21",
+                "notes": ["Create an animation sequence", "Render the animation"]
               }
             ]
           },
@@ -153,19 +171,22 @@
                 "title": "Basics of 3D Printing",
                 "subTitle": "Introduction to 3D printing",
                 "description": "Learn the basics of 3D printing, including how 3D printers work and common materials used.",
-                "date": "1/28"
+                "date": "2025-01-28",
+                "notes": ["Setup a 3D printer", "Print a basic model"]
               },
               {
                 "title": "Designing for 3D Printing",
                 "subTitle": "Design principles for 3D printing",
                 "description": "Understand the principles of designing 3D models specifically for 3D printing.",
-                "date": "2/4"
+                "date": "2025-02-04",
+                "notes": ["Design a printable model", "Prepare the model for printing"]
               },
               {
                 "title": "Printing Your Designs",
                 "subTitle": "How to print 3D designs",
                 "description": "Learn how to set up a 3D printer and print your own 3D designs.",
-                "date": "2/11"
+                "date": "2025-02-11",
+                "notes": ["Print a custom design", "Finish and post-process the print"]
               }
             ]
           },
@@ -176,19 +197,22 @@
                 "title": "Introduction to AI",
                 "subTitle": "Basics of artificial intelligence",
                 "description": "Learn the fundamental concepts of artificial intelligence, including machine learning and neural networks.",
-                "date": "2/18"
+                "date": "2025-02-18",
+                "notes": ["Research AI applications", "Develop a simple AI model"]
               },
               {
                 "title": "Machine Learning Basics",
                 "subTitle": "Introduction to machine learning",
                 "description": "Understand the basics of machine learning, including supervised and unsupervised learning.",
-                "date": "2/25"
+                "date": "2025-02-25",
+                "notes": ["Collect training data", "Train a machine learning model"]
               },
               {
                 "title": "Building an AI Project",
                 "subTitle": "Hands-on AI project",
                 "description": "Participate in a hands-on project to build and train a simple AI model.",
-                "date": "3/4"
+                "date": "2025-03-04",
+                "notes": ["Develop an AI application", "Test and evaluate the AI"]
               }
             ]
           },
@@ -199,19 +223,22 @@
                 "title": "Working on a Team",
                 "subTitle": "Collaboration in tech teams",
                 "description": "Learn about collaboration and communication in technology teams, including tools and best practices.",
-                "date": "3/18"
+                "date": "2025-03-18",
+                "notes": ["Participate in a team project", "Use collaboration tools"]
               },
               {
                 "title": "What Tools Are Used",
                 "subTitle": "Common tools in tech industry",
                 "description": "Explore the common tools and software used in the technology industry.",
-                "date": "3/25"
+                "date": "2025-03-25",
+                "notes": ["Research industry tools", "Create a tool comparison"]
               },
               {
                 "title": "Starting a Career in IT",
                 "subTitle": "Launching a career in IT",
                 "description": "Understand the steps to start a career in IT, including education, certifications, and job search strategies.",
-                "date": "4/1"
+                "date": "2025-04-01",
+                "notes": ["Prepare a resume", "Apply for jobs"]
               }
             ]
           },
@@ -222,19 +249,22 @@
                 "title": "Project Planning",
                 "subTitle": "Planning your capstone project",
                 "description": "Learn how to plan and organize a capstone project, including defining objectives and creating a timeline.",
-                "date": "4/8"
+                "date": "2025-04-08",
+                "notes": ["Define project goals", "Create a project timeline"]
               },
               {
                 "title": "Development and Implementation",
                 "subTitle": "Executing your project plan",
                 "description": "Work on the development and implementation of your capstone project according to the plan.",
-                "date": "4/15"
+                "date": "2025-04-15",
+                "notes": ["Develop project deliverables", "Implement the project plan"]
               },
               {
                 "title": "Presentation and Review",
                 "subTitle": "Presenting and reviewing your project",
                 "description": "Learn how to present your project effectively and participate in a review process to evaluate your work.",
-                "date": "4/22"
+                "date": "2025-04-22",
+                "notes": ["Prepare a presentation", "Conduct a project review"]
               }
             ]
           }

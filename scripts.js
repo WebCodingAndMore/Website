@@ -75,11 +75,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalTitle = document.getElementById("modal-title");
     const modalSubtitle = document.getElementById("modal-subtitle");
     const modalBody = document.getElementById("modal-body");
-    const notesList = classItem.notes
-      ? `<ul class="modal-list">${classItem.notes
-          .map((note) => `<li>${note}</li>`)
-          .join("")}</ul>`
-      : "";
+    const notesList =
+      classItem.notes && classItem.notes.length > 0
+        ? `<ul class="modal-list">${classItem.notes
+            .map((note) => `<li>${note}</li>`)
+            .join("")}</ul>`
+        : "";
     const classDate = new Date(classItem.date + "T00:00:00-05:00"); // Nashville, TN is in CST (UTC-5)
 
     modalTitle.textContent = classItem.title;
@@ -89,12 +90,17 @@ document.addEventListener("DOMContentLoaded", function () {
               timeZone: "America/Chicago",
             })}</p>
             <p>${classItem.description}</p>
-            <p><strong>Notes:</strong></p>
-            ${notesList}
         `;
-
+    console.log("notesList", notesList);
+    modalBody.innerHTML =
+      notesList !== ""
+        ? modalBody.innerHTML +
+          `   
+            <p><strong>Notes:</strong></p>
+            ${notesList}`
+        : modalBody.innerHTML;
     // Add target="_blank" to all links in the notes
-    const links = modalBody.querySelectorAll(".modal-list a");
+    const links = modalBody.querySelectorAll("a");
     links.forEach((link) => link.setAttribute("target", "_blank"));
 
     modal.style.display = "block";

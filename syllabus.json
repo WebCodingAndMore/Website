@@ -1,275 +1,292 @@
 {
-    "semesters": [
-      {
-        "title": "First",
-        "sections": [
-          {
-            "title": "Hosting a Website",
-            "classes": [
-              {
-                "title": "Basics of Websites",
-                "subTitle": "Learn how to create and host a website",
-                "description": "In this class we will use the Raspberry Pi Pico W to create and host a website following this tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>.",
-                "date": "2024-08-13",
-                "notes": ["Here is an <a href=\"https://hexed.it\">online hex editor</a> that let's you see how text is actually stored on a computer."]
-              },
-              {
-                "title": "Build Your Website",
-                "subTitle": "Work together on our websites",
-                "description": "We'll continue to work through the official Raspberry Pi Pico W tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\" target=\"_blank\">Getting started with your Raspberry Pi Pico W</a>.",
-                "date": "2024-08-20",
-                "notes": []
-              },
-              {
-                "title": "Share Your Website",
-                "subTitle": "View each others sites on the network",
-                "description": "Since we're all connected to the same WiFi network, we can view each others sites that we're hosting on our Raspberry Pis.",
-                "date": "2024-08-27",
-                "notes": []
-              }
-            ]
-          },
-          {
-            "title": "Game Development",
-            "classes": [
-              {
-                "title": "Basics of Game Development",
-                "subTitle": "Start fom Scratch",
-                "description": "We'll learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a>. (Click 'Tutorials' at the top for additional tutorials.)",
-                "date": "2024-09-03",
-                "notes": []
-              },
-              {
-                "title": "Build Your Game",
-                "subTitle": "Moving from Scratch to Python",
-                "description": "We'll build some games using <a href=\"https://www.pytch.org/app/\">Pytch</a> which lets us move from programming with blocks (Scratch) to programming with code (Python).",
-                "date": "2024-09-10",
-                "notes": []
-              },
-              {
-                "title": "Share Your Game",
-                "subTitle": "Step-by-step guide to creating a game",
-                "description": "Follow a step-by-step guide to create your first game using a game engine.",
-                "date": "2024-09-17",
-                "notes": []
-              }
-            ]
-          },
-          {
-            "title": "Building a Database",
-            "classes": [
-              {
-                "title": "Basics of Databases",
-                "subTitle": "Introduction to database concepts",
-                "description": "Learn the fundamental concepts of databases, including data modeling and relational databases.",
-                "date": "2024-09-24",
-                "notes": []
-              },
-              {
-                "title": "Build Your Database",
-                "subTitle": "Fundamentals of SQL",
-                "description": "Learn the basics of SQL, the standard language for interacting with relational databases.",
-                "date": "2024-10-01",
-                "notes": []
-              },
-              {
-                "title": "Share Your Database",
-                "subTitle": "Integrating databases with applications",
-                "description": "Learn how to integrate databases with web applications using SQL and server-side scripting languages.",
-                "date": "2024-10-15",
-                "notes": []
-              }
-            ]
-          },
-          {
-            "title": "Cloud Computing",
-            "classes": [
-              {
-                "title": "Basics of Cloud Computing",
-                "subTitle": "Overview of cloud computing",
-                "description": "Learn the basics of cloud computing, including different types of cloud services and deployment models.",
-                "date": "2024-10-22",
-                "notes": []
-              },
-              {
-                "title": "Build Your Cloud",
-                "subTitle": "Exploring different cloud storage options",
-                "description": "Understand the various cloud storage solutions available and how to use them effectively.",
-                "date": "2024-10-29",
-                "notes": []
-              },
-              {
-                "title": "Share Your Cloud",
-                "subTitle": "How to deploy applications in the cloud",
-                "description": "Learn how to deploy web applications in the cloud using popular cloud platforms.",
-                "date": "2024-11-05",
-                "notes": []
-              }
-            ]
-          },
-          {
-            "title": "Controlling Robots",
-            "classes": [
-              {
-                "title": "Basics of Robotics",
-                "subTitle": "Controlling a simple robot",
-                "description": "We'll use the <a href=\"https://rocksi.net\">Rocksi Robot Simulator</a> to learn how to control a robot.",
-                "date": "2024-11-12",
-                "notes": []
-              },
-              {
-                "title": "Build Your Robot",
-                "subTitle": "Programming fundamentals for robotics",
-                "description": "Understand the basics of programming robots, including sensors, actuators, and control systems.",
-                "date": "2024-11-19",
-                "notes": []
-              },
-              {
-                "title": "Share Your Robot",
-                "subTitle": "Hands-on project to build a robot",
-                "description": "Participate in a hands-on project to build and program a simple robot.",
-                "date": "2024-12-03",
-                "notes": []
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Second",
-        "sections": [
-          {
-            "title": "3D Animation",
-            "classes": [
-              {
-                "title": "Basics of 3D Animation",
-                "subTitle": "Basics of 3D animation",
-                "description": "Learn the basic concepts of 3D animation, including keyframing and rigging.",
-                "date": "2025-01-07",
-                "notes": []
-              },
-              {
-                "title": "Build Your 3D Animation",
-                "subTitle": "Techniques for creating 3D models",
-                "description": "Explore techniques for creating detailed 3D models using software like Blender.",
-                "date": "2025-01-14",
-                "notes": []
-              },
-              {
-                "title": "Share Your 3D Animation",
-                "subTitle": "Animating 3D models",
-                "description": "Learn how to animate your 3D models and bring them to life.",
-                "date": "2025-01-21",
-                "notes": []
-              }
-            ]
-          },
-          {
-            "title": "3D Printing",
-            "classes": [
-              {
-                "title": "Basics of 3D Printing",
-                "subTitle": "Introduction to 3D printing",
-                "description": "We'll use <a href=\"https://www.tinkercad.com\">Tinkercad</a> to learn the basics of designing objects for 3D printing.",
-                "date": "2025-01-28",
-                "notes": []
-              },
-              {
-                "title": "Build Your 3D Creation",
-                "subTitle": "Design principles for 3D printing",
-                "description": "Understand the principles of designing 3D models specifically for 3D printing.",
-                "date": "2025-02-04",
-                "notes": []
-              },
-              {
-                "title": "Share Your 3D Creation",
-                "subTitle": "How to print 3D designs",
-                "description": "Learn how to set up a 3D printer and print your own 3D designs.",
-                "date": "2025-02-11",
-                "notes": []
-              }
-            ]
-          },
-          {
-            "title": "Creating Artificial Intelligence",
-            "classes": [
-              {
-                "title": "Basics of AI",
-                "subTitle": "Basics of artificial intelligence",
-                "description": "Learn the fundamental concepts of artificial intelligence, including machine learning and neural networks.",
-                "date": "2025-02-18",
-                "notes": []
-              },
-              {
-                "title": "Build Your AI",
-                "subTitle": "Introduction to machine learning",
-                "description": "Understand the basics of machine learning, including supervised and unsupervised learning.",
-                "date": "2025-02-25",
-                "notes": []
-              },
-              {
-                "title": "Share Your AI",
-                "subTitle": "Hands-on AI project",
-                "description": "Participate in a hands-on project to build and train a simple AI model.",
-                "date": "2025-03-04",
-                "notes": []
-              }
-            ]
-          },
-          {
-            "title": "Working in Technology",
-            "classes": [
-              {
-                "title": "Basics of Working in Technology",
-                "subTitle": "Collaboration in tech teams",
-                "description": "Learn about collaboration and communication in technology teams, including tools and best practices.",
-                "date": "2025-03-18",
-                "notes": []
-              },
-              {
-                "title": "Build Your Technology",
-                "subTitle": "Common tools in tech industry",
-                "description": "Explore the common tools and software used in the technology industry.",
-                "date": "2025-03-25",
-                "notes": []
-              },
-              {
-                "title": "Share Your Technology",
-                "subTitle": "Launching a career in IT",
-                "description": "Understand the steps to start a career in IT, including education, certifications, and job search strategies.",
-                "date": "2025-04-01",
-                "notes": []
-              }
-            ]
-          },
-          {
-            "title": "Capstone Projects",
-            "classes": [
-              {
-                "title": "Basics of Capstone Projects",
-                "subTitle": "Planning your capstone project",
-                "description": "Learn how to plan and organize a capstone project, including defining objectives and creating a timeline.",
-                "date": "2025-04-08",
-                "notes": []
-              },
-              {
-                "title": "Build Your Capstone Project",
-                "subTitle": "Executing your project plan",
-                "description": "Work on the development and implementation of your capstone project according to the plan.",
-                "date": "2025-04-15",
-                "notes": []
-              },
-              {
-                "title": "Share Your Capstone Project",
-                "subTitle": "Presenting and reviewing your project",
-                "description": "Learn how to present your project effectively and participate in a review process to evaluate your work.",
-                "date": "2025-04-22",
-                "notes": []
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+  "semesters": [
+    {
+      "title": "First",
+      "sections": [
+        {
+          "title": "Hosting a Website",
+          "classes": [
+            {
+              "title": "Basics of Websites",
+              "subTitle": "Learn how to create and host a website",
+              "description": "In this class we will use the Raspberry Pi Pico W to create and host a website following this tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>.",
+              "date": "2024-08-13",
+              "notes": [
+                "Here is an <a href=\"https://hexed.it\">online hex editor</a> that lets you see how text is actually stored on a computer. Text files are what all websites and programs are built from."
+              ]
+            },
+            {
+              "title": "Build Your Website",
+              "subTitle": "Work together on our websites",
+              "description": "We'll continue to work through the official Raspberry Pi Pico W tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\" target=\"_blank\">Getting started with your Raspberry Pi Pico W</a>.",
+              "date": "2024-08-20",
+              "notes": []
+            },
+            {
+              "title": "Share Your Website",
+              "subTitle": "View each other's sites on the network",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2024-08-27",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "title": "Game Development",
+          "classes": [
+            {
+              "title": "Basics of Game Development",
+              "subTitle": "Start from Scratch",
+              "description": "We'll learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a>. (Click 'Tutorials' at the top for additional tutorials.)",
+              "date": "2024-09-03",
+              "notes": []
+            },
+            {
+              "title": "Build Your Game",
+              "subTitle": "Moving from Scratch to Python",
+              "description": "We'll build some games using <a href=\"https://www.pytch.org/app/\">Pytch</a> which lets us move from programming with blocks (Scratch) to programming with code (Python).",
+              "date": "2024-09-10",
+              "notes": []
+            },
+            {
+              "title": "Share Your Game",
+              "subTitle": "See and play each other's games",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2024-09-17",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "title": "Building a Database",
+          "classes": [
+            {
+              "title": "Basics of Databases",
+              "subTitle": "Introduction to database concepts",
+              "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases.",
+              "date": "2024-09-24",
+              "notes": [
+                "Tony Saro builds his own database from scratch in this <a href=\"https://www.youtube.com/watch?v=5Pc18ge9ohI\">video</a>."
+              ]
+            },
+            {
+              "title": "Build Your Database",
+              "subTitle": "Using SQL to Build a Database",
+              "description": "We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.",
+              "date": "2024-10-01",
+              "notes": []
+            },
+            {
+              "title": "Share Your Database",
+              "subTitle": "Explain the database you've built",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2024-10-15",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "title": "Cloud Computing and Simulations",
+          "classes": [
+            {
+              "title": "Basics of Cloud Computing",
+              "subTitle": "Overview of cloud computing",
+              "description": "Learn the basics of cloud computing, including different types of cloud services and deployment models.",
+              "date": "2024-10-22",
+              "notes": []
+            },
+            {
+              "title": "Build Your Cloud",
+              "subTitle": "Exploring different cloud storage options",
+              "description": "Understand the various cloud storage solutions available and how to use them effectively.",
+              "date": "2024-10-29",
+              "notes": []
+            },
+            {
+              "title": "Simulations and Hardware",
+              "subTitle": "Explore various simulations and hardware concepts",
+              "description": "Learn about various simulations and hardware concepts using these resources: <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">Build an Atom</a>, <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">Charges and Fields</a>, <a href=\"https://simbucket.com/drudemodel/\">Electron Flow (Drude Model)</a>, <a href=\"https://phet.colorado.edu/en/simulations/filter?subjects=electricity-magnets-and-circuits&type=html\">Phet Electricity and Circuit Simulations</a>, <a href=\"https://www.falstad.com/circuit/\">Falstad Circuit Simulator</a>.",
+              "date": "2024-11-05",
+              "notes": [
+                "<a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">Gold atoms under electron microscope</a>",
+                "<a href=\"https://www.youtube.com/watch?v=NvzSLByrw4Q&ab_channel=physicslectures\">Dr Quantum Double Slit Experiment</a>",
+                "<a href=\"https://toutestquantique.fr/en/\">Really cooly French physics animations</a>",
+                "<a href=\"https://www.youtube.com/watch?v=HE2yE8SvHmA&ab_channel=LaPhysiqueAutrement\">Video about Scanning Tunneling Microscope</a>",
+                "<a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulator</a>",
+                "<a href=\"http://visual6502.org/JSSim/index.html\">F6502 Simulator</a>",
+                "<a href=\"http://buthowdoitknow.com/but_how_do_it_know_cpu_model.html\">Scott CPU Simulator</a>",
+                "<a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>",
+                "<a href=\"https://www.youtube.com/watch?v=LQmTKxI4Wn4&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Long)</a>",
+                "<a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Short)</a>",
+                "<a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">Immune System</a>",
+                "<a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">Malaria Animation</a>",
+                "<a href=\"https://evolutionnews.org/2021/09/more-fantastic-molecular-machine-videos-from-wehi/\">Evolution News Article about WEHI</a>"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Controlling Robots",
+          "classes": [
+            {
+              "title": "Basics of Robotics",
+              "subTitle": "Controlling a simple robot",
+              "description": "We'll use the <a href=\"https://rocksi.net\">Rocksi Robot Simulator</a> to learn how to control a robot.",
+              "date": "2024-11-12",
+              "notes": []
+            },
+            {
+              "title": "Build Your Robot",
+              "subTitle": "Programming fundamentals for robotics",
+              "description": "Understand the basics of programming robots, including sensors, actuators, and control systems.",
+              "date": "2024-11-19",
+              "notes": []
+            },
+            {
+              "title": "Share Your Robot",
+              "subTitle": "Show off the robot you've built",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2024-12-03",
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Second",
+      "sections": [
+        {
+          "title": "3D Animation",
+          "classes": [
+            {
+              "title": "Basics of 3D Animation",
+              "subTitle": "Basics of 3D animation",
+              "description": "Learn the basic concepts of 3D animation, including keyframing and rigging.",
+              "date": "2025-01-07",
+              "notes": []
+            },
+            {
+              "title": "Build Your 3D Animation",
+              "subTitle": "Techniques for creating 3D models",
+              "description": "Explore techniques for creating detailed 3D models using software like <a href=\"https://www.blender.org/\">Blender</a>. You can also find free 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a> and explore more models on <a href=\"https://sketchfab.com/\">Sketchfab</a>.",
+              "date": "2025-01-14",
+              "notes": []
+            },
+            {
+              "title": "Share Your 3D Animation",
+              "subTitle": "Show the class your 3D animation",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2025-01-21",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "title": "3D Printing",
+          "classes": [
+            {
+              "title": "Basics of 3D Printing",
+              "subTitle": "Introduction to 3D printing",
+              "description": "We'll use <a href=\"https://www.tinkercad.com\">Tinkercad</a> to learn the basics of designing objects for 3D printing.",
+              "date": "2025-01-28",
+              "notes": []
+            },
+            {
+              "title": "Build Your 3D Creation",
+              "subTitle": "Design principles for 3D printing",
+              "description": "Understand the principles of designing 3D models specifically for 3D printing.",
+              "date": "2025-02-04",
+              "notes": []
+            },
+            {
+              "title": "Share Your 3D Creation",
+              "subTitle": "Show off what you've built",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2025-02-11",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "title": "Creating Artificial Intelligence",
+          "classes": [
+            {
+              "title": "Basics of AI",
+              "subTitle": "Basics of artificial intelligence",
+              "description": "Learn the fundamental concepts of artificial intelligence, including machine learning and neural networks. Explore <a href=\"https://teachablemachine.withgoogle.com/\">Google's Teachable Machine</a> and <a href=\"https://machinelearningforkids.co.uk/scratch/\">IBM's Machine Learning for Kids</a> (a good basic example is under 'Project Templates' by searching 'Hand gestures').",
+              "date": "2025-02-18",
+              "notes": []
+            },
+            {
+              "title": "Build Your AI",
+              "subTitle": "Introduction to machine learning",
+              "description": "Understand the basics of machine learning, including supervised and unsupervised learning.",
+              "date": "2025-02-25",
+              "notes": []
+            },
+            {
+              "title": "Share Your AI",
+              "subTitle": "Show off what you've built",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2025-03-04",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "title": "Working in Technology",
+          "classes": [
+            {
+              "title": "Basics of Working in Technology",
+              "subTitle": "Collaboration in tech teams",
+              "description": "Learn about collaboration and communication in technology teams, including tools and best practices.",
+              "date": "2025-03-18",
+              "notes": []
+            },
+            {
+              "title": "Build Your Technology",
+              "subTitle": "Common tools in tech industry",
+              "description": "Explore the common tools and software used in the technology industry.",
+              "date": "2025-03-25",
+              "notes": []
+            },
+            {
+              "title": "Share Your Technology",
+              "subTitle": "Teams will share what they've built",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2025-04-01",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "title": "Capstone Projects",
+          "classes": [
+            {
+              "title": "Basics of Capstone Projects",
+              "subTitle": "Planning your capstone project",
+              "description": "Learn how to plan and organize a capstone project, including defining objectives and creating a timeline.",
+              "date": "2025-04-08",
+              "notes": []
+            },
+            {
+              "title": "Build Your Capstone Project",
+              "subTitle": "Executing your project plan",
+              "description": "Work on the development and implementation of your capstone project according to the plan.",
+              "date": "2025-04-15",
+              "notes": []
+            },
+            {
+              "title": "Share Your Capstone Project",
+              "subTitle": "Show off your final project",
+              "description": "You will get a chance to share your work with the class.",
+              "date": "2025-04-22",
+              "notes": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -86,40 +86,33 @@
           ]
         },
         {
-          "title": "Cloud Computing and Simulations",
+          "title": "Computer Hardware",
           "classes": [
             {
-              "title": "Basics of Cloud Computing",
-              "subTitle": "Overview of cloud computing",
-              "description": "Learn the basics of cloud computing, including different types of cloud services and deployment models.",
+              "title": "Basics of Electronics",
+              "subTitle": "Overview of electronics",
+              "description": "Electronics starts with electrons. To understand electrons, we will <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">build an atom</a>, see <a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">actual atoms under an electron microscope</a>, learn about <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">electron charges and fields</a>, see how <a href=\"https://simbucket.com/drudemodel/\">electrons move inside metal</a>, build some <a href=\"https://phet.colorado.edu/en/simulations/filter?subjects=electricity-magnets-and-circuits&type=html\">basic circuits</a>, and possible dive into <a href=\"https://www.falstad.com/circuit/\">how those circuits work in detail</a>.",
               "date": "2024-10-22",
-              "notes": []
+              "notes": [
+                "<a href=\"https://www.youtube.com/watch?v=NvzSLByrw4Q&ab_channel=physicslectures\">Dr Quantum Double Slit Experiment</a>",
+                "<a href=\"https://toutestquantique.fr/en/\">Really cooly French physics animations</a>",
+                "<a href=\"https://www.youtube.com/watch?v=HE2yE8SvHmA&ab_channel=LaPhysiqueAutrement\">Video about Scanning Tunneling Microscope</a>"
+              ]
             },
             {
-              "title": "Build Your Cloud",
-              "subTitle": "Exploring different cloud storage options",
-              "description": "Understand the various cloud storage solutions available and how to use them effectively.",
+              "title": "Basics of CPUs",
+              "subTitle": "The Central Processing Unit (CPU)",
+              "description": "The CPU is like the brain of the computer. We will explore simulations of how it works including the <a href=\"/sim/ScottCPU.html\">Scott CPU Simulation</a>, a <a href=\"http://visual6502.org/JSSim/index.html\">6502 Simulator</a> (the CPU used in the original Nintendo), and an <a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulator</a> (the ARM is a type of CPU used in mobile devices).",
               "date": "2024-10-29",
               "notes": []
             },
             {
-              "title": "Simulations and Hardware",
-              "subTitle": "Explore various simulations and hardware concepts",
-              "description": "Learn about various simulations and hardware concepts using these resources: <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">Build an Atom</a>, <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">Charges and Fields</a>, <a href=\"https://simbucket.com/drudemodel/\">Electron Flow (Drude Model)</a>, <a href=\"https://phet.colorado.edu/en/simulations/filter?subjects=electricity-magnets-and-circuits&type=html\">Phet Electricity and Circuit Simulations</a>, <a href=\"https://www.falstad.com/circuit/\">Falstad Circuit Simulator</a>.",
+              "title": "Basics of Code in Biology",
+              "subTitle": "Exploring God's creativity",
+              "description": "We will look at the remarkable world of DNA and the cell with a <a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>, the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">Immune System</a>, a <a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">Malaria Animation</a>, and the <a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Short)</a>.",
               "date": "2024-11-05",
               "notes": [
-                "<a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">Gold atoms under electron microscope</a>",
-                "<a href=\"https://www.youtube.com/watch?v=NvzSLByrw4Q&ab_channel=physicslectures\">Dr Quantum Double Slit Experiment</a>",
-                "<a href=\"https://toutestquantique.fr/en/\">Really cooly French physics animations</a>",
-                "<a href=\"https://www.youtube.com/watch?v=HE2yE8SvHmA&ab_channel=LaPhysiqueAutrement\">Video about Scanning Tunneling Microscope</a>",
-                "<a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulator</a>",
-                "<a href=\"http://visual6502.org/JSSim/index.html\">F6502 Simulator</a>",
-                "<a href=\"http://buthowdoitknow.com/but_how_do_it_know_cpu_model.html\">Scott CPU Simulator</a>",
-                "<a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>",
                 "<a href=\"https://www.youtube.com/watch?v=LQmTKxI4Wn4&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Long)</a>",
-                "<a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Short)</a>",
-                "<a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">Immune System</a>",
-                "<a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">Malaria Animation</a>",
                 "<a href=\"https://evolutionnews.org/2021/09/more-fantastic-molecular-machine-videos-from-wehi/\">Evolution News Article about WEHI</a>"
               ]
             }
@@ -245,7 +238,7 @@
               "notes": []
             },
             {
-              "title": "Build Your Technology",
+              "title": "Building Programs in the Cloud",
               "subTitle": "Common tools in tech industry",
               "description": "Explore the common tools and software used in the technology industry.",
               "date": "2025-03-25",

@@ -86,7 +86,7 @@
           ]
         },
         {
-          "title": "Computer Hardware",
+          "title": "Simulations",
           "classes": [
             {
               "title": "Basics of Electronics",
@@ -119,7 +119,7 @@
           ]
         },
         {
-          "title": "Controlling Robots",
+          "title": "Robotics",
           "classes": [
             {
               "title": "Basics of Robotics",
@@ -202,7 +202,7 @@
           ]
         },
         {
-          "title": "Creating Artificial Intelligence",
+          "title": "Artificial Intelligence",
           "classes": [
             {
               "title": "Basics of AI",

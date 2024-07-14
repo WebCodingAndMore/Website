@@ -1,7 +1,7 @@
 {
   "semesters": [
     {
-      "title": "First",
+      "title": "Fall",
       "sections": [
         {
           "title": "Hosting a Website",
@@ -58,7 +58,7 @@
           ]
         },
         {
-          "title": "Building a Database",
+          "title": "Databases",
           "classes": [
             {
               "title": "Basics of Databases",
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "title": "Second",
+      "title": "Spring",
       "sections": [
         {
           "title": "3D Animation",
@@ -231,21 +231,21 @@
           "title": "Working in Technology",
           "classes": [
             {
-              "title": "Basics of Working in Technology",
+              "title": "Working on a Team",
               "subTitle": "Collaboration in tech teams",
               "description": "Learn about collaboration and communication in technology teams, including tools and best practices.",
               "date": "2025-03-18",
               "notes": []
             },
             {
-              "title": "Building Programs in the Cloud",
+              "title": "Working in the Cloud",
               "subTitle": "Common tools in tech industry",
               "description": "Explore the common tools and software used in the technology industry.",
               "date": "2025-03-25",
               "notes": []
             },
             {
-              "title": "Share Your Technology",
+              "title": "Starting a Career in Tech",
               "subTitle": "Teams will share what they've built",
               "description": "You will get a chance to share your work with the class.",
               "date": "2025-04-01",

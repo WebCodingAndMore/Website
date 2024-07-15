@@ -32,6 +32,36 @@
           ]
         },
         {
+          "title": "Networks & Databases",
+          "classes": [
+            {
+              "title": "Basics of Networks",
+              "subTitle": "How the Internet Works",
+              "description": "We'll look at <a href=\"https://www.youtube.com/watch?v=i8CmibhvZ0c\">how data is actually sent between two computers</a>, we'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic, and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.",
+              "date": "2024-10-01",
+              "notes": [
+                "<a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW\">Ben Eater's Full Networking Tutorial Playlist</a>"
+              ]
+            },
+            {
+              "title": "Basics of Databases",
+              "subTitle": "Introduction to database concepts",
+              "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.",
+              "date": "2024-09-24",
+              "notes": [
+                "Tony Saro builds his own database from scratch in this <a href=\"https://www.youtube.com/watch?v=5Pc18ge9ohI\">video</a>."
+              ]
+            },
+            {
+              "title": "Wireless Networks",
+              "subTitle": "How Your Cell Phone Works",
+              "description": "We'll look at the technology that makes cell phones possible.",
+              "date": "2024-10-15",
+              "notes": []
+            }
+          ]
+        },
+        {
           "title": "Game Development",
           "classes": [
             {
@@ -58,62 +88,36 @@
           ]
         },
         {
-          "title": "Databases",
+          "title": "Simulations & Videos",
           "classes": [
             {
-              "title": "Basics of Databases",
-              "subTitle": "Introduction to database concepts",
-              "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases.",
-              "date": "2024-09-24",
-              "notes": [
-                "Tony Saro builds his own database from scratch in this <a href=\"https://www.youtube.com/watch?v=5Pc18ge9ohI\">video</a>."
-              ]
-            },
-            {
-              "title": "Build Your Database",
-              "subTitle": "Using SQL to Build a Database",
-              "description": "We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.",
-              "date": "2024-10-01",
-              "notes": []
-            },
-            {
-              "title": "Share Your Database",
-              "subTitle": "Explain the database you've built",
-              "description": "You will get a chance to share your work with the class.",
-              "date": "2024-10-15",
-              "notes": []
-            }
-          ]
-        },
-        {
-          "title": "Simulations",
-          "classes": [
-            {
-              "title": "Basics of Electronics",
-              "subTitle": "Overview of electronics",
-              "description": "Electronics starts with electrons. To understand electrons, we will <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">build an atom</a>, see <a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">actual atoms under an electron microscope</a>, learn about <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">electron charges and fields</a>, see how <a href=\"https://simbucket.com/drudemodel/\">electrons move inside metal</a>, build some <a href=\"https://phet.colorado.edu/en/simulations/filter?subjects=electricity-magnets-and-circuits&type=html\">basic circuits</a>, and possible dive into <a href=\"https://www.falstad.com/circuit/\">how those circuits work in detail</a>.",
+              "title": "Electronics Simulations",
+              "subTitle": "From Atoms to Chips",
+              "description": "Electronics starts with electrons. To understand electrons, we will <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">build an atom</a>, see <a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">actual atoms under an electron microscope</a>, learn about <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">electron charges and fields</a> (here is a <a href=\"https://youtu.be/X_crwFuPht4?t=971\">great video</a> on that topic), see how <a href=\"https://simbucket.com/drudemodel/\">electrons move inside metal</a>, build some <a href=\"https://phet.colorado.edu/en/simulations/filter?subjects=electricity-magnets-and-circuits&type=html\">basic circuits</a>, and possibly dive into a <a href=\"https://www.withdiode.com\">3D circuit simulator</a>.<br><br> We may also look at some CPU simulations to get a feel for how they work. These include the <a href=\"/sim/ScottCPU.html\">Scott CPU Simulation</a>, the <a href=\"http://visual6502.org/JSSim/index.html\">6502 Simulation</a> (the CPU used in the original Nintendo), and the <a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulation</a> (the ARM is a type of CPU used in mobile devices).",
               "date": "2024-10-22",
               "notes": [
-                "<a href=\"https://www.youtube.com/watch?v=NvzSLByrw4Q&ab_channel=physicslectures\">Dr Quantum Double Slit Experiment</a>",
-                "<a href=\"https://toutestquantique.fr/en/\">Really cooly French physics animations</a>",
-                "<a href=\"https://www.youtube.com/watch?v=HE2yE8SvHmA&ab_channel=LaPhysiqueAutrement\">Video about Scanning Tunneling Microscope</a>"
+                "<a href=\"https://www.falstad.com/circuit\">An In-Depth 2D Circuit Simulator</a>",
+                "<a href=\"https://toutestquantique.fr/en/\">French Quantum Physics Animations</a>",
+                "<a href=\"https://www.youtube.com/watch?v=NvzSLByrw4Q&ab_channel=physicslectures\">Exploring the Quantum World - The Double Slit Experiment</a>",
+                "<a href=\"https://www.youtube.com/@AlphaPhoenixChannel/featured\">AlphaPhoenix</a> has some great videos explaining electricity and other natural phenomenon."
               ]
             },
             {
-              "title": "Basics of CPUs",
-              "subTitle": "The Central Processing Unit (CPU)",
-              "description": "The CPU is like the brain of the computer. We will explore simulations of how it works including the <a href=\"/sim/ScottCPU.html\">Scott CPU Simulation</a>, a <a href=\"http://visual6502.org/JSSim/index.html\">6502 Simulator</a> (the CPU used in the original Nintendo), and an <a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulator</a> (the ARM is a type of CPU used in mobile devices).",
+              "title": "More Simulations & Videos",
+              "subTitle": "Learning About Other Technologies",
+              "description": "This week we'll look at some simulations and videos that teach us about other technologies like the <a href=\"https://ciechanow.ski/mechanical-watch/\">mechanical watch</a>, <a href=\"https://ciechanow.ski/internal-combustion-engine/\">car engines</a>, and <a href=\"https://ciechanow.ski/gps/\">GPS</a>. ",
               "date": "2024-10-29",
               "notes": []
             },
             {
-              "title": "Basics of Code in Biology",
-              "subTitle": "Exploring God's creativity",
-              "description": "We will look at the remarkable world of DNA and the cell with a <a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>, the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">Immune System</a>, a <a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">Malaria Animation</a>, and the <a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Short)</a>.",
+              "title": "Coding in Biology",
+              "subTitle": "Exploring God's Creativity in the Cell",
+              "description": "We will look at the remarkable world of DNA & molecular machines with a <a href=\"https://www.youtube.com/watch?v=MNR48hUd-Hw\">discussion about molecular machines</a>, a <a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>, the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">Immune System</a>, a <a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">Malaria Animation</a>, and the <a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Short)</a>.",
               "date": "2024-11-05",
               "notes": [
                 "<a href=\"https://www.youtube.com/watch?v=LQmTKxI4Wn4&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Long)</a>",
-                "<a href=\"https://evolutionnews.org/2021/09/more-fantastic-molecular-machine-videos-from-wehi/\">Evolution News Article about WEHI</a>"
+                "<a href=\"https://evolutionnews.org/2021/09/more-fantastic-molecular-machine-videos-from-wehi/\">Evolution News Article about WEHI</a>",
+                "<a href=\"https://www.youtube.com/watch?v=UUSL0NqcY6k\">Brownian Motion</a>"
               ]
             }
           ]
@@ -212,16 +216,16 @@
               "notes": []
             },
             {
-              "title": "Build Your AI",
-              "subTitle": "Introduction to machine learning",
-              "description": "Understand the basics of machine learning, including supervised and unsupervised learning.",
+              "title": "Using AI",
+              "subTitle": "Uses of Artificial Intelligence",
+              "description": "We'll look at some basic uses of AI including <a href=\"https://chatgpt.com/\">ChatGPT</a>, <a href=\"https://gemini.google.com\">Google Gemini</a> and <a href=\"https://claude.ai/\">Claude.AI</a>.",
               "date": "2025-02-25",
               "notes": []
             },
             {
-              "title": "Share Your AI",
-              "subTitle": "Show off what you've built",
-              "description": "You will get a chance to share your work with the class.",
+              "title": "The Future of AI",
+              "subTitle": "Where is Artificial Intelligence Going",
+              "description": "We'll discuss recent advancements in AI and how the technology will likely change things in the future.",
               "date": "2025-03-04",
               "notes": []
             }

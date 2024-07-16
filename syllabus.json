@@ -11,16 +11,16 @@
               "subTitle": "Learn how to create and host a website",
               "description": "In this class we will use the Raspberry Pi Pico W to create and host a website following this tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>.",
               "date": "2024-08-13",
-              "notes": [
-                "Here is an <a href=\"https://hexed.it\">online hex editor</a> that lets you see how text is actually stored on a computer. Text files are what all websites and programs are built from."
-              ]
+              "notes": []
             },
             {
               "title": "Build Your Website",
               "subTitle": "Work together on our websites",
               "description": "We'll continue to work through the official Raspberry Pi Pico W tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\" target=\"_blank\">Getting started with your Raspberry Pi Pico W</a>.",
               "date": "2024-08-20",
-              "notes": []
+              "notes": [
+                "Here is an <a href=\"https://hexed.it\">online hex editor</a> that lets you see how text is actually stored on a computer. Text files are what all websites and programs are built from."
+              ]
             },
             {
               "title": "Share Your Website",
@@ -54,10 +54,14 @@
             },
             {
               "title": "Wireless Networks",
-              "subTitle": "How Your Cell Phone Works",
-              "description": "We'll look at the technology that makes cell phones possible.",
+              "subTitle": "Exploring Software-Defined Radio Technology",
+              "description": "In this class, we will delve into the fascinating world of Software-Defined Radio (SDR). SDR technology allows us to tune into various frequencies, decode different signals, and understand the principles of radio communication using software. This hands-on session will involve setting up an SDR, exploring different frequencies, and decoding signals.",
               "date": "2024-10-15",
-              "notes": []
+              "notes": [
+                "<a href=\"https://www.rtl-sdr.com/\">RTL-SDR.COM</a> - Software defined radio news and projects",
+                "<a href=\"https://greatscottgadgets.com/hackrf/one/\">HackRF One</a> is one of the most powerful SDRs out there",
+                "<a href=\"https://www.gnuradio.org/about/\">GNU Radio</a> is a free & open-source software development toolkit that provides signal processing blocks to implement software radios"
+              ]
             }
           ]
         },
@@ -128,21 +132,21 @@
             {
               "title": "Basics of Robotics",
               "subTitle": "Controlling a simple robot",
-              "description": "We'll use the <a href=\"https://rocksi.net\">Rocksi Robot Simulator</a> to learn how to control a robot.",
+              "description": "We'll use the <a href=\"https://rocksi.net\">Rocksi Robot Simulator</a> to learn how to control a robot. We'll also get some more in-depth experience programming a robot with <a href=\"https://vr.vex.com/?playground=Grid&lang=en\">VEXcode VR</a>.",
               "date": "2024-11-12",
               "notes": []
             },
             {
-              "title": "Build Your Robot",
-              "subTitle": "Programming fundamentals for robotics",
-              "description": "Understand the basics of programming robots, including sensors, actuators, and control systems.",
+              "title": "Robotics in Class",
+              "subTitle": "Hands-On Experience in Robotics",
+              "description": "We will program a real robot in class.",
               "date": "2024-11-19",
               "notes": []
             },
             {
-              "title": "Share Your Robot",
-              "subTitle": "Show off the robot you've built",
-              "description": "You will get a chance to share your work with the class.",
+              "title": "Recap Class",
+              "subTitle": "Discussing What We've Learned So Far",
+              "description": "We'll look back at the classes we've had this semester and talk about what we've learned. We'll also talk about what to expect next semester",
               "date": "2024-12-03",
               "notes": []
             }
@@ -190,9 +194,9 @@
               "notes": []
             },
             {
-              "title": "Build Your 3D Creation",
-              "subTitle": "Design principles for 3D printing",
-              "description": "Understand the principles of designing 3D models specifically for 3D printing.",
+              "title": "Build 3D Creations",
+              "subTitle": "3D printing in class",
+              "description": "We wil have a 3D printer in class to see how it works.",
               "date": "2025-02-04",
               "notes": []
             },
@@ -250,8 +254,8 @@
             },
             {
               "title": "Starting a Career in Tech",
-              "subTitle": "Teams will share what they've built",
-              "description": "You will get a chance to share your work with the class.",
+              "subTitle": "Getting Started",
+              "description": "We will talk about how to start your career in technology.",
               "date": "2025-04-01",
               "notes": []
             }

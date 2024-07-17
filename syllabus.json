@@ -161,22 +161,26 @@
           "title": "3D Animation",
           "classes": [
             {
-              "title": "Basics of 3D Animation",
-              "subTitle": "Basics of 3D animation",
-              "description": "Learn the basic concepts of 3D animation, including keyframing and rigging.",
-              "date": "2025-01-07",
-              "notes": []
-            },
-            {
-              "title": "Build Your 3D Animation",
-              "subTitle": "Techniques for creating 3D models",
-              "description": "Explore techniques for creating detailed 3D models using software like <a href=\"https://www.blender.org/\">Blender</a>. You can also find free 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a> and explore more models on <a href=\"https://sketchfab.com/\">Sketchfab</a>.",
+              "title": "Exploring 3D Animation",
+              "subTitle": "Looking at how computers model the real world",
+              "description": "We will explore 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a>, <a href=\"https://sketchfab.com/\">Sketchfab</a>, and <a href=\"https://threejs.org/\">Three.js</a>.",
               "date": "2025-01-14",
               "notes": []
             },
             {
-              "title": "Share Your 3D Animation",
-              "subTitle": "Show the class your 3D animation",
+              "title": "Building 3D Models",
+              "subTitle": "Create our own 3D models",
+              "description": "We will use the <a href=\"https://threejs.org/editor/\">Three.js Editor</a> to create our own 3D models.",
+              "date": "2025-01-07",
+              "notes": [
+                "The <a href=\"https://threejs.org/manual/\">Three.js Manual</a> gives some great information about how to use the Three.js editor.",
+                "A basic <a href=\"https://youtu.be/DcDbRQUSbsw?t=157\">walkthrough video</a> on Youtube showing you how to create a simple house in the Three.js editor.",
+                "Another great free 3D modeling software is <a href=\"https://www.blender.org/\">Blender</a>. <a href=\"https://playcanvas.com/\">PlayCanvas</a> is also another option."
+              ]
+            },
+            {
+              "title": "Share Your 3D Models",
+              "subTitle": "Show the class your 3D creation",
               "description": "You will get a chance to share your work with the class.",
               "date": "2025-01-21",
               "notes": []
@@ -262,26 +266,26 @@
           ]
         },
         {
-          "title": "Capstone Projects",
+          "title": "Course Review",
           "classes": [
             {
-              "title": "Basics of Capstone Projects",
-              "subTitle": "Planning your capstone project",
-              "description": "Learn how to plan and organize a capstone project, including defining objectives and creating a timeline.",
+              "title": "Fall Semester Review",
+              "subTitle": "Reviewing the course content from last semester",
+              "description": "We'll look back and what we learned last semester.",
               "date": "2025-04-08",
               "notes": []
             },
             {
-              "title": "Build Your Capstone Project",
-              "subTitle": "Executing your project plan",
-              "description": "Work on the development and implementation of your capstone project according to the plan.",
+              "title": "Spring Semester review",
+              "subTitle": "Reviewing the course content from this semester",
+              "description": "We'll look at what we learned this semester.",
               "date": "2025-04-15",
               "notes": []
             },
             {
-              "title": "Share Your Capstone Project",
-              "subTitle": "Show off your final project",
-              "description": "You will get a chance to share your work with the class.",
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've built",
+              "description": "You will get a chance to share what you've created in this class with the class.",
               "date": "2025-04-22",
               "notes": []
             }

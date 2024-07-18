@@ -73,7 +73,10 @@
               "subTitle": "Start from Scratch",
               "description": "We'll learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a>. (Click 'Tutorials' at the top for additional tutorials.)",
               "date": "2024-09-24",
-              "notes": []
+              "notes": [
+                "A basic Game Development App on the Nintendo Switch is called <a href=\"https://www.nintendo.com/us/store/products/game-builder-garage-switch/\">Game Builder Garage</a>. A more sophisticated Game Development App on the Nintendo Switch is called <a href=\"https://www.nintendo.com/us/store/products/fuze4-nintendo-switch-switch/\">Fuze4</a>.",
+                "Some other good game development platforms are <a href=\"https://www.tynker.com/\">Tynker</a>, <a href=\"https://stencyl.com/\">Stencyl</a>, and <a href=\"https://www.bloxels.com/\">Bloxels</a>."
+              ]
             },
             {
               "title": "Build Your Game",

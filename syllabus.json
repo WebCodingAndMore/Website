@@ -38,7 +38,7 @@
               "title": "Basics of Networks",
               "subTitle": "How the Internet Works",
               "description": "We'll look at <a href=\"https://www.youtube.com/watch?v=i8CmibhvZ0c\">how data is actually sent between two computers</a>, we'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic, and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.",
-              "date": "2024-10-01",
+              "date": "2024-09-03",
               "notes": [
                 "<a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW\">Ben Eater's Full Networking Tutorial Playlist</a>"
               ]
@@ -47,7 +47,7 @@
               "title": "Basics of Databases",
               "subTitle": "Introduction to database concepts",
               "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.",
-              "date": "2024-09-24",
+              "date": "2024-09-10",
               "notes": [
                 "Tony Saro builds his own database from scratch in this <a href=\"https://www.youtube.com/watch?v=5Pc18ge9ohI\">video</a>."
               ]
@@ -56,7 +56,7 @@
               "title": "Wireless Networks",
               "subTitle": "Exploring Software-Defined Radio Technology",
               "description": "In this class, we will delve into the fascinating world of Software-Defined Radio (SDR). SDR technology allows us to tune into various frequencies, decode different signals, and understand the principles of radio communication using software. This hands-on session will involve setting up an SDR, exploring different frequencies, and decoding signals.",
-              "date": "2024-10-15",
+              "date": "2024-09-17",
               "notes": [
                 "<a href=\"https://www.rtl-sdr.com/\">RTL-SDR.COM</a> - Software defined radio news and projects",
                 "<a href=\"https://greatscottgadgets.com/hackrf/one/\">HackRF One</a> is one of the most powerful SDRs out there",
@@ -72,21 +72,21 @@
               "title": "Basics of Game Development",
               "subTitle": "Start from Scratch",
               "description": "We'll learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a>. (Click 'Tutorials' at the top for additional tutorials.)",
-              "date": "2024-09-03",
+              "date": "2024-09-24",
               "notes": []
             },
             {
               "title": "Build Your Game",
               "subTitle": "Moving from Scratch to Python",
               "description": "We'll build some games using <a href=\"https://www.pytch.org/app/\">Pytch</a> which lets us move from programming with blocks (Scratch) to programming with code (Python).",
-              "date": "2024-09-10",
+              "date": "2024-10-01",
               "notes": []
             },
             {
               "title": "Share Your Game",
               "subTitle": "See and play each other's games",
               "description": "You will get a chance to share your work with the class.",
-              "date": "2024-09-17",
+              "date": "2024-10-15",
               "notes": []
             }
           ]
@@ -164,14 +164,14 @@
               "title": "Exploring 3D Animation",
               "subTitle": "Looking at how computers model the real world",
               "description": "We will explore 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a>, <a href=\"https://sketchfab.com/\">Sketchfab</a>, and <a href=\"https://threejs.org/\">Three.js</a>.",
-              "date": "2025-01-14",
+              "date": "2025-01-07",
               "notes": []
             },
             {
               "title": "Building 3D Models",
               "subTitle": "Create our own 3D models",
               "description": "We will use the <a href=\"https://threejs.org/editor/\">Three.js Editor</a> to create our own 3D models.",
-              "date": "2025-01-07",
+              "date": "2025-01-14",
               "notes": [
                 "The <a href=\"https://threejs.org/manual/\">Three.js Manual</a> gives some great information about how to use the Three.js editor.",
                 "A basic <a href=\"https://youtu.be/DcDbRQUSbsw?t=157\">walkthrough video</a> on Youtube showing you how to create a simple house in the Three.js editor.",

@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    color: #322f38;
+    color: #5d6d7e;
 }
 
 header {
-    background-color: #19276e;
+    background-color: #34495e;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -91,11 +91,11 @@ h1, h2, h3, h4 {
 }
 
 footer {
-    background-color: #19276e;
+    background-color: #34495e;
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -145,8 +145,8 @@ ul li:hover {
     background-color: #ddd;
 }
 
-.date {
-    color: rgb(105, 105, 105);
+.section .date {
+    color: #5d6d7e;
     font-size: small;
     padding: 0.25rem 0.5rem;
     border-radius: 4px;
@@ -261,7 +261,7 @@ ul li:hover {
 }
 
 .date.past {
-    color: gray;
+    color: rgb(160, 160, 160);
 }
 
 .date.near {

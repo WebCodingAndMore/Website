@@ -9,17 +9,20 @@
             {
               "title": "Basics of Websites",
               "subTitle": "Learn how to create and host a website",
-              "description": "In this class we will use the Raspberry Pi Pico W to create and host a website following this tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>.",
+              "description": "We'll learn how to create and host our very own website on a <a href=\"https://www.raspberrypi.com/products/raspberry-pi-pico/\">Raspberry Pi Pico W</a> by following this tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>.",
               "date": "2024-08-13",
-              "notes": []
+              "notes": [
+                "A few more great Raspberry Pi Pico W tutorials on building web servers are <a href=\"https://core-electronics.com.au/guides/raspberry-pi-pico-w-create-a-simple-http-server/\">here</a>, <a href=\"https://m.youtube.com/watch?v=0sPPxIq4hg8\">here</a>, and <a href=\"https://www.doctormonk.com/2022/09/a-better-web-server-for-raspberry-pi.html\">here</a> (which uses the Microdot library to make things a bit easier).",
+                "For more in-depth lessons on the Raspbyerr Pi Pico W, check out Paul McWhorter on YouTube who has an entire playlist dedicated to <a href=\"https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5\">Raspberry Pi Pico W Lessons for Absolute Beginners</a> using this <a href=\"https://www.amazon.com/SunFounder-Raspberry-Kit-MicroPython-Compatible/dp/B0BDFVL6FX\">Starter Kit</a> from Amazon."
+              ]
             },
             {
               "title": "Build Your Website",
               "subTitle": "Work together on our websites",
-              "description": "We'll continue to work through the official Raspberry Pi Pico W tutorial: <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\" target=\"_blank\">Getting started with your Raspberry Pi Pico W</a>.",
+              "description": "We'll continue to work together through the official Raspberry Pi Pico W tutorial <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>. Finish up your own custom website before our next class and you'll get a chance to show it off in class!",
               "date": "2024-08-20",
               "notes": [
-                "Here is an <a href=\"https://hexed.it\">online hex editor</a> that lets you see how text is actually stored on a computer. Text files are what all websites and programs are built from."
+                "If you're curious how websites and computers store text, take a look at this <a href=\"https://hexed.it\">online hex editor</a> that lets you see how text is actually stored on a computer."
               ]
             },
             {
@@ -37,7 +40,7 @@
             {
               "title": "Basics of Networks",
               "subTitle": "How the Internet Works",
-              "description": "We'll look at <a href=\"https://www.youtube.com/watch?v=i8CmibhvZ0c\">how data is actually sent between two computers</a>, we'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic, and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.",
+              "description": "We'll look at <a href=\"https://m.youtube.com/watch?v=x3c1ih2NJEg\">how the internet works</a>, we'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic, and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.",
               "date": "2024-09-03",
               "notes": [
                 "<a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW\">Ben Eater's Full Networking Tutorial Playlist</a>"
@@ -103,6 +106,8 @@
               "description": "Electronics starts with electrons. To understand electrons, we will <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">build an atom</a>, see <a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">actual atoms under an electron microscope</a>, learn about <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">electron charges and fields</a> (here is a <a href=\"https://youtu.be/X_crwFuPht4?t=971\">great video</a> on that topic), see how <a href=\"https://simbucket.com/drudemodel/\">electrons move inside metal</a>, build some <a href=\"https://phet.colorado.edu/en/simulations/filter?subjects=electricity-magnets-and-circuits&type=html\">basic circuits</a>, and possibly dive into a <a href=\"https://www.withdiode.com\">3D circuit simulator</a>.<br><br> We may also look at some CPU simulations to get a feel for how they work. These include the <a href=\"/sim/ScottCPU.html\">Scott CPU Simulation</a>, the <a href=\"http://visual6502.org/JSSim/index.html\">6502 Simulation</a> (the CPU used in the original Nintendo), and the <a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulation</a> (the ARM is a type of CPU used in mobile devices).",
               "date": "2024-10-22",
               "notes": [
+                "<a href=\"https://www.youtube.com/watch?v=W2Xb2GFK2yc\">What atoms & electrons really look like</a>",
+                "<a href=\"https://www.youtube.com/watch?v=7WhRJV_bAiE\">Voyage into the world of atoms</a>",
                 "<a href=\"https://www.falstad.com/circuit\">An In-Depth 2D Circuit Simulator</a>",
                 "<a href=\"https://toutestquantique.fr/en/\">French Quantum Physics Animations</a>",
                 "<a href=\"https://www.youtube.com/watch?v=NvzSLByrw4Q&ab_channel=physicslectures\">Exploring the Quantum World - The Double Slit Experiment</a>",
@@ -112,7 +117,7 @@
             {
               "title": "More Simulations & Videos",
               "subTitle": "Learning About Other Technologies",
-              "description": "This week we'll look at some simulations and videos that teach us about other technologies like the <a href=\"https://ciechanow.ski/mechanical-watch/\">mechanical watch</a>, <a href=\"https://ciechanow.ski/internal-combustion-engine/\">car engines</a>, and <a href=\"https://ciechanow.ski/gps/\">GPS</a>. ",
+              "description": "We'll look back at any simulations or videos from last week that we weren't able to get to.<br><br>We'll also look at a few new simulations and videos that teach us about other technologies like the <a href=\"https://ciechanow.ski/mechanical-watch/\">mechanical watch</a>, <a href=\"https://ciechanow.ski/internal-combustion-engine/\">car engines</a>, and <a href=\"https://ciechanow.ski/gps/\">GPS</a>. ",
               "date": "2024-10-29",
               "notes": []
             },
@@ -233,12 +238,15 @@
               "subTitle": "Uses of Artificial Intelligence",
               "description": "We'll look at some basic uses of AI including <a href=\"https://chatgpt.com/\">ChatGPT</a>, <a href=\"https://gemini.google.com\">Google Gemini</a> and <a href=\"https://claude.ai/\">Claude.AI</a>.",
               "date": "2025-02-25",
-              "notes": []
+              "notes": [
+                "<a href=\"https://www.maketecheasier.com/use-ai-develop-web-app/\">How I Used Claude.AI to Develop A Modern Web App</a>.",
+                "<a href=\"https://www.tomsguide.com/ai/claude-artifacts-is-the-greatest-innovation-in-ai-this-year-5-prompts-to-try-it-now\">Building Game and Toy Websites with Claude.AI</a> (Tom's Hardware)"
+              ]
             },
             {
               "title": "The Future of AI",
               "subTitle": "Where is Artificial Intelligence Going",
-              "description": "We'll discuss recent advancements in AI and how the technology will likely change things in the future.",
+              "description": "We'll discuss recent advancements in AI and how the technology will likely change things in the future.<br><br>We'll look at 'text to video' using <a href=\"https://openai.com/index/sora/\">Open AI's Sora</a>, <a href=\"https://runwayml.com/\">Runway ML</a>, and <a href=\"https://deepmind.google/technologies/veo/\">Google's Veo</a>.<br><br>In addition, we'll look at <a href=\"https://www.youtube.com/watch?v=HdT8G5S3IAc&ab_channel=TwoMinutePapers\">how AI can generate an entire 3D scene from a few photos</a>.",
               "date": "2025-03-04",
               "notes": []
             }
@@ -256,8 +264,8 @@
             },
             {
               "title": "Working in the Cloud",
-              "subTitle": "Common tools in tech industry",
-              "description": "Explore the common tools and software used in the technology industry.",
+              "subTitle": "Common tools for Cloud Computing",
+              "description": "Most software built today will not be deployed directly to individual computers but will be sent to large data centers, often referred to as the cloud. Cloud computing allows companies to run very large websites and programs without owning their own networks. We'll look at what is possible in the world of cloud computing and how to build programs in the cloud.",
               "date": "2025-03-25",
               "notes": []
             },

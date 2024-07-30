@@ -41,7 +41,7 @@
             {
               "title": "Basics of Networks",
               "subTitle": "How the Internet Works",
-              "description": "We'll look at a video about <a href=\"https://m.youtube.com/watch?v=x3c1ih2NJEg\">how the internet works</a>, we'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic, and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.",
+              "description": "We'll look at a video about <a href=\"https://m.youtube.com/watch?v=x3c1ih2NJEg\">how the internet works</a>, we'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic, and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.<br><br>We'll also look at network traffic using our browser's Dev Tools (viewable by hitting Ctrl/Cmd + Shift + I or the F12 key).",
               "date": "2024-09-03",
               "notes": [
                 "<a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW\">Ben Eater's Full Networking Tutorial Playlist</a>"
@@ -63,7 +63,8 @@
               "date": "2024-09-17",
               "notes": [
                 "<a href=\"http://websdr.org/\">WebSDR</a> is a Software-Defined Radio receiver connected to the internet, allowing many listeners to listen and tune it simultaneously.",
-                "A map of some easy to use web SDRs is <a href=\"https://rx.skywavelinux.com/\">here</a>.",
+                "<a href=\"https://rx.skywavelinux.com/\">View a map</a> of some easy to use web SDRs.",
+                "<a href=\"https://blinry.org/50-things-with-sdr/\">50 Things you can do with a Software Defined Radio</a>",
                 "<a href=\"https://www.rtl-sdr.com/\">RTL-SDR</a> is a blog with Software defined radio news and projects",
                 "<a href=\"https://greatscottgadgets.com/hackrf/one/\">HackRF One</a> is one of the most powerful SDRs out there, but the <a href=\"https://www.amazon.com/dp/B01GDN1T4S\">Nooelec RTL-SDR v5 Bundle</a> is a cheap alternative from Amazon.",
                 "<a href=\"https://www.gnuradio.org/about/\">GNU Radio</a> is a fully featured free & open-source SDR software for connecting to your SDR, but <a href=\"https://airspy.com/download/ \">SDR Sharp</a> and <a href=\"https://www.sdrpp.org/\">SDR++</a> are simpler alternatives."

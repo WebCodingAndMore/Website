@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,7 +27,7 @@ nav a:hover {
 }
 
 main {
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2 rem;
 }
 
 h1, h2, h3, h4 {
@@ -94,7 +96,7 @@ footer {
     background-color: #34495e;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0rem;
     position: relative;
     width: 100%;
     bottom: 0;
@@ -270,4 +272,24 @@ ul li:hover {
 
 .date {
     color: black;
+}
+
+.homework-instructions {
+    background-color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+}
+
+.homework-instructions h2 {
+    margin-top: 0;
+    color: #34495e;
+}
+
+.homework-instructions p {
+    color: #5d6d7e;
+    margin: 1rem 0;
 }

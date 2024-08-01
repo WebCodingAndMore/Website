@@ -3,6 +3,32 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("classModal");
   const span = document.getElementsByClassName("close")[0];
 
+  function getSecondSunday(year, month) {
+    const firstDay = new Date(year, month, 1).getDay();
+    const day = firstDay === 0 ? 8 : 15 - firstDay;
+    return new Date(year, month, day);
+  }
+
+  function getFirstSunday(year, month) {
+    const firstDay = new Date(year, month, 1).getDay();
+    const day = firstDay === 0 ? 1 : 8 - firstDay;
+    return new Date(year, month, day);
+  }
+
+  function isDaylightSaving(date) {
+    const year = date.getFullYear();
+    const startDST = getSecondSunday(year, 2); // March
+    const endDST = getFirstSunday(year, 10); // November
+    return date >= startDST && date < endDST;
+  }
+
+  function getAdjustedDate(dateString) {
+    const date = new Date(dateString + "T00:00:00");
+    const isDST = isDaylightSaving(date);
+    const offset = isDST ? "-05:00" : "-06:00";
+    return new Date(dateString + "T00:00:00" + offset);
+  }
+
   fetch("syllabus.json")
     .then((response) => response.json())
     .then((data) => {
@@ -26,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
           let ul = document.createElement("ul");
           section.classes.forEach((classItem, index) => {
             let li = document.createElement("li");
-            let classDate = new Date(classItem.date + "T00:00:00-05:00"); // Nashville, TN is in CST (UTC-5)
+            let classDate = getAdjustedDate(classItem.date);
             let today = new Date();
             today.setHours(0, 0, 0, 0); // Set to start of today
             let dateClass = "date";
@@ -81,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .map((note) => `<li>${note}</li>`)
             .join("")}</ul>`
         : "";
-    const classDate = new Date(classItem.date + "T00:00:00-05:00"); // Nashville, TN is in CST (UTC-5)
+    const classDate = getAdjustedDate(classItem.date);
 
     modalTitle.textContent = classItem.title;
     modalSubtitle.textContent = classItem.subTitle;

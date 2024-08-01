@@ -27,9 +27,9 @@
               ]
             },
             {
-              "title": "Share Your Website",
-              "subTitle": "View each other's sites on the network",
-              "description": "You will get a chance to share your work with the class.",
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on. These could be projects we've worked on together in class or projects you've been working on for homework.",
               "date": "2024-08-27",
               "notes": []
             }
@@ -93,9 +93,9 @@
               "notes": []
             },
             {
-              "title": "Share Your Game",
-              "subTitle": "See and play each other's games",
-              "description": "You will get a chance to share your work with the class.",
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on. These could be projects we've worked on together in class or projects you've been working on for homework.",
               "date": "2024-10-15",
               "notes": []
             }
@@ -160,7 +160,7 @@
             {
               "title": "Recap Class",
               "subTitle": "Discussing What We've Learned So Far",
-              "description": "We'll look back at the classes we've had this semester and talk about what we've learned. We'll also talk about what to expect next semester",
+              "description": "We'll look back at the classes we've had this semester and talk about what we've learned. We'll also talk about what to expect next semester.",
               "date": "2024-12-03",
               "notes": []
             }
@@ -193,9 +193,9 @@
               ]
             },
             {
-              "title": "Share Your 3D Models",
-              "subTitle": "Show the class your 3D creation",
-              "description": "You will get a chance to share your 3D designs with the class.",
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on. These could be projects we've worked on together in class or projects you've been working on for homework.",
               "date": "2025-01-21",
               "notes": []
             }
@@ -221,9 +221,9 @@
               "notes": []
             },
             {
-              "title": "Share Your 3D Creation",
-              "subTitle": "Show off what you've built",
-              "description": "You will get a chance to share your work with the class.",
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on. These could be projects we've worked on together in class or projects you've been working on for homework.",
               "date": "2025-02-11",
               "notes": []
             }
@@ -264,7 +264,7 @@
             {
               "title": "Working on a Team",
               "subTitle": "Collaboration in tech teams",
-              "description": "Learn about collaboration and communication in technology teams, including tools and best practices.",
+              "description": "Learn about collaboration and communication in technology teams, including tools and best practices. We'll look at specific tools used to help organize software development teams like <a href=\"https://azure.microsoft.com/en-us/products/devops/\">Azure DevOps</a>, <a href=\"https://trello.com/\">Trello</a>, and <a href=\"https://www.atlassian.com/software/jira\">Jira</a>.",
               "date": "2025-03-18",
               "notes": []
             },
@@ -281,7 +281,7 @@
             {
               "title": "Starting a Career in Tech",
               "subTitle": "Getting Started",
-              "description": "We will talk about how to start your career in technology.",
+              "description": "We will talk about how to start your career in technology and we'll discuss what careers or hobbies in tech that we might want to pursue in the future.",
               "date": "2025-04-01",
               "notes": []
             }
@@ -291,14 +291,14 @@
           "title": "Course Review",
           "classes": [
             {
-              "title": "Fall Semester Review",
+              "title": "Fall Semester Recap",
               "subTitle": "Reviewing the course content from last semester",
               "description": "We'll look back and what we learned last semester.",
               "date": "2025-04-08",
               "notes": []
             },
             {
-              "title": "Spring Semester review",
+              "title": "Spring Semester Recap",
               "subTitle": "Reviewing the course content from this semester",
               "description": "We'll look at what we learned this semester.",
               "date": "2025-04-15",
@@ -306,8 +306,8 @@
             },
             {
               "title": "Share Your Work",
-              "subTitle": "Show off what you've built",
-              "description": "You will get a chance to share what you've created in class with the rest of the class.",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a final chance to share what you've created in this class with the rest of the class.",
               "date": "2025-04-22",
               "notes": []
             }

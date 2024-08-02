@@ -274,7 +274,7 @@
             {
               "title": "Working in the Cloud",
               "subTitle": "Common tools for Cloud Computing",
-              "description": "Most software built today will not be deployed directly to individual computers but will be sent to large data centers, often referred to as the cloud.<br><br>Cloud computing allows companies to run very large websites and programs without owning their own networks. We'll look at what is possible in the world of cloud computing and how to build programs in the cloud.",
+              "description": "Most software built today will not be deployed directly to individual computers but will be sent to large data centers, often referred to as the cloud.<br><br>Cloud computing allows companies to run very large websites and programs without owning their own networks. We'll look at what is possible in the world of cloud computing and how to build programs in the cloud, including this very website.",
               "date": "2025-03-25",
               "notes": [
                 "Most of Amazon's profits comes from their cloud computing business called <a href=\"https://aws.amazon.com/\">Amazon Web Services (AWS)</a>.",

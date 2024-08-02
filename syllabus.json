@@ -81,6 +81,8 @@
               "description": "We'll learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a>. (Click 'Tutorials' at the top for additional tutorials.)",
               "date": "2024-09-24",
               "notes": [
+                "<a href=\"https://www.youtube.com/watch?v=C8YtdC8mxTU\">How Video Game Graphics Work</a>",
+                "<a href=\"https://www.youtube.com/watch?v=F2AXJgsrs90\">How Game Boy Graphics Work</a>",
                 "A basic Game Development App on the Nintendo Switch is called <a href=\"https://www.nintendo.com/us/store/products/game-builder-garage-switch/\">Game Builder Garage</a>. A more sophisticated Game Development App on the Nintendo Switch is called <a href=\"https://www.nintendo.com/us/store/products/fuze4-nintendo-switch-switch/\">Fuze4</a>.",
                 "Some other good game development platforms are <a href=\"https://www.tynker.com/\">Tynker</a>, <a href=\"https://stencyl.com/\">Stencyl</a>, and <a href=\"https://www.bloxels.com/\">Bloxels</a>."
               ]
@@ -128,9 +130,10 @@
             {
               "title": "Coding in Biology",
               "subTitle": "Exploring God's Creativity in the Cell",
-              "description": "We will look at the remarkable world of DNA & molecular machines with a <a href=\"https://www.youtube.com/watch?v=MNR48hUd-Hw\">discussion about molecular machines</a>, a <a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>, the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">Immune System</a>, a <a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">Malaria Animation</a>, and the <a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Short)</a>.",
+              "description": "We will look at the remarkable world of DNA & molecular machines with <a href=\"https://youtu.be/WFCvkkDSfIU?t=174\">animations of unseen biology</a>, <a href=\"https://www.youtube.com/watch?v=MNR48hUd-Hw\">a discussion about molecular machines</a>, a look at the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">immune system</a>, an animation about <a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">malaria</a>, and one about how the energy transport chain in our cells creates <a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP</a>. ATP stores and transfers energy within cells, providing the necessary power for various cellular processes, including muscle contraction, nerve impulse propagation, and the creation of DNA.",
               "date": "2024-11-05",
               "notes": [
+                "<a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>",
                 "<a href=\"https://www.youtube.com/watch?v=LQmTKxI4Wn4&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Long)</a>",
                 "<a href=\"https://evolutionnews.org/2021/09/more-fantastic-molecular-machine-videos-from-wehi/\">Evolution News Article about WEHI</a>",
                 "<a href=\"https://www.youtube.com/watch?v=UUSL0NqcY6k\">Brownian Motion</a>",

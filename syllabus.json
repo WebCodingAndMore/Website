@@ -22,7 +22,8 @@
               "description": "We'll continue to work together through the official Raspberry Pi Pico W tutorial <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>. Finish up your own custom website before our next class and you'll get a chance to show it off in class!",
               "date": "2024-08-20",
               "notes": [
-                "<a href=\"https://developer.mozilla.org/en-US/docs/Learn\">Learn Web Development</a>",
+                "<a href=\"https://developer.mozilla.org/en-US/docs/Learn\">Learn Web Development</a> is a free and very popular tutorial for learning about web development.",
+                "<a href=\"https://www.amazon.com/gp/product/1484287509\">Programming for Absolute Beginners</a> is a great book written by a homeschool dad for anyone interested in learning web development.",
                 "All programming, including web programming, uses basic text files to store those programs. If you're curious how raw text files work, take a look at this <a href=\"https://hexed.it\">online hex editor</a> that lets you see the 1s and 0s behind the text."
               ]
             },
@@ -59,15 +60,12 @@
             {
               "title": "Wireless Networks",
               "subTitle": "Exploring Software-Defined Radio Technology",
-              "description": "In this class, we will delve into the fascinating world of Software-Defined Radio (SDR). SDR technology allows us to tune into various frequencies, decode different signals, and understand the principles of radio communication using software. This hands-on session will involve setting up an SDR, exploring different frequencies, and decoding signals.",
+              "description": "In this class, we will delve into the fascinating world of Software-Defined Radio (SDR). SDR technology allows us to tune into various frequencies including AM/FM radio, conversations between pilots and air traffic control, CB radio used by truckers, shortwave radio, weather stations, and more. When combined with digital decoders you can also listen to police and fire radio.<br><br>We will use this cheap <a href=\"https://www.amazon.com/dp/B0CD7558GT\">USB SDR Kit</a> from the creators of the <a href=\"https://www.rtl-sdr.com/\">RTL-SDR.com</a> blog to find these signals. We'll also use the <a href=\"https://airspy.com/download/ \">SDR Sharp</a> software to listen to the signals coming from the USB SDR kit. We'll also use <a href=\"http://websdr.org/\">WebSDR</a> to use other peoples SDRs from around the world (see a map of these WebSDRs <a href=\"https://rx.skywavelinux.com/\">here</a>).",
               "date": "2024-09-17",
               "notes": [
-                "<a href=\"http://websdr.org/\">WebSDR</a> is a Software-Defined Radio receiver connected to the internet, allowing many listeners to listen and tune it simultaneously.",
-                "<a href=\"https://rx.skywavelinux.com/\">View a map</a> of some easy to use web SDRs.",
                 "<a href=\"https://blinry.org/50-things-with-sdr/\">50 Things you can do with a Software Defined Radio</a>",
-                "<a href=\"https://www.rtl-sdr.com/\">RTL-SDR</a> is a blog with Software defined radio news and projects",
-                "<a href=\"https://greatscottgadgets.com/hackrf/one/\">HackRF One</a> is one of the most powerful SDRs out there, but the <a href=\"https://www.amazon.com/dp/B01GDN1T4S\">Nooelec RTL-SDR v5 Bundle</a> is a cheap alternative from Amazon.",
-                "<a href=\"https://www.gnuradio.org/about/\">GNU Radio</a> is a fully featured free & open-source SDR software for connecting to your SDR, but <a href=\"https://airspy.com/download/ \">SDR Sharp</a> and <a href=\"https://www.sdrpp.org/\">SDR++</a> are simpler alternatives."
+                "<a href=\"https://www.radioreference.com\">Radio Reference</a> is a website with a huge database of frequencies you can listen to with an SDR.",
+                "<a href=\"https://www.broadcastify.com/listen/ctid/2522\">Broadcastify.com</a> allows you to listen to police and fire radio online."
               ]
             }
           ]
@@ -130,12 +128,11 @@
             {
               "title": "Coding in Biology",
               "subTitle": "Exploring God's Creativity in the Cell",
-              "description": "We will look at the remarkable world of DNA & molecular machines with <a href=\"https://youtu.be/WFCvkkDSfIU?t=174\">animations of unseen biology</a>, <a href=\"https://www.youtube.com/watch?v=MNR48hUd-Hw\">a discussion about molecular machines</a>, a look at the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">immune system</a>, an animation about <a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">malaria</a>, and one about how the energy transport chain in our cells creates <a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP</a>. ATP stores and transfers energy within cells, providing the necessary power for various cellular processes, including muscle contraction, nerve impulse propagation, and the creation of DNA.",
+              "description": "We will look at the remarkable world of DNA & molecular machines with <a href=\"https://youtu.be/WFCvkkDSfIU?t=174\">animations of unseen biology</a>, <a href=\"https://www.youtube.com/watch?v=MNR48hUd-Hw\">a discussion about molecular machines</a>, a look at the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">immune system</a>, an animation about <a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">malaria</a>, and we'll have a look at the molecule inside all life on earth that powers muscles and nerves called <a href=\"https://youtu.be/qbyzEiBvbXw?t=932\">ATP</a>.",
               "date": "2024-11-05",
               "notes": [
                 "<a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>",
-                "<a href=\"https://www.youtube.com/watch?v=LQmTKxI4Wn4&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Long)</a>",
-                "<a href=\"https://evolutionnews.org/2021/09/more-fantastic-molecular-machine-videos-from-wehi/\">Evolution News Article about WEHI</a>",
+                "<a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Harvard)</a>",
                 "<a href=\"https://www.youtube.com/watch?v=UUSL0NqcY6k\">Brownian Motion</a>",
                 "<a href=\"https://m.youtube.com/watch?v=mHak9EZjySs\">Epigenetics</a>: How DNA gets activated or deactivated for different types of cells.",
                 "<a href=\"https://m.youtube.com/watch?v=TNKWgcFPHqw\">DNA Replication in 3D</a>"

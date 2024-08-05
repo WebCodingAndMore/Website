@@ -188,6 +188,7 @@
               "date": "2025-01-14",
               "notes": [
                 "The <a href=\"https://threejs.org/manual/\">Three.js Manual</a> gives some great information about how to use the Three.js editor.",
+                "Download 3D models at <a href=\"https://sketchfab.com/store\">Sketchfab</a>",
                 "A basic <a href=\"https://youtu.be/DcDbRQUSbsw?t=157\">walkthrough video</a> on Youtube showing you how to create a simple house in the Three.js editor.",
                 "Another great free 3D modeling software is <a href=\"https://www.blender.org/\">Blender</a>. <a href=\"https://playcanvas.com/\">PlayCanvas</a> is also another option."
               ]

@@ -107,11 +107,11 @@
             {
               "title": "Electronics Simulations",
               "subTitle": "From Atoms to Chips",
-              "description": "Electronics starts with electrons. To understand electrons, we will <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">build an atom</a>, see <a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">actual atoms under an electron microscope</a>, learn about <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">electron charges and fields</a> (here is a <a href=\"https://youtu.be/X_crwFuPht4?t=971\">great video</a> on that topic), see how <a href=\"https://simbucket.com/drudemodel/\">electrons move inside metal</a>, build some <a href=\"https://phet.colorado.edu/en/simulations/filter?subjects=electricity-magnets-and-circuits&type=html\">basic circuits</a>, and possibly dive into a <a href=\"https://www.withdiode.com\">3D circuit simulator</a>.<br><br> We may also look at some CPU simulations to get a feel for how they work. These include the <a href=\"/sim/ScottCPU.html\">Scott CPU Simulation</a>, the <a href=\"http://visual6502.org/JSSim/index.html\">6502 Simulation</a> (the CPU used in the original Nintendo), and the <a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulation</a> (the ARM is a type of CPU used in mobile devices).",
+              "description": "Electronics starts with electrons. To understand electrons, we will <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">build an atom</a>, see <a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">actual atoms under an electron microscope</a>, learn about <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">electron charges and fields</a> (here is a <a href=\"https://youtu.be/X_crwFuPht4?t=971\">great video</a> on that topic), see how <a href=\"https://simbucket.com/drudemodel/\">electrons move inside metal</a>, build some <a href=\"https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab_all.html\">basic circuits</a>, and possibly dive into a <a href=\"https://www.withdiode.com\">3D circuit simulator</a>.<br><br> We may also look at some CPU simulations to get a feel for how they work. These include the <a href=\"/sim/ScottCPU.html\">Scott CPU Simulation</a>, the <a href=\"http://visual6502.org/JSSim/index.html\">6502 Simulation</a> (the CPU used in the original Nintendo), and the <a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulation</a> (the ARM is a type of CPU used in mobile devices).",
               "date": "2024-10-22",
               "notes": [
-                "<a href=\"https://www.youtube.com/watch?v=W2Xb2GFK2yc\">What atoms & electrons really look like</a>",
-                "<a href=\"https://www.youtube.com/watch?v=7WhRJV_bAiE\">Voyage into the world of atoms</a>",
+                "<a href=\"https://www.youtube.com/watch?v=yf-lNTN_Ufc\">How Small Are Atoms?</a>",
+                "<a href=\"https://youtu.be/W2Xb2GFK2yc?t=9\">What atoms & electrons really look like</a>",
                 "<a href=\"https://www.falstad.com/circuit\">An In-Depth 2D Circuit Simulator</a>",
                 "<a href=\"https://toutestquantique.fr/en/\">French Quantum Physics Animations</a>",
                 "<a href=\"https://www.youtube.com/watch?v=NvzSLByrw4Q&ab_channel=physicslectures\">Exploring the Quantum World - The Double Slit Experiment</a>",
@@ -131,11 +131,11 @@
               "description": "We will look at the remarkable world of DNA & molecular machines with <a href=\"https://youtu.be/WFCvkkDSfIU?t=174\">animations of unseen biology</a>, <a href=\"https://www.youtube.com/watch?v=MNR48hUd-Hw\">a discussion about molecular machines</a>, a look at the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">immune system</a>, an animation about <a href=\"https://www.youtube.com/watch?v=rIiegij3DQs&list=PLD0444BD542B4D7D9&ab_channel=WEHImovies\">malaria</a>, and we'll have a look at the molecule inside all life on earth that powers muscles and nerves called <a href=\"https://youtu.be/qbyzEiBvbXw?t=932\">ATP</a>.",
               "date": "2024-11-05",
               "notes": [
+                "<a href=\"https://m.youtube.com/watch?v=lv89fSt5jBY\">Your Unstoppable Copy Machine｜DNA Replication</a>",
                 "<a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>",
                 "<a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Harvard)</a>",
                 "<a href=\"https://www.youtube.com/watch?v=UUSL0NqcY6k\">Brownian Motion</a>",
-                "<a href=\"https://m.youtube.com/watch?v=mHak9EZjySs\">Epigenetics</a>: How DNA gets activated or deactivated for different types of cells.",
-                "<a href=\"https://m.youtube.com/watch?v=TNKWgcFPHqw\">DNA Replication in 3D</a>"
+                "<a href=\"https://m.youtube.com/watch?v=mHak9EZjySs\">Epigenetics</a>: How DNA gets activated or deactivated for different types of cells."
               ]
             }
           ]

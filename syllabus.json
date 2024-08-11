@@ -42,7 +42,7 @@
             {
               "title": "Basics of Networks",
               "subTitle": "How the Internet Works",
-              "description": "We'll look at a <a href=\"https://youtu.be/h8K49dD52WA?t=18\">brief history of the internet</a> and a <a href=\"https://youtube.com/watch?v=35KXThuTeVs\">quick explanation of how the internet works</a>, we'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic, and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.<br><br>We'll also look at network traffic using our browser's Dev Tools (viewable by hitting Ctrl/Cmd + Shift + I or the F12 key).",
+              "description": "We'll look at a <a href=\"https://youtu.be/h8K49dD52WA?t=18\">brief history of the internet</a> and a <a href=\"https://youtube.com/watch?v=35KXThuTeVs\">quick explanation of how the internet works</a>. We'll then use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic, and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.<br><br>We'll also look at network traffic using our browser's Dev Tools (viewable by hitting Ctrl/Cmd + Shift + I or the F12 key).",
               "date": "2024-09-03",
               "notes": [
                 "<a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW\">Ben Eater's Full Networking Tutorial Playlist</a>"

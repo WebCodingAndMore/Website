@@ -101,9 +101,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const modalTitle = document.getElementById("modal-title");
     const modalSubtitle = document.getElementById("modal-subtitle");
     const modalBody = document.getElementById("modal-body");
-    const notesList =
-      classItem.notes && classItem.notes.length > 0
-        ? `<ul class="modal-list">${classItem.notes
+    const tipsList =
+      classItem.tips && classItem.tips.length > 0
+        ? `<ul class="modal-list">${classItem.tips
             .map((note) => `<li>${note}</li>`)
             .join("")}</ul>`
         : "";
@@ -117,15 +117,15 @@ document.addEventListener("DOMContentLoaded", function () {
             })}</p>
             <p>${classItem.description}</p>
         `;
-    console.log("notesList", notesList);
+    console.log("tipsList", tipsList);
     modalBody.innerHTML =
-      notesList !== ""
+      tipsList !== ""
         ? modalBody.innerHTML +
           `   
-            <p><strong>Notes:</strong></p>
-            ${notesList}`
+            <p><strong>Tips:</strong></p>
+            ${tipsList}`
         : modalBody.innerHTML;
-    // Add target="_blank" to all links in the notes
+    // Add target="_blank" to all links in the tips
     const links = modalBody.querySelectorAll("a");
     links.forEach((link) => link.setAttribute("target", "_blank"));
 

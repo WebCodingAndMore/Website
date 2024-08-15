@@ -1,0 +1,309 @@
+{
+  "semesters": [
+    {
+      "title": "Fall",
+      "sections": [
+        {
+          "title": "Websites & Electronics",
+          "classes": [
+            {
+              "title": "Basics of Websites",
+              "subTitle": "Learn how to create and host a website",
+              "description": "You'll receive a <a href=\"https://www.raspberrypi.com/products/raspberry-pi-pico/\">Raspberry Pi Pico W</a> minicomputer. We'll look at a tutorial showing you how to host a website on it called <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>.<br><br>We'll look at a <a href=\"https://youtu.be/h8K49dD52WA?t=18\">brief history of the internet</a> and a <a href=\"https://youtube.com/watch?v=35KXThuTeVs\">quick explanation of how the internet works</a>.<br><br>We'll also look at our browser's Developer Tools (Ctrl+Shift+I). In Dev Tools, go to the Console tab and then enter <code>document.designMode = 'on'</code>, hit enter, and you'll be able to modify any text on the website.",
+              "date": "2024-08-13",
+              "tips": [
+                "A few more great Raspberry Pi Pico W tutorials on building web servers are <a href=\"https://core-electronics.com.au/guides/raspberry-pi-pico-w-create-a-simple-http-server/\">here</a>, <a href=\"https://m.youtube.com/watch?v=0sPPxIq4hg8\">here</a>, and <a href=\"https://www.doctormonk.com/2022/09/a-better-web-server-for-raspberry-pi.html\">here</a> (which uses the Microdot library to make things a bit easier).",
+                "For more in-depth lessons on the Raspbyerr Pi Pico W, check out Paul McWhorter on YouTube who has an entire playlist dedicated to <a href=\"https://www.youtube.com/playlist?list=PLGs0VKk2DiYz8js1SJog21cDhkBqyAhC5\">Raspberry Pi Pico W Lessons for Absolute Beginners</a> using this <a href=\"https://www.amazon.com/SunFounder-Raspberry-Kit-MicroPython-Compatible/dp/B0BDFVL6FX\">Starter Kit</a> from Amazon.",
+                "You can also edit text on a website (and much more) by installing the free <a href=\"https://chromewebstore.google.com/detail/visbug/cdockenadnadldjbbgcallicgledbeoc\">VisBug</a> extension for your browser."
+              ]
+            },
+            {
+              "title": "Basics of Electronics",
+              "subTitle": "Work together on our websites",
+              "description": "We'll continue to work together through the official Raspberry Pi Pico W tutorial <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>. Finish up your own custom website before our next class and you'll get a chance to show it off in class!",
+              "date": "2024-08-20",
+              "tips": [
+                "<a href=\"https://developer.mozilla.org/en-US/docs/Learn\">Learn Web Development</a> is a free and very popular tutorial for learning about web development.",
+                "<a href=\"https://www.amazon.com/gp/product/1484287509\">Programming for Absolute Beginners</a> is a great book written by a homeschool dad for anyone interested in learning web development.",
+                "All programming, including web programming, uses basic text files to store those programs. If you're curious how raw text files work, take a look at this <a href=\"https://hexed.it\">online hex editor</a> that lets you see the 1s and 0s behind the text."
+              ]
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2024-08-27",
+              "tips": []
+            }
+          ]
+        },
+        {
+          "title": "Hardware & Networks",
+          "classes": [
+            {
+              "title": "Basics of Computer Hardware",
+              "subTitle": "How the Internet Works",
+              "description": "We'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.<br><br>We'll also look at network traffic using our browser's Dev Tools (viewable by hitting Ctrl/Cmd + Shift + I or the F12 key).",
+              "date": "2024-09-03",
+              "tips": [
+                "<a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW\">Ben Eater's Full Networking Tutorial Playlist</a>"
+              ]
+            },
+            {
+              "title": "Basics of Networks & SDR",
+              "subTitle": "Introduction to database concepts",
+              "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.",
+              "date": "2024-09-10",
+              "tips": [
+                "Tony Saro builds his own database from scratch in this <a href=\"https://www.youtube.com/watch?v=5Pc18ge9ohI\">video</a>."
+              ]
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2024-09-17",
+              "tips": []
+            }
+          ]
+        },
+        {
+          "title": "Coding",
+          "classes": [
+            {
+              "title": "Basics of Coding",
+              "subTitle": "Start from Scratch",
+              "description": "We'll learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a>. (Click 'Tutorials' at the top for additional tutorials.)",
+              "date": "2024-09-24",
+              "tips": [
+                "<a href=\"https://www.youtube.com/watch?v=C8YtdC8mxTU\">How Video Game Graphics Work</a>",
+                "<a href=\"https://www.youtube.com/watch?v=F2AXJgsrs90\">How Game Boy Graphics Work</a>",
+                "A basic Game Development App on the Nintendo Switch is called <a href=\"https://www.nintendo.com/us/store/products/game-builder-garage-switch/\">Game Builder Garage</a>. A more sophisticated Game Development App on the Nintendo Switch is called <a href=\"https://www.nintendo.com/us/store/products/fuze4-nintendo-switch-switch/\">Fuze4</a>.",
+                "Some other good game development platforms are <a href=\"https://www.tynker.com/\">Tynker</a>, <a href=\"https://stencyl.com/\">Stencyl</a>, and <a href=\"https://www.bloxels.com/\">Bloxels</a>."
+              ]
+            },
+            {
+              "title": "Basics of Bio Encoding",
+              "subTitle": "Moving from Scratch to Python",
+              "description": "We'll build some games using <a href=\"https://www.pytch.org/app/\">Pytch</a> which lets us move from programming with blocks (Scratch) to programming with code (Python).",
+              "date": "2024-10-01",
+              "tips": []
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2024-10-15",
+              "tips": []
+            }
+          ]
+        },
+        {
+          "title": "Data & Cybersecurity",
+          "classes": [
+            {
+              "title": "Basics of Data",
+              "subTitle": "From Atoms to Chips",
+              "description": "Electronics starts with electrons. To understand electrons, we will <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">build an atom</a>, see <a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">actual atoms under an electron microscope</a>, learn about <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">electron charges and fields</a>, see how <a href=\"https://simbucket.com/drudemodel/\">electrons move inside metal</a>, build some <a href=\"https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab_all.html\">basic circuits</a>, and possibly dive into a <a href=\"https://www.withdiode.com\">3D circuit simulator</a>.<br><br> We may also look at some CPU simulations to get a feel for how they work. These include the <a href=\"http://visual6502.org/JSSim/index.html\">6502 Simulation</a> (the CPU used in the original Nintendo), and the <a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulation</a> (the ARM is a type of CPU used in mobile devices), and the <a href=\"/sim/ScottCPU.html\">Scott CPU Simulation</a> (from a great book called <a href=\"https://www.amazon.com/But-How-Know-Principles-Computers-ebook/dp/B00F25LEVC\">But How Do It Know</a> that teaches the basic principles of computers).",
+              "date": "2024-10-22",
+              "tips": [
+                "<a href=\"https://www.youtube.com/watch?v=yf-lNTN_Ufc\">How Small Are Atoms?</a>",
+                "<a href=\"https://youtu.be/W2Xb2GFK2yc?t=9\">What atoms & electrons really look like</a>",
+                "<a href=\"https://www.falstad.com/circuit\">An In-Depth 2D Circuit Simulator</a>",
+                "<a href=\"https://www.youtube.com/watch?v=NvzSLByrw4Q&ab_channel=physicslectures\">Exploring the Quantum World - The Double Slit Experiment</a>"
+              ]
+            },
+            {
+              "title": "Basics of Cybersecurity",
+              "subTitle": "Learning About Other Technologies",
+              "description": "We'll look back at any simulations or videos from last week that we weren't able to get to.<br><br>We'll also look at a few new simulations and videos that teach us about other technologies like the <a href=\"https://ciechanow.ski/mechanical-watch/\">mechanical watch</a>, <a href=\"https://ciechanow.ski/internal-combustion-engine/\">car engines</a>, and <a href=\"https://ciechanow.ski/gps/\">GPS</a>. ",
+              "date": "2024-10-29",
+              "tips": []
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2024-11-05",
+              "tips": []
+            }
+          ]
+        },
+        {
+          "title": "Game & App Dev",
+          "classes": [
+            {
+              "title": "Basics of Game Development",
+              "subTitle": "Controlling a simple robot",
+              "description": "We'll use the <a href=\"https://rocksi.net\">Rocksi Robot Simulator</a> to learn how to control a robot. We'll also get some more in-depth experience programming a robot with <a href=\"https://vr.vex.com/?playground=Grid&lang=en\">VEXcode VR</a>.",
+              "date": "2024-11-12",
+              "tips": []
+            },
+            {
+              "title": "Basics of App Development",
+              "subTitle": "Hands-On Experience in Robotics",
+              "description": "We will program a real robot in class.",
+              "date": "2024-11-19",
+              "tips": []
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2024-12-03",
+              "tips": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spring",
+      "sections": [
+        {
+          "title": "Design & Animation",
+          "classes": [
+            {
+              "title": "Basics of Design",
+              "subTitle": "Looking at how computers model the real world",
+              "description": "We will explore 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a>, <a href=\"https://sketchfab.com/\">Sketchfab</a>, and <a href=\"https://threejs.org/\">Three.js</a>.",
+              "date": "2025-01-07",
+              "tips": []
+            },
+            {
+              "title": "Basics of Animation",
+              "subTitle": "Create our own 3D models",
+              "description": "We will use the <a href=\"https://threejs.org/editor/\">Three.js Editor</a> to create our own 3D models.",
+              "date": "2025-01-14",
+              "tips": [
+                "The <a href=\"https://threejs.org/manual/\">Three.js Manual</a> gives some great information about how to use the Three.js editor.",
+                "Download 3D models at <a href=\"https://sketchfab.com/store\">Sketchfab</a>",
+                "A basic <a href=\"https://youtu.be/DcDbRQUSbsw?t=157\">walkthrough video</a> on Youtube showing you how to create a simple house in the Three.js editor.",
+                "Another great free 3D modeling software is <a href=\"https://www.blender.org/\">Blender</a>. <a href=\"https://playcanvas.com/\">PlayCanvas</a> is also another option."
+              ]
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2025-01-21",
+              "tips": []
+            }
+          ]
+        },
+        {
+          "title": "3D Printing",
+          "classes": [
+            {
+              "title": "Basics of 3D Modeling",
+              "subTitle": "Introduction to 3D printing",
+              "description": "We'll use <a href=\"https://www.tinkercad.com\">Tinkercad</a> to learn the basics of designing objects for 3D printing.",
+              "date": "2025-01-28",
+              "tips": [
+                "<a href=\"https://www.autodesk.com/products/fusion-360/personal\">Fusion 360</a> is a downloadable, free, more powerful 3D design software used by a lot of 3D printers."
+              ]
+            },
+            {
+              "title": "Basics of 3D Printing",
+              "subTitle": "3D printing in class",
+              "description": "We wil have a 3D printer in class to see how it works.",
+              "date": "2025-02-04",
+              "tips": []
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2025-02-11",
+              "tips": []
+            }
+          ]
+        },
+        {
+          "title": "AR/VR & Robotics",
+          "classes": [
+            {
+              "title": "Basics of AR/VR",
+              "subTitle": "Basics of artificial intelligence",
+              "description": "Learn the fundamental concepts of artificial intelligence, including machine learning and neural networks. Explore <a href=\"https://teachablemachine.withgoogle.com/\">Google's Teachable Machine</a> and <a href=\"https://machinelearningforkids.co.uk/scratch/\">IBM's Machine Learning for Kids</a> (a good basic example is under 'Project Templates' by searching 'Hand gestures').",
+              "date": "2025-02-18",
+              "tips": []
+            },
+            {
+              "title": "Basics of Robotics",
+              "subTitle": "Uses of Artificial Intelligence",
+              "description": "We'll look at some basic uses of AI including <a href=\"https://chatgpt.com/\">ChatGPT</a>, <a href=\"https://gemini.google.com\">Google Gemini</a> and <a href=\"https://claude.ai/\">Claude.AI</a>.",
+              "date": "2025-02-25",
+              "tips": [
+                "<a href=\"https://www.maketecheasier.com/use-ai-develop-web-app/\">How I Used Claude.AI to Develop A Modern Web App</a>.",
+                "<a href=\"https://www.tomsguide.com/ai/claude-artifacts-is-the-greatest-innovation-in-ai-this-year-5-prompts-to-try-it-now\">Building Game and Toy Websites with Claude.AI</a> (Tom's Hardware)"
+              ]
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2025-03-04",
+              "tips": []
+            }
+          ]
+        },
+        {
+          "title": "Cloud & Space Tech",
+          "classes": [
+            {
+              "title": "Basics of Cloud Computing",
+              "subTitle": "Collaboration in tech teams",
+              "description": "Learn about collaboration and communication in technology teams, including tools and best practices. We'll look at specific tools used to help organize software development teams like <a href=\"https://azure.microsoft.com/en-us/products/devops/\">Azure DevOps</a>, <a href=\"https://trello.com/\">Trello</a>, and <a href=\"https://www.atlassian.com/software/jira\">Jira</a>.",
+              "date": "2025-03-18",
+              "tips": []
+            },
+            {
+              "title": "Basics of Spacecraft",
+              "subTitle": "Common tools for Cloud Computing",
+              "description": "Most software built today will not be deployed directly to individual computers but will be sent to large data centers, often referred to as the cloud.<br><br>Cloud computing allows companies to run very large websites and programs without owning their own networks. We'll look at what is possible in the world of cloud computing and how to build programs in the cloud, including this very website.",
+              "date": "2025-03-25",
+              "tips": [
+                "Most of Amazon's profits comes from their cloud computing business called <a href=\"https://aws.amazon.com/\">Amazon Web Services (AWS)</a>.",
+                "Microsoft's cloud computing platform is called <a href=\"https://azure.microsoft.com/en-us\">Azure</a> and is used in a lot of larger enterprise companies."
+              ]
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2025-04-01",
+              "tips": []
+            }
+          ]
+        },
+        {
+          "title": "Crypto & AI",
+          "classes": [
+            {
+              "title": "Basics of Cryptocurrency",
+              "subTitle": "Reviewing the course content from last semester",
+              "description": "We'll look back and what we learned last semester.",
+              "date": "2025-04-08",
+              "tips": []
+            },
+            {
+              "title": "Basics of AI",
+              "subTitle": "Reviewing the course content from this semester",
+              "description": "We'll look at what we learned this semester.",
+              "date": "2025-04-15",
+              "tips": []
+            },
+            {
+              "title": "Share Your Work",
+              "subTitle": "Show off what you've been doing",
+              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "date": "2025-04-22",
+              "tips": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
       "title": "Fall",
       "sections": [
         {
-          "title": "Websites & Electronics",
+          "title": "Websites",
           "classes": [
             {
               "title": "Basics of Websites",
@@ -18,7 +18,7 @@
               ]
             },
             {
-              "title": "Basics of Electronics",
+              "title": "Build Your Website",
               "subTitle": "Work together on our websites",
               "description": "We'll continue to work together through the official Raspberry Pi Pico W tutorial <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>. Finish up your own custom website before our next class and you'll get a chance to show it off in class!",
               "date": "2024-08-20",
@@ -31,17 +31,17 @@
             {
               "title": "Share Your Work",
               "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "description": "You will get a chance to share the project(s) you've been working on. These could be projects we've worked on together in class or projects you've been working on for homework.",
               "date": "2024-08-27",
               "tips": []
             }
           ]
         },
         {
-          "title": "Hardware & Networks",
+          "title": "Networks & Databases",
           "classes": [
             {
-              "title": "Basics of Computer Hardware",
+              "title": "Basics of Networks",
               "subTitle": "How the Internet Works",
               "description": "We'll use <a href=\"https://www.wireshark.org/\">Wireshark</a> to actually inspect some network traffic and we'll use <a href=\"https://www.telerik.com/fiddler\">Fiddler</a> to get a higher-level view of that same network traffic.<br><br>We'll also look at network traffic using our browser's Dev Tools (viewable by hitting Ctrl/Cmd + Shift + I or the F12 key).",
               "date": "2024-09-03",
@@ -50,7 +50,7 @@
               ]
             },
             {
-              "title": "Basics of Networks & SDR",
+              "title": "Basics of Databases",
               "subTitle": "Introduction to database concepts",
               "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.",
               "date": "2024-09-10",
@@ -59,19 +59,23 @@
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "title": "Wireless Networks",
+              "subTitle": "Exploring Software-Defined Radio Technology",
+              "description": "In this class, we will delve into the fascinating world of Software-Defined Radio (SDR). SDR technology allows us to tune into various frequencies including AM/FM radio, conversations between pilots and air traffic control, CB radio used by truckers, shortwave radio, weather stations, and more. When combined with digital decoders you can also listen to police and fire radio.<br><br>We will use this cheap <a href=\"https://www.amazon.com/dp/B0CD7558GT\">USB SDR Kit</a> from the creators of the <a href=\"https://www.rtl-sdr.com/\">RTL-SDR.com</a> blog to find these signals. We'll also use the <a href=\"https://airspy.com/download/ \">SDR Sharp</a> software to listen to the signals coming from the USB SDR kit. We'll also use <a href=\"http://websdr.org/\">WebSDR</a> to use other peoples SDRs from around the world (see a map of these WebSDRs <a href=\"https://rx.skywavelinux.com/\">here</a>).",
               "date": "2024-09-17",
-              "tips": []
+              "tips": [
+                "<a href=\"https://blinry.org/50-things-with-sdr/\">50 Things you can do with a Software Defined Radio</a>",
+                "<a href=\"https://www.radioreference.com\">Radio Reference</a> is a website with a huge database of frequencies you can listen to with an SDR.",
+                "<a href=\"https://www.broadcastify.com/listen/ctid/2522\">Broadcastify.com</a> allows you to listen to police and fire radio online."
+              ]
             }
           ]
         },
         {
-          "title": "Coding",
+          "title": "Game Development",
           "classes": [
             {
-              "title": "Basics of Coding",
+              "title": "Basics of Game Development",
               "subTitle": "Start from Scratch",
               "description": "We'll learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a>. (Click 'Tutorials' at the top for additional tutorials.)",
               "date": "2024-09-24",
@@ -83,7 +87,7 @@
               ]
             },
             {
-              "title": "Basics of Bio Encoding",
+              "title": "Build Your Game",
               "subTitle": "Moving from Scratch to Python",
               "description": "We'll build some games using <a href=\"https://www.pytch.org/app/\">Pytch</a> which lets us move from programming with blocks (Scratch) to programming with code (Python).",
               "date": "2024-10-01",
@@ -92,17 +96,17 @@
             {
               "title": "Share Your Work",
               "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "description": "You will get a chance to share the project(s) you've been working on. These could be projects we've worked on together in class or projects you've been working on for homework.",
               "date": "2024-10-15",
               "tips": []
             }
           ]
         },
         {
-          "title": "Data & Cybersecurity",
+          "title": "Simulations & Videos",
           "classes": [
             {
-              "title": "Basics of Data",
+              "title": "Electronics Simulations",
               "subTitle": "From Atoms to Chips",
               "description": "Electronics starts with electrons. To understand electrons, we will <a href=\"https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html\">build an atom</a>, see <a href=\"https://www.youtube.com/watch?v=pGWSX6pStd0&ab_channel=ScienceVideos\">actual atoms under an electron microscope</a>, learn about <a href=\"https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html\">electron charges and fields</a>, see how <a href=\"https://simbucket.com/drudemodel/\">electrons move inside metal</a>, build some <a href=\"https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab_all.html\">basic circuits</a>, and possibly dive into a <a href=\"https://www.withdiode.com\">3D circuit simulator</a>.<br><br> We may also look at some CPU simulations to get a feel for how they work. These include the <a href=\"http://visual6502.org/JSSim/index.html\">6502 Simulation</a> (the CPU used in the original Nintendo), and the <a href=\"http://visual6502.org/sim/varm/armgl.html\">Arm1 CPU Simulation</a> (the ARM is a type of CPU used in mobile devices), and the <a href=\"/sim/ScottCPU.html\">Scott CPU Simulation</a> (from a great book called <a href=\"https://www.amazon.com/But-How-Know-Principles-Computers-ebook/dp/B00F25LEVC\">But How Do It Know</a> that teaches the basic principles of computers).",
               "date": "2024-10-22",
@@ -114,42 +118,46 @@
               ]
             },
             {
-              "title": "Basics of Cybersecurity",
+              "title": "More Simulations & Videos",
               "subTitle": "Learning About Other Technologies",
               "description": "We'll look back at any simulations or videos from last week that we weren't able to get to.<br><br>We'll also look at a few new simulations and videos that teach us about other technologies like the <a href=\"https://ciechanow.ski/mechanical-watch/\">mechanical watch</a>, <a href=\"https://ciechanow.ski/internal-combustion-engine/\">car engines</a>, and <a href=\"https://ciechanow.ski/gps/\">GPS</a>. ",
               "date": "2024-10-29",
               "tips": []
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "title": "Coding in Biology",
+              "subTitle": "Exploring God's Creativity in the Cell",
+              "description": "We will look at <a href=\"https://youtube.com/watch?v=9kOGOY7vthk\">the remarkable world of DNA & molecular machines</a> with <a href=\"https://youtu.be/WFCvkkDSfIU?t=174\">animations of unseen biology</a>, <a href=\"https://www.youtube.com/watch?v=MNR48hUd-Hw\">a discussion about molecular machines</a>, a look at the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">immune system</a>, and we'll have a look at the molecule inside all life on earth that powers muscles and nerves called <a href=\"https://youtu.be/qbyzEiBvbXw?t=932\">ATP</a>.",
               "date": "2024-11-05",
-              "tips": []
+              "tips": [
+                "<a href=\"https://m.youtube.com/watch?v=lv89fSt5jBY\">Your Unstoppable Copy Machine｜DNA Replication</a>",
+                "<a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>",
+                "<a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Harvard)</a>"
+              ]
             }
           ]
         },
         {
-          "title": "Game & App Dev",
+          "title": "Robotics",
           "classes": [
             {
-              "title": "Basics of Game Development",
+              "title": "Basics of Robotics",
               "subTitle": "Controlling a simple robot",
               "description": "We'll use the <a href=\"https://rocksi.net\">Rocksi Robot Simulator</a> to learn how to control a robot. We'll also get some more in-depth experience programming a robot with <a href=\"https://vr.vex.com/?playground=Grid&lang=en\">VEXcode VR</a>.",
               "date": "2024-11-12",
               "tips": []
             },
             {
-              "title": "Basics of App Development",
+              "title": "Robotics in Class",
               "subTitle": "Hands-On Experience in Robotics",
               "description": "We will program a real robot in class.",
               "date": "2024-11-19",
               "tips": []
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "title": "Recap Class",
+              "subTitle": "Discussing What We've Learned So Far",
+              "description": "We'll look back at the classes we've had this semester and talk about what we've learned. We'll also talk about what to expect next semester.",
               "date": "2024-12-03",
               "tips": []
             }
@@ -161,17 +169,17 @@
       "title": "Spring",
       "sections": [
         {
-          "title": "Design & Animation",
+          "title": "3D Animation",
           "classes": [
             {
-              "title": "Basics of Design",
+              "title": "Exploring 3D Animation",
               "subTitle": "Looking at how computers model the real world",
               "description": "We will explore 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a>, <a href=\"https://sketchfab.com/\">Sketchfab</a>, and <a href=\"https://threejs.org/\">Three.js</a>.",
               "date": "2025-01-07",
               "tips": []
             },
             {
-              "title": "Basics of Animation",
+              "title": "Building 3D Models",
               "subTitle": "Create our own 3D models",
               "description": "We will use the <a href=\"https://threejs.org/editor/\">Three.js Editor</a> to create our own 3D models.",
               "date": "2025-01-14",
@@ -185,7 +193,7 @@
             {
               "title": "Share Your Work",
               "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "description": "You will get a chance to share the project(s) you've been working on. These could be projects we've worked on together in class or projects you've been working on for homework.",
               "date": "2025-01-21",
               "tips": []
             }
@@ -195,7 +203,7 @@
           "title": "3D Printing",
           "classes": [
             {
-              "title": "Basics of 3D Modeling",
+              "title": "Basics of 3D Printing",
               "subTitle": "Introduction to 3D printing",
               "description": "We'll use <a href=\"https://www.tinkercad.com\">Tinkercad</a> to learn the basics of designing objects for 3D printing.",
               "date": "2025-01-28",
@@ -204,7 +212,7 @@
               ]
             },
             {
-              "title": "Basics of 3D Printing",
+              "title": "Build 3D Creations",
               "subTitle": "3D printing in class",
               "description": "We wil have a 3D printer in class to see how it works.",
               "date": "2025-02-04",
@@ -213,24 +221,24 @@
             {
               "title": "Share Your Work",
               "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "description": "You will get a chance to share the project(s) you've been working on. These could be projects we've worked on together in class or projects you've been working on for homework.",
               "date": "2025-02-11",
               "tips": []
             }
           ]
         },
         {
-          "title": "AR/VR & Robotics",
+          "title": "Artificial Intelligence",
           "classes": [
             {
-              "title": "Basics of AR/VR",
+              "title": "Basics of AI",
               "subTitle": "Basics of artificial intelligence",
               "description": "Learn the fundamental concepts of artificial intelligence, including machine learning and neural networks. Explore <a href=\"https://teachablemachine.withgoogle.com/\">Google's Teachable Machine</a> and <a href=\"https://machinelearningforkids.co.uk/scratch/\">IBM's Machine Learning for Kids</a> (a good basic example is under 'Project Templates' by searching 'Hand gestures').",
               "date": "2025-02-18",
               "tips": []
             },
             {
-              "title": "Basics of Robotics",
+              "title": "Using AI",
               "subTitle": "Uses of Artificial Intelligence",
               "description": "We'll look at some basic uses of AI including <a href=\"https://chatgpt.com/\">ChatGPT</a>, <a href=\"https://gemini.google.com\">Google Gemini</a> and <a href=\"https://claude.ai/\">Claude.AI</a>.",
               "date": "2025-02-25",
@@ -240,26 +248,26 @@
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "title": "The Future of AI",
+              "subTitle": "Where is Artificial Intelligence Going",
+              "description": "We'll discuss recent advancements in AI and how the technology will likely change things in the future.<br><br>We'll look at 'text to video' using <a href=\"https://openai.com/index/sora/\">Open AI's Sora</a>, <a href=\"https://runwayml.com/\">Runway ML</a>, and <a href=\"https://deepmind.google/technologies/veo/\">Google's Veo</a>.<br><br>In addition, we'll look at <a href=\"https://www.youtube.com/watch?v=HdT8G5S3IAc&ab_channel=TwoMinutePapers\">how AI can generate an entire 3D scene from a few photos</a>.",
               "date": "2025-03-04",
               "tips": []
             }
           ]
         },
         {
-          "title": "Cloud & Space Tech",
+          "title": "Working in Technology",
           "classes": [
             {
-              "title": "Basics of Cloud Computing",
+              "title": "Working on a Team",
               "subTitle": "Collaboration in tech teams",
               "description": "Learn about collaboration and communication in technology teams, including tools and best practices. We'll look at specific tools used to help organize software development teams like <a href=\"https://azure.microsoft.com/en-us/products/devops/\">Azure DevOps</a>, <a href=\"https://trello.com/\">Trello</a>, and <a href=\"https://www.atlassian.com/software/jira\">Jira</a>.",
               "date": "2025-03-18",
               "tips": []
             },
             {
-              "title": "Basics of Spacecraft",
+              "title": "Working in the Cloud",
               "subTitle": "Common tools for Cloud Computing",
               "description": "Most software built today will not be deployed directly to individual computers but will be sent to large data centers, often referred to as the cloud.<br><br>Cloud computing allows companies to run very large websites and programs without owning their own networks. We'll look at what is possible in the world of cloud computing and how to build programs in the cloud, including this very website.",
               "date": "2025-03-25",
@@ -269,26 +277,26 @@
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "title": "Starting a Career in Tech",
+              "subTitle": "Getting Started",
+              "description": "We will talk about how to start your career in technology and we'll discuss what careers or hobbies in tech that we might want to pursue in the future.",
               "date": "2025-04-01",
               "tips": []
             }
           ]
         },
         {
-          "title": "Crypto & AI",
+          "title": "Course Review",
           "classes": [
             {
-              "title": "Basics of Cryptocurrency",
+              "title": "Fall Semester Recap",
               "subTitle": "Reviewing the course content from last semester",
               "description": "We'll look back and what we learned last semester.",
               "date": "2025-04-08",
               "tips": []
             },
             {
-              "title": "Basics of AI",
+              "title": "Spring Semester Recap",
               "subTitle": "Reviewing the course content from this semester",
               "description": "We'll look at what we learned this semester.",
               "date": "2025-04-15",
@@ -297,7 +305,7 @@
             {
               "title": "Share Your Work",
               "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on and we'll review what we've just learned if we have extra time.",
+              "description": "You will get a final chance to share what you've created in this class with the rest of the class.",
               "date": "2025-04-22",
               "tips": []
             }

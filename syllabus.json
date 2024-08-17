@@ -253,17 +253,14 @@
           ]
         },
         {
-          "title": "Cloud & Space Tech",
+          "title": "Drones & Space Tech",
           "classes": [
             {
-              "title": "Basics of Cloud Computing",
-              "subTitle": "Using Other People's Computers",
-              "description": "Cloud computing allows companies to run very large websites and programs without owning their own networks. We'll look at how this website was built using the cloud.<br><br>We will also learn about using the cloud for collaboration and communication in technology teams using <a href=\"https://azure.microsoft.com/en-us/products/devops/\">Azure DevOps</a>, <a href=\"https://trello.com/\">Trello</a>, and <a href=\"https://www.atlassian.com/software/jira\">Jira</a>.",
+              "title": "Basics of Drones",
+              "subTitle": "Learning About Drone Tech",
+              "description": "Drones allow us to gain a new perspective and new abilities that we didn't have before.",
               "date": "2025-03-18",
-              "tips": [
-                "Most of Amazon's profits comes from their cloud computing business called <a href=\"https://aws.amazon.com/\">Amazon Web Services (AWS)</a>.",
-                "Microsoft's cloud computing platform is called <a href=\"https://azure.microsoft.com/en-us\">Azure</a> and is used in a lot of larger enterprise companies."
-              ]
+              "tips": []
             },
             {
               "title": "Basics of Space Tech",

@@ -107,9 +107,9 @@
           "title": "Data & Cybersecurity",
           "classes": [
             {
-              "title": "Basics of Data",
-              "subTitle": "From Bits to Databases",
-              "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.",
+              "title": "Basics of Datab",
+              "subTitle": "From Databases to Data Centers",
+              "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.<br<br>We will also look at data centers, also known as the cloud. We'll see how this website is hosted in the cloud. ",
               "date": "2024-10-22",
               "tips": [
                 "Tony Saro builds his own database from scratch in this <a href=\"https://www.youtube.com/watch?v=5Pc18ge9ohI\">video</a>."

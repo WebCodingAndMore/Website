@@ -107,7 +107,7 @@
           "title": "Data & Cybersecurity",
           "classes": [
             {
-              "title": "Basics of Datab",
+              "title": "Basics of Data",
               "subTitle": "From Databases to Data Centers",
               "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.<br<br>We will also look at data centers, also known as the cloud. We'll see how this website is hosted in the cloud. ",
               "date": "2024-10-22",

@@ -34,9 +34,9 @@
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-08-27",
               "tips": []
             }
@@ -67,13 +67,15 @@
                 "<a href=\"https://www.youtube.com/playlist?list=PLowKtXNTBypH19whXTVoG3oKSuOcw_XeW\">Ben Eater's Full Networking Tutorial Playlist</a>",
                 "<a href=\"https://blinry.org/50-things-with-sdr/\">50 Things you can do with a Software Defined Radio</a>",
                 "<a href=\"https://www.radioreference.com\">Radio Reference</a> is a website with a huge database of frequencies you can listen to with an SDR.",
-                "<a href=\"https://www.broadcastify.com/listen/ctid/2522\">Broadcastify.com</a> allows you to listen to police and fire radio online."
+                "<a href=\"https://www.broadcastify.com/listen/ctid/2522\">Broadcastify.com</a> allows you to listen to police and fire radio online.",
+                "<a href=\"https://m.youtube.com/watch?v=1I1vxu5qIUM\">How Bluetooth Works</a>",
+                "<a href=\"https://m.youtube.com/watch?v=whEqaxlCVSs\">How Electromagnetic Waves Carry Messages</a>"
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-09-17",
               "tips": []
             }
@@ -97,15 +99,16 @@
               "description": "We will look at <a href=\"https://youtube.com/watch?v=9kOGOY7vthk\">the remarkable world of DNA & molecular machines</a> with <a href=\"https://youtu.be/WFCvkkDSfIU?t=174\">animations of unseen biology</a>, <a href=\"https://www.youtube.com/watch?v=MNR48hUd-Hw\">a discussion about molecular machines</a>, a look at the <a href=\"https://www.youtube.com/watch?v=HUSDvSknIgI\">immune system</a>, and we'll have a look at the molecule inside all life on earth that powers muscles and nerves called <a href=\"https://youtu.be/qbyzEiBvbXw?t=932\">ATP</a>.",
               "date": "2024-10-01",
               "tips": [
-                "<a href=\"https://m.youtube.com/watch?v=lv89fSt5jBY\">Your Unstoppable Copy Machine｜DNA Replication</a>",
+                "<a href=\"https://m.youtube.com/watch?v=lv89fSt5jBY\">Your Unstoppable Copy Machine | DNA Replication</a>",
                 "<a href=\"https://www.youtube.com/watch?v=7Hk9jct2ozY\">Montage of DNA Animations</a>",
-                "<a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Harvard)</a>"
+                "<a href=\"https://www.youtube.com/watch?v=kXpzp4RDGJI&ab_channel=HarvardOnline\">ATP / Electron Transport Chain (Harvard)</a>",
+                "<a href=\"https://m.youtube.com/watch?v=N97cgUqV0Cg\">Actual Footage of Cell Division (Kidney Cells)</a>"
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-10-15",
               "tips": []
             }
@@ -117,7 +120,7 @@
             {
               "title": "Basics of Data",
               "subTitle": "From Databases to Data Centers",
-              "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.<br<br>We will also look at data centers, also known as the cloud. We'll see how this website is hosted in the cloud. ",
+              "description": "We will use the <a href=\"https://sqlzoo.net\">SQL Zoo</a> tutorials to get hands-on practice with databases. We will look at the <a href=\"https://onecompiler.com/mysql\">MySQL Online Compiler</a> so we can write our own database online.<br><br>We will also <a href=\"https://www.youtube.com/watch?v=Amow8BJm5Go\">learn about data centers</a>, also known as the cloud, and we'll see <a href=\"https://github.com/WebCodingAndMore/Website\">how this website is hosted in the cloud</a>. ",
               "date": "2024-10-22",
               "tips": [
                 "Tony Saro builds his own database from scratch in this <a href=\"https://www.youtube.com/watch?v=5Pc18ge9ohI\">video</a>."
@@ -131,9 +134,9 @@
               "tips": []
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-11-05",
               "tips": []
             }
@@ -157,14 +160,14 @@
             {
               "title": "Basics of App Development",
               "subTitle": "How You Can Build an App",
-              "description": "We'll use some tools to build a mobile application.",
+              "description": "We'll look at an <a href=\"https://appetize.io/demo\">online mobile app simulator</a>, learn how to simulate what a website will look like on a mobile device using our browser's dev tools (Ctrl + Shift + I), and more.",
               "date": "2024-11-19",
               "tips": []
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-12-03",
               "tips": []
             }
@@ -180,8 +183,8 @@
           "classes": [
             {
               "title": "Basics of Design",
-              "subTitle": "How to Make Tech Appealing",
-              "description": "We'll look at tools and techniques for design.",
+              "subTitle": "How to Make Tech Look Good",
+              "description": "We'll look at one of the most popular tools in design today called <a href=\"https://www.figma.com/\">Figma</a>.",
               "date": "2025-01-07",
               "tips": []
             },
@@ -198,9 +201,9 @@
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-01-21",
               "tips": []
             }
@@ -226,9 +229,9 @@
               "tips": []
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-02-11",
               "tips": []
             }
@@ -252,9 +255,9 @@
               "tips": []
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-03-04",
               "tips": []
             }
@@ -266,23 +269,26 @@
             {
               "title": "Basics of Drones",
               "subTitle": "Learning About Drone Tech",
-              "description": "Drones allow us to gain a new perspective and new abilities that we didn't have before.",
+              "description": "We'll look at <a href=\"https://www.youtube.com/watch?v=N_XneaFmOmU\">how drones work</a>.",
               "date": "2025-03-18",
               "tips": []
             },
             {
               "title": "Basics of Space Tech",
               "subTitle": "Communicating with Computers in Space",
-              "description": "We'll look at <a href=\"https://ciechanow.ski/gps/\">how GPS works</a>, we'll receive weather images from a satellite, look at how our phone can connect to a satellite, and we'll look at the Starlink satellite internet service.",
+              "description": "We'll look at <a href=\"https://satellitetracker3d.com/\">a real time view of satellites in space</a>, view <a href=\"https://zoom.earth/maps/satellite/\">satellite weather images from space</a>, look at a <a href=\"https://www.youtube.com/watch?v=lx2CNP7kwhI\">live view from the International Space Station</a>, check out <a href=\"https://ciechanow.ski/gps/\">how GPS works</a>, and look at how our phone can connect to a satellite. We'll also look at <a href=\"https://www.youtube.com/watch?v=qs2QcycggWU\">how Starlink satellite internet service works</a>.",
               "date": "2025-03-25",
               "tips": [
+                "<a href=\"https://youtube.com/watch?v=5voQfQOTem8\">How to Build a Satellite</a>",
+                "<a href=\"https://starship-bysteve.netlify.app/\">Rocket Vertical Takeoff Simulator</a>",
+                "<a href=\"https://iss-sim.spacex.com/\">SpaceX Docking Simulator</a>",
                 "The GPS site mentioned above also has some nice tutorials exploring <a href=\"https://ciechanow.ski/internal-combustion-engine/\">car engines</a> and <a href=\"https://ciechanow.ski/mechanical-watch/\">mechanical watches</a>."
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-04-01",
               "tips": []
             }
@@ -301,7 +307,7 @@
             {
               "title": "Basics of AI",
               "subTitle": "Basics of artificial intelligence",
-              "description": "We will learn the fundamental concepts of artificial intelligence, including machine learning and neural networks. Explore <a href=\"https://teachablemachine.withgoogle.com/\">Google's Teachable Machine</a> and <a href=\"https://machinelearningforkids.co.uk/scratch/\">IBM's Machine Learning for Kids</a> (a good basic example is under 'Project Templates' by searching 'Hand gestures').<br><br>We'll look at some basic uses of AI including <a href=\"https://chatgpt.com/\">ChatGPT</a>, <a href=\"https://gemini.google.com\">Google Gemini</a> and <a href=\"https://claude.ai/\">Claude.AI</a>.<br><br>We'll discuss recent advancements in AI and how the technology will likely change things in the future.<br><br>We'll look at 'text to video' using <a href=\"https://openai.com/index/sora/\">Open AI's Sora</a>, <a href=\"https://runwayml.com/\">Runway ML</a>, and <a href=\"https://deepmind.google/technologies/veo/\">Google's Veo</a>.<br><br>In addition, we'll look at <a href=\"https://www.youtube.com/watch?v=HdT8G5S3IAc&ab_channel=TwoMinutePapers\">how AI can generate an entire 3D scene from a few photos</a>.",
+              "description": "We will learn the fundamental concepts of artificial intelligence, including machine learning and neural networks. Explore <a href=\"https://teachablemachine.withgoogle.com/\">Google's Teachable Machine</a> and <a href=\"https://machinelearningforkids.co.uk/scratch/\">IBM's Machine Learning for Kids</a> (a good basic example is under 'Project Templates' by searching 'Hand gestures').<br><br>We'll look at some basic uses of AI including <a href=\"https://chatgpt.com/\">ChatGPT</a>, <a href=\"https://gemini.google.com\">Google Gemini</a> and <a href=\"https://claude.ai/\">Claude.AI</a>.<br><br>We'll look at 'text to image' using <a href=\"https://deepmind.google/technologies/imagen-3/\">Google's Imagen3</a>.<br><br>We'll also look at 'text to video' using <a href=\"https://openai.com/index/sora/\">Open AI's Sora</a>, <a href=\"https://runwayml.com/\">Runway ML</a>, and <a href=\"https://deepmind.google/technologies/veo/\">Google's Veo</a>.<br><br>In addition, we'll look at <a href=\"https://www.youtube.com/watch?v=HdT8G5S3IAc&ab_channel=TwoMinutePapers\">how AI can generate an entire 3D scene from a few photos</a>.",
               "date": "2025-04-15",
               "tips": [
                 "<a href=\"https://www.maketecheasier.com/use-ai-develop-web-app/\">How I Used Claude.AI to Develop A Modern Web App</a>.",
@@ -309,9 +315,9 @@
               ]
             },
             {
-              "title": "Share Your Work",
-              "subTitle": "Show off what you've been doing",
-              "description": "You will get a chance to share the project(s) you've been working on. If we have extra time we will review what we've learned and possibly work on a class project together.",
+              "title": "Review, Competitions & Group Activities",
+              "subTitle": "We will review what we've learned, compete, and work in groups",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-04-22",
               "tips": []
             }

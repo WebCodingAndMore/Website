@@ -9,7 +9,7 @@
             {
               "title": "Basics of Websites",
               "subTitle": "Learn how to create and host a website",
-              "description": "You'll receive a <a href=\"https://www.raspberrypi.com/products/raspberry-pi-pico/\">Raspberry Pi Pico W</a> minicomputer. We'll look at a tutorial showing you how to host a website on it called <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>.<br><br>We'll look at a <a href=\"https://youtu.be/h8K49dD52WA?t=18\">brief history of the internet</a>.<br><br>We'll also look at our browser's Developer Tools (Ctrl+Shift+I). In Dev Tools, go to the Console tab and then enter <code>document.designMode = 'on'</code>, hit enter, and you'll be able to modify any text on the website.",
+              "description": "You'll receive a <a href=\"https://www.raspberrypi.com/products/raspberry-pi-pico/\">Raspberry Pi Pico W</a> minicomputer. We'll look at a tutorial showing you how to host a website on it called <a href=\"https://projects.raspberrypi.org/en/projects/get-started-pico-w/\">Getting started with your Raspberry Pi Pico W</a>. If you have trouble with the tutorial and just want to download the finished program, you can do so by clicking <a href=\"files/pico_website_complete_code.txt\" download>here</a>.<br><br>We'll look at a <a href=\"https://youtu.be/h8K49dD52WA?t=18\">brief history of the internet</a>.<br><br>We'll also look at our browser's Developer Tools (Ctrl+Shift+I). In Dev Tools, go to the Console tab and then enter <code>document.designMode = 'on'</code>, hit enter, and you'll be able to modify any text on the website.",
               "date": "2024-08-13",
               "tips": [
                 "A few more great Raspberry Pi Pico W tutorials on building web servers are <a href=\"https://core-electronics.com.au/guides/raspberry-pi-pico-w-create-a-simple-http-server/\">here</a>, <a href=\"https://m.youtube.com/watch?v=0sPPxIq4hg8\">here</a>, and <a href=\"https://www.doctormonk.com/2022/09/a-better-web-server-for-raspberry-pi.html\">here</a> (which uses the Microdot library to make things a bit easier).",
@@ -36,7 +36,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-08-27",
               "tips": []
             }
@@ -51,6 +51,7 @@
               "description": "We'll start with a quick look at the components <a href=\"https://youtube.com/watch?v=HB4I2CgkcCo\">inside a computer</a>, we'll look at the first part of a video showing a <a href=\"https://youtube.com/watch?v=d86ws7mQYIg\">3D walkthrough of every component in a computer</a>, we'll see <a href=\"https://www.youtube.com/watch?v=SrAMBi_8tIk\">how a graphics card works</a>, and we'll see <a href=\"https://www.youtube.com/watch?v=7J7X7aZvMXQ\">how computer memory works</a>.<br><br>We'll also look at <a href=\"https://youtube.com/watch?v=Jz8Gs4UHTO8\">a computer vs a virtual machine vs a container</a> to understand how modern computing is done.<br><br>We'll then run a virtual machine on Windows and then run a container on Windows using the free and very popular <a hre\"https://docs.docker.com/desktop/install/windows-install/\">Docker</a> software.",
               "date": "2024-09-03",
               "tips": [
+                "\"<a href=\"https://en.wikipedia.org/wiki/The_Mother_of_All_Demos\">The Mother of All Demos</a>\" (<a href=\"https://www.youtube.com/watch?v=2nm47PFALc8\">video</a>) was a landmark computer demonstration in 1968 that showed off, for the first time, many of the technologies we use today including the computer mouse, a word processor, hyperlinked text (like on a website) and video conferencing.",
                 "Another video about <a href=\"https://www.youtube.com/watch?v=Kgcfj_KV-mo\">how graphics cards work</a>",
                 "A 3D animation showing <a href=\"https://www.youtube.com/watch?v=dX9CGRZwD-w\">how CPUs are made<a/>",
                 "A walkthrough of <a href=\"https://www.youtube.com/watch?v=h-NM1xSSzHQ\">how keyboards work</a>",
@@ -75,7 +76,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-09-17",
               "tips": []
             }
@@ -108,7 +109,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-10-15",
               "tips": []
             }
@@ -136,7 +137,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-11-05",
               "tips": []
             }
@@ -167,7 +168,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2024-12-03",
               "tips": []
             }
@@ -203,7 +204,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-01-21",
               "tips": []
             }
@@ -231,7 +232,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-02-11",
               "tips": []
             }
@@ -257,7 +258,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-03-04",
               "tips": []
             }
@@ -288,7 +289,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-04-01",
               "tips": []
             }
@@ -317,7 +318,7 @@
             {
               "title": "Review, Competitions & Group Activities",
               "subTitle": "We will review what we've learned, compete, and work in groups",
-              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home with the class, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
+              "description": "We will review what we have learned so far in this module, you'll get a chance to show off any technology projects you've been working on at home, we will have some class competitions covering what we have learned, and then we'll split off into groups to work on some group activities.",
               "date": "2025-04-22",
               "tips": []
             }

@@ -56,7 +56,9 @@
                 "A 3D animation showing <a href=\"https://www.youtube.com/watch?v=dX9CGRZwD-w\">how CPUs are made<a/>",
                 "A walkthrough of <a href=\"https://www.youtube.com/watch?v=h-NM1xSSzHQ\">how keyboards work</a>",
                 "A nice video explaining <a href=\"https://www.youtube.com/watch?v=Kv1Hiv3ox8I\">how JPEG images are compressed</a>",
-                "Another good video about <a href=\"https://www.youtube.com/watch?v=eyNBf1sqdBQ\">virtual machines vs containers</a>."
+                "Another good video about <a href=\"https://www.youtube.com/watch?v=eyNBf1sqdBQ\">virtual machines vs containers</a>.",
+                "A nice playlist where Ben Eater <a href=\"https://www.youtube.com/playlist?app=desktop&list=PLowKtXNTBypGqImE405J2565dvjafglHU\">builds an 8-bit computer from scratch</a>.",
+                "If you really want to know how a computer works from the ground up, one of the classic books for students is called <a href=\"https://www.nand2tetris.org\">Nand2Tetris</a> (<a href=\"https://www.amazon.com/Elements-Computing-Systems-second-Principles/dp/0262539802\">book</a>, <a href=\"https://www.coursera.org/learn/build-a-computer\"free Coursera course part 1</a>, <a href=\"https://www.coursera.org/learn/nand2tetris2\">part 2</a>)."
               ]
             },
             {
@@ -88,10 +90,16 @@
             {
               "title": "Basics of Coding",
               "subTitle": "Learning how programming works",
-              "description": "We'll learn the basic fundamentals of computer programming.",
+              "description": "All programming, including web programming, uses basic text files to store those programs. We'll take a look at this <a href=\"https://hexed.it\">online hex editor</a> that lets you see the raw bits, the 1s and 0s, behind the text.<br><br>We'll look at <a href=\"https://github.com/InOneLesson/VideoScripts\">a series of lessons</a> that explain coding from the bits on up along with a video about <a href=\"https://www.youtube.com/watch?v=VBDoT8o4q00\">how transistors do math</a>. We'll also use a program called <a href=\"https://x64dbg.com/\">x64dbg</a> that lets us see, on a Windows computer, exactly what instructions the CPU is running when it is running a program.<br><br>A high level language like C or Python cannot run on a computer directly. First the text files used to store that program must be scanned, parsed and eventually turned into instructions the computer's CPU can understand. We'll look at that process using an online tool called <a href=\"https://astexplorer.net/\">AST explorer</a>. We'll also look at tools like <a href=\"https://godbolt.org/\">compiler explorer</a> and <a href=\"https://www.linqpad.net/Download.aspx</a>LINQPad</a> that show you what CPU instructions are created when a program written in a high level language like C or Python is read by the computer.",
               "date": "2024-09-24",
               "tips": [
-                "All programming, including web programming, uses basic text files to store those programs. If you're curious how raw text files work, take a look at this <a href=\"https://hexed.it\">online hex editor</a> that lets you see the 1s and 0s behind the text."
+                "Two of the most popular websites for learning coding online for free are <a href=\"https://www.codecademy.com/\">Codecademy</a> and <a href=\"https://www.freecodecamp.org/\">Free Code Camp</a>.",
+                "Three of the best books for understanding how coding really works are <a href=\"https://www.amazon.com/But-How-Know-Principles-Computers-ebook/dp/B00F25LEVC\">But How Do It Know</a>, <a href=\"https://www.amazon.com/Computer-Systems-Programmers-Perspective-3/dp/9332573905\">Computer Systems : A Programmer's Perspective</a>, and <a href=\"https://www.amazon.com/Programming-Language-2nd-Brian-Kernighan/dp/0131103628\">The C Programming Language</a>",
+                "If you really want to know how programming languages work, <a href=\"https://craftinginterpreters.com/\">Crafting Interpreters</a> is one of the best resources available online and its free.",
+                "The <a href=\"https://www.iamtk.co/series/building-an-interpreter\">Building an Interpreter Series of Blog Posts</a> is another good resource for understanding how programming languages work.",
+                "JSON is one of the most common formats used in text files to send data to websites and mobile apps. <a href=\"https://ogzhanolguncu.com/blog/write-your-own-json-parser/\">Here</a> is a great blog post showing how to write a program to convert that JSON into something a program can understand.",
+                "<a href=\"https://deeps.dev/posts/typescript-compiler-architecture-high-level-overview/\">Here</a> is a link to the raw source code for the TypeScript parser, one of the most popular languages used on the internet today. The scanner is what splits up the raw TypeScript source code text files into 'tokens' which are then fed to the parser so the computer can understand what those tokens mean.",
+                "The Windows standard calculator when used in programmer mode lets you do calculations with binary and hexadecimal numbers."
               ]
             },
             {
@@ -130,9 +138,11 @@
             {
               "title": "Basics of Cybersecurity",
               "subTitle": "How Hackers Think and How to Stop Them",
-              "description": "We'll learn how hacking works and explore techniques for preventing it.",
+              "description": "We can use <a href=\"https://cyberchef.org/\">CyberChef</a> along with some <a href=\"https://github.com/mattnotmax/cyberchef-recipes\">example CyberChef recipes</a> to see how viruses and malware are sometimes hidden from virus scanners.",
               "date": "2024-10-29",
-              "tips": []
+              "tips": [
+                "Here is <a href=\"https://m.youtube.com/watch?v=UjjyIeoWY0I\">an in-depth tutorial on using CyberChef</a>."
+              ]
             },
             {
               "title": "Review, Competitions & Group Activities",
@@ -149,9 +159,10 @@
             {
               "title": "Basics of Game Development",
               "subTitle": "Basic to Advanced",
-              "description": "We'll learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a> (click 'Tutorials' at the top for additional tutorials). We'll also build some games using <a href=\"https://www.pytch.org/app/\">Pytch</a> which lets us move from programming with blocks (Scratch) to programming with code (Python).",
+              "description": "We'll start by looking at a video showing the experience one person had spending <a href=\"https://m.youtube.com/watch?v=x5wndRdBowo\">3 months learning game development</a>. We'll also learn about <a href=\"https://m.youtube.com/watch?v=iqlH4okiQqg\">Unity in 100 seconds</a>.Next we'll learn <a href=\"https://www.youtube.com/watch?v=PcEbSoSGioY\">how to make a Roblox game</a>.<br><br>We'll then learn the basics of game design using these Scratch <a href=\"https://scratch.mit.edu/projects/editor/?tutorial=getStarted\">tutorials</a> (click 'Tutorials' at the top for additional tutorials). We'll also build some games using <a href=\"https://www.pytch.org/app/\">Pytch</a> which lets us move from programming with blocks (Scratch) to programming with code (Python).",
               "date": "2024-11-12",
               "tips": [
+                "Here is another nice video about <a href=\"https://www.youtube.com/watch?app=desktop&v=Nsfuj8hFrVU\">Making a Game in Lua with No Experience</a> (Lua is the programming language used in Roblox)",
                 "<a href=\"https://www.youtube.com/watch?v=C8YtdC8mxTU\">How Video Game Graphics Work</a>",
                 "<a href=\"https://www.youtube.com/watch?v=F2AXJgsrs90\">How Game Boy Graphics Work</a>",
                 "A basic Game Development App on the Nintendo Switch is called <a href=\"https://www.nintendo.com/us/store/products/game-builder-garage-switch/\">Game Builder Garage</a>. A more sophisticated Game Development App on the Nintendo Switch is called <a href=\"https://www.nintendo.com/us/store/products/fuze4-nintendo-switch-switch/\">Fuze4</a>.",
@@ -246,7 +257,10 @@
               "subTitle": "Learn about Augmented Reality (AR) and Virtual Reality (VR)",
               "description": "We'll explore the world of virtual reality.",
               "date": "2025-02-18",
-              "tips": []
+              "tips": [
+                "<a href=\"https://www.youtube.com/watch?v=i3DbJwy0R6E\">VR Development for Beginners 2024 - How to get started</a>",
+                "<a href=\"https://experiments.withgoogle.com/collection/webvr\">Google's WebVR Experiments</a>"
+              ]
             },
             {
               "title": "Basics of Robotics",
@@ -308,7 +322,7 @@
             {
               "title": "Basics of AI",
               "subTitle": "Basics of artificial intelligence",
-              "description": "We will learn the fundamental concepts of artificial intelligence, including machine learning and neural networks. Explore <a href=\"https://teachablemachine.withgoogle.com/\">Google's Teachable Machine</a> and <a href=\"https://machinelearningforkids.co.uk/scratch/\">IBM's Machine Learning for Kids</a> (a good basic example is under 'Project Templates' by searching 'Hand gestures').<br><br>We'll look at some basic uses of AI including <a href=\"https://chatgpt.com/\">ChatGPT</a>, <a href=\"https://gemini.google.com\">Google Gemini</a> and <a href=\"https://claude.ai/\">Claude.AI</a>.<br><br>We'll look at 'text to image' using <a href=\"https://deepmind.google/technologies/imagen-3/\">Google's Imagen3</a>.<br><br>We'll also look at 'text to video' using <a href=\"https://openai.com/index/sora/\">Open AI's Sora</a>, <a href=\"https://runwayml.com/\">Runway ML</a>, and <a href=\"https://deepmind.google/technologies/veo/\">Google's Veo</a>.<br><br>In addition, we'll look at <a href=\"https://www.youtube.com/watch?v=HdT8G5S3IAc&ab_channel=TwoMinutePapers\">how AI can generate an entire 3D scene from a few photos</a>.",
+              "description": "We will learn the fundamental concepts of artificial intelligence by looking at some videos that will help us <a href=\"https://m.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi\">visualize how neural networks work</a>. We'll also explore <a href=\"https://teachablemachine.withgoogle.com/\">Google's Teachable Machine</a> and <a href=\"https://machinelearningforkids.co.uk/scratch/\">IBM's Machine Learning for Kids</a> (a good basic example is under 'Project Templates' by searching 'Hand gestures').<br><br>We'll look at some basic uses of AI including <a href=\"https://chatgpt.com/\">ChatGPT</a>, <a href=\"https://gemini.google.com\">Google Gemini</a> and <a href=\"https://claude.ai/\">Claude.AI</a>.<br><br>We'll look at 'text to image' using <a href=\"https://deepmind.google/technologies/imagen-3/\">Google's Imagen3</a>.<br><br>We'll also look at 'text to video' using <a href=\"https://openai.com/index/sora/\">Open AI's Sora</a>, <a href=\"https://runwayml.com/\">Runway ML</a>, and <a href=\"https://deepmind.google/technologies/veo/\">Google's Veo</a>.<br><br>In addition, we'll look at <a href=\"https://www.youtube.com/watch?v=HdT8G5S3IAc&ab_channel=TwoMinutePapers\">how AI can generate an entire 3D scene from a few photos</a>.",
               "date": "2025-04-15",
               "tips": [
                 "<a href=\"https://www.maketecheasier.com/use-ai-develop-web-app/\">How I Used Claude.AI to Develop A Modern Web App</a>.",

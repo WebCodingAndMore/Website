@@ -48,13 +48,12 @@
             {
               "title": "Basics of Computer Hardware",
               "subTitle": "Exploring a Computer",
-              "description": "We'll start with a quick look at the components <a href=\"https://youtube.com/watch?v=HB4I2CgkcCo\">inside a computer</a>, we'll look at the first part of a video showing a <a href=\"https://youtube.com/watch?v=d86ws7mQYIg\">3D walkthrough of every component in a computer</a>, we'll see <a href=\"https://www.youtube.com/watch?v=SrAMBi_8tIk\">how a graphics card works</a>, and we'll see <a href=\"https://www.youtube.com/watch?v=7J7X7aZvMXQ\">how computer memory works</a>.<br><br>We'll also look at <a href=\"https://youtube.com/watch?v=Jz8Gs4UHTO8\">a computer vs a virtual machine vs a container</a> to understand how modern computing is done.<br><br>We'll then run a virtual machine on Windows and then run a container on Windows using the free and very popular <a hre\"https://docs.docker.com/desktop/install/windows-install/\">Docker</a> software.",
+              "description": "We'll start with a quick look at the components <a href=\"https://youtube.com/watch?v=HB4I2CgkcCo\">inside a computer</a>, we'll look at the first part of a video showing a <a href=\"https://youtube.com/watch?v=d86ws7mQYIg\">3D walkthrough of every component in a computer</a>.<br><br>We'll also see how a <a href=\"https://www.youtube.com/watch?v=SrAMBi_8tIk\">graphics card</a>, <a href=\"https://www.youtube.com/watch?v=7J7X7aZvMXQ\">computer memory</a>, <a href=\"https://www.youtube.com/watch?v=h-NM1xSSzHQ\">keyboards</a>, <a href=\"https://www.youtube.com/watch?v=wtdnatmVdIg\">hard drives</a>, and <a href=\"https://www.youtube.com/watch?v=5Mh3o886qpg\">solid state hard drives</a> work.<br><br>We'll also look at <a href=\"https://youtube.com/watch?v=Jz8Gs4UHTO8\">a computer vs a virtual machine vs a container</a> to understand how modern computing is done.<br><br>We'll then run a virtual machine on Windows and then run a container on Windows using the free and very popular <a hre\"https://docs.docker.com/desktop/install/windows-install/\">Docker</a> software.",
               "date": "2024-09-03",
               "tips": [
                 "\"<a href=\"https://en.wikipedia.org/wiki/The_Mother_of_All_Demos\">The Mother of All Demos</a>\" (<a href=\"https://www.youtube.com/watch?v=2nm47PFALc8\">video</a>) was a landmark computer demonstration in 1968 that showed off, for the first time, many of the technologies we use today including the computer mouse, a word processor, hyperlinked text (like on a website) and video conferencing.",
-                "Another video about <a href=\"https://www.youtube.com/watch?v=Kgcfj_KV-mo\">how graphics cards work</a>",
+                "Another more detailed video about <a href=\"https://www.youtube.com/watch?v=Kgcfj_KV-mo\">how graphics cards work</a>",
                 "A 3D animation showing <a href=\"https://www.youtube.com/watch?v=dX9CGRZwD-w\">how CPUs are made<a/>",
-                "A walkthrough of <a href=\"https://www.youtube.com/watch?v=h-NM1xSSzHQ\">how keyboards work</a>",
                 "A nice video explaining <a href=\"https://www.youtube.com/watch?v=Kv1Hiv3ox8I\">how JPEG images are compressed</a>",
                 "Another good video about <a href=\"https://www.youtube.com/watch?v=eyNBf1sqdBQ\">virtual machines vs containers</a>.",
                 "A nice playlist where Ben Eater <a href=\"https://www.youtube.com/playlist?app=desktop&list=PLowKtXNTBypGqImE405J2565dvjafglHU\">builds an 8-bit computer from scratch</a>.",
@@ -204,7 +203,7 @@
             {
               "title": "Basics of Animation",
               "subTitle": "Adding Motion to Our Work",
-              "description": "We will explore 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a>, <a href=\"https://sketchfab.com/\">Sketchfab</a>, and <a href=\"https://threejs.org/\">Three.js</a>. We will use the <a href=\"https://threejs.org/editor/\">Three.js Editor</a> to create our own 3D models.",
+              "description": "We'll look at a video about <a href=\"https://www.youtube.com/watch?v=iOlehM5kNSk\">how CGI works</a>. We will also explore 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a>, <a href=\"https://sketchfab.com/\">Sketchfab</a>, and <a href=\"https://threejs.org/\">Three.js</a>. We will use the <a href=\"https://threejs.org/editor/\">Three.js Editor</a> to create our own 3D models.",
               "date": "2025-01-14",
               "tips": [
                 "The <a href=\"https://threejs.org/manual/\">Three.js Manual</a> gives some great information about how to use the Three.js editor.",

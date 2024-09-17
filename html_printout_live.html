@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Interactive Webpage</title>
+        <style>
+            /* CSS styles go here */
+            body {
+                background-color: lightblue;
+            }
+            h1 {
+                color: darkblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Welcome to My Webpage
+        </h1>
+
+        <p id="intro">
+            Hello, this is an example paragraph.
+        </p>
+
+        <button onclick="changeText()">
+            Click Me
+        </button>
+
+        <script>
+            // JavaScript code goes here
+            function changeText() {
+                var para = document.getElementById("intro");
+                para.textContent = "You clicked the button!";
+                para.style.color = "red";
+            }
+        </script>
+    </body>
+</html>

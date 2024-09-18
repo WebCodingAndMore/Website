@@ -44,26 +44,45 @@
         font-weight: bold;
       }
       .goal-hit {
-        background-color: lightcoral; /* Color change after hitting the goal */
+        background-color: lightcoral;
       }
       .jump {
         background-color: orange;
         font-weight: bold;
       }
+      .player {
+        background-color: red;
+      }
       .controls {
         margin-top: 20px;
       }
-      .instructions {
-        margin-top: 20px;
-        color: #555;
-        text-align: center;
+      #command-input {
+        font-size: 24px;
+        padding: 10px;
+        text-transform: uppercase;
+        width: 500px;
+        margin-bottom: 20px;
+      }
+      button {
+        font-size: 24px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      button:hover {
+        background-color: #45a049;
       }
       .timer {
         margin-top: 10px;
         font-weight: bold;
       }
-      .player {
-        background-color: red;
+      .instructions {
+        margin-top: 20px;
+        color: #555;
+        text-align: center;
       }
     </style>
   </head>
@@ -77,9 +96,10 @@
       <input
         type="text"
         id="command-input"
-        placeholder="Enter a sequence like 'rruudddl'"
-        size="40"
+        placeholder="Enter a sequence like 'RRUUDDL'"
+        maxlength="70"
       />
+      <br />
       <button onclick="runProgram()">Run Program</button>
     </div>
 
@@ -93,12 +113,12 @@
     <div class="instructions">
       <h3>How to Play:</h3>
       <p>
-        Enter a sequence of commands using **r** (right), **l** (left), **u**
-        (up), and **d** (down).
+        Enter a sequence of commands using **R** (right), **L** (left), **U**
+        (up), and **D** (down).
       </p>
       <p>
-        Your goal is to reach all the goal blocks (G1, G2, etc.) <b>in any order</b>,
-        using the shortest path possible.
+        Your goal is to reach all the goal blocks (G1, G2, etc.)
+        <b>in any order</b>, using the shortest path possible.
       </p>
       <p>
         If you land on a jump block, you will automatically be transported to
@@ -115,8 +135,8 @@
       const walls = [];
       const jumps = [];
       const goals = [];
-      const numJumpPairs = 5; // Configurable number of jump pairs
-      const numGoalBlocks = 5; // Configurable number of goal blocks
+      const numJumpPairs = 5;
+      const numGoalBlocks = 5;
       let startPos = { row: 0, col: 0 };
       let playerPos = { row: 0, col: 0 };
       let moveCount = 0;
@@ -124,8 +144,8 @@
       let interval;
       const jumpPairs = Array(numJumpPairs)
         .fill()
-        .map(() => []); // Create an array for the number of jump pairs
-      const goalsHit = new Set(); // Track goals that have been hit
+        .map(() => []);
+      const goalsHit = new Set();
 
       // Generate random positions
       function randomPos() {
@@ -318,7 +338,7 @@
 
       // Clean input and remove spaces, invalid characters
       function cleanInput(input) {
-        return input.replace(/[^rlud]/gi, "").toLowerCase();
+        return input.replace(/[^rlud]/gi, "").toUpperCase();
       }
 
       // Run the player's program (sequence of moves)
@@ -339,7 +359,7 @@
         let index = 0;
         function executeNextCommand() {
           if (index < commands.length) {
-            movePlayer(commands[index]);
+            movePlayer(commands[index].toLowerCase());
             index++;
             setTimeout(executeNextCommand, 500); // Move every 0.5 seconds
           } else {

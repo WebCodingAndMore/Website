@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Networking Code Breakers: The Quest for Points!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        text-align: center;
+        color: #2e6da4;
+      }
+      h2 {
+        margin-top: 30px;
+        color: #2e6da4;
+      }
+      p {
+        margin: 10px 0;
+      }
+      .explanation {
+        background-color: #f1f1f1;
+        padding: 15px;
+        border: 1px solid #ccc;
+        margin: 20px 0;
+      }
+      .hint {
+        color: green;
+        font-style: italic;
+      }
+      .challenge-container {
+        margin-bottom: 30px;
+      }
+      .fill-in {
+        font-family: monospace;
+        display: inline-block;
+        border-bottom: 1px solid #000;
+        width: 100px;
+      }
+      .output-container {
+        background-color: #e0f7fa;
+        padding: 15px;
+        border: 1px solid #00796b;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      .output-title {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .binary-table {
+        margin: 10px 0;
+      }
+      .binary-table td {
+        padding: 5px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+      @media print {
+        .page-break {
+          page-break-before: always;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Networking Code Breakers: The Quest for Points!</h1>
+
+    <h2>Welcome to Networking Code Breakers!</h2>
+    <p>
+      Get ready to learn the basics of how devices on the internet communicate!
+      You will complete challenges that cover basic networking concepts like IP
+      addresses, TCP/IP, HTTP, and DNS. Don’t worry—if you read carefully,
+      you’ll learn everything you need to complete the challenges!
+    </p>
+
+    <h2>How to Play:</h2>
+    <ol>
+      <li>
+        The instructor will start the game. You will have a limited amount of
+        time to complete each challenge.
+      </li>
+      <li>
+        Take a moment to read this page carefully. It contains everything you
+        need to know to complete the challenges.
+      </li>
+      <li>
+        Once you turn the page, you won’t be able to turn back! So, study the
+        instructions well.
+      </li>
+      <li>
+        Even if you don’t know much about networking, reading this page
+        carefully will give you all the information you need to solve the
+        puzzles!
+      </li>
+    </ol>
+
+    <h2>Concepts You Need to Know:</h2>
+    <p>
+      Let’s go over the basic concepts of networking. Understanding these will
+      help you fill in the blanks correctly!
+    </p>
+
+    <!-- Explanation for IP Addresses -->
+    <div class="explanation">
+      <h3>1. IP Addresses</h3>
+      <p>
+        Every device on a network has an **IP address**. This is a unique
+        address that identifies devices on a network (like your phone, computer,
+        or server).
+      </p>
+      <p>
+        There are two versions of IP addresses: **IPv4** and **IPv6**. IPv4
+        addresses are made up of four numbers between 0 and 255, separated by
+        dots.
+      </p>
+      <p>For example: <code>192.168.1.1</code> is a common IPv4 address.</p>
+    </div>
+
+    <!-- Explanation for TCP/IP -->
+    <div class="explanation">
+      <h3>2. TCP/IP</h3>
+      <p>
+        TCP/IP is the **language** of the internet. It is the protocol that
+        defines how data is broken down into smaller pieces called **packets**
+        and sent across networks. The receiving device then **reassembles** the
+        packets to read the data.
+      </p>
+      <p>
+        TCP ensures that packets are delivered in the correct order and without
+        errors.
+      </p>
+    </div>
+
+    <!-- Explanation for HTTP -->
+    <div class="explanation">
+      <h3>3. HTTP</h3>
+      <p>
+        HTTP (HyperText Transfer Protocol) is the foundation of the **World Wide
+        Web**. It is how browsers communicate with servers to request and
+        display web pages.
+      </p>
+      <p>
+        When you type a URL like <code>https://example.com</code> in your
+        browser, it sends an **HTTP request** to the server asking for the web
+        page, and the server responds with the page data.
+      </p>
+    </div>
+
+    <!-- Explanation for DNS -->
+    <div class="explanation">
+      <h3>4. DNS (Domain Name System)</h3>
+      <p>
+        DNS is like the **phonebook** of the internet. It translates **domain
+        names** (like <code>www.example.com</code>) into IP addresses (like
+        <code>192.168.1.1</code>) so that computers can communicate with each
+        other.
+      </p>
+      <p>
+        When you enter a website’s name into the browser, a DNS server looks up
+        the IP address for that domain name and helps your device connect to the
+        correct server.
+      </p>
+    </div>
+
+    <p>
+      <strong
+        >Make sure you understand these concepts before moving to the next
+        page!</strong
+      >
+    </p>
+
+    <p class="hint">
+      <strong>Hint:</strong> You’ll need to fill in the blanks on the next page
+      based on what you’ve learned here. Don’t worry if you can’t remember
+      everything—there will be hints on the next page too!
+    </p>
+
+    <!-- Page break -->
+    <div class="page-break"></div>
+
+    <!-- Page 2 starts here -->
+    <h1>Networking Code Breakers Challenges</h1>
+
+    <p>
+      Now it’s time to apply what you’ve learned! Fill in the blanks in each
+      challenge. Work quickly and accurately—time is ticking!
+    </p>
+
+    <!-- Challenge 1 -->
+    <div class="challenge-container">
+      <h3>Challenge 1: IP Addresses</h3>
+      <p>Fill in the missing numbers to complete this IPv4 address:</p>
+      <p>
+        <code
+          >192.<span class="fill-in"></span>.<span class="fill-in"></span
+          >.1</code
+        >
+        <span class="hint">// Each number should be between 0 and 255</span>
+      </p>
+    </div>
+
+    <!-- Challenge 2 -->
+    <div class="challenge-container">
+      <h3>Challenge 2: TCP/IP</h3>
+      <p>Fill in the blanks about how data travels through the network:</p>
+      <p>
+        When data is sent, it is broken into smaller pieces called
+        <span class="fill-in"></span>. TCP makes sure these pieces arrive in the
+        correct <span class="fill-in"></span> at the destination.
+      </p>
+    </div>
+
+    <!-- Challenge 3 -->
+    <div class="challenge-container">
+      <h3>Challenge 3: HTTP</h3>
+      <p>Fill in the blanks to complete this HTTP transaction:</p>
+      <p>
+        The browser sends an <span class="fill-in"></span> to the server asking
+        for the webpage. The server then sends back a
+        <span class="fill-in"></span> with the webpage data.
+      </p>
+    </div>
+
+    <!-- Challenge 4 -->
+    <div class="challenge-container">
+      <h3>Challenge 4: DNS</h3>
+      <p>Fill in the blanks to explain how DNS works:</p>
+      <p>
+        The browser sends the domain name to a
+        <span class="fill-in"></span> server, which looks up the corresponding
+        <span class="fill-in"></span> address and returns it so the browser can
+        connect to the correct server.
+      </p>
+    </div>
+
+    <!-- Expected Output Section 
+<div class="output-container">
+    <div class="output-title">Expected Output Examples:</div>
+    <p>Challenge 1: A valid IPv4 address, like <code>192.168.0.1</code>.</p>
+    <p>Challenge 2: Packets and order.</p>
+    <p>Challenge 3: Request and response.</p>
+    <p>Challenge 4: DNS and IP address.</p>
+-->
+  </body>
+</html>

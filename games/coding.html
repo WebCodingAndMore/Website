@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Breakers: The Quest for Points!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2e6da4;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #2e6da4;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .explanation {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .hint {
+            color: green;
+            font-style: italic;
+        }
+        .challenge-container {
+            margin-bottom: 30px;
+        }
+        .fill-in {
+            font-family: monospace;
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            width: 100px;
+        }
+        .output-container {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border: 1px solid #00796b;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .output-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Code Breakers: The Quest for Points!</h1>
+
+<h2>Welcome to Code Breakers!</h2>
+<p>Get ready to test your coding skills! You’re about to embark on an exciting challenge where you will complete coding tasks as quickly and accurately as possible.</p>
+
+<h2>How to Play:</h2>
+<ol>
+    <li>The instructor will start the game. You will have a limited amount of time to complete each challenge.</li>
+    <li>Take a moment to read this page carefully. It contains everything you need to know to complete the challenges.</li>
+    <li>Once you turn the page, you won’t be able to turn back! So, study the instructions well.</li>
+    <li>Even if you don’t know programming, by reading these instructions carefully, you’ll have all the information to solve the puzzles.</li>
+</ol>
+
+<h2>Concepts You Need to Know:</h2>
+<p>Let’s go over the basic concepts you’ll need for the challenges. Understanding these will help you fill in the blanks correctly!</p>
+
+<!-- Explanation for Variables -->
+<div class="explanation">
+    <h3>1. Variables</h3>
+    <p>A variable is a way to store data. In most programming languages, you assign a value to a variable using the <strong>=</strong> symbol.</p>
+    <p>For example, in Python:</p>
+    <p><code>name = "John"</code> means the variable <code>name</code> contains the value <code>"John"</code>.</p>
+    <p>In some languages like C#, you must first specify the type of data (e.g., <code>int</code> for numbers, <code>string</code> for text).</p>
+    <p>For example, in C#: <code>int age = 25;</code> declares a variable called <code>age</code> that holds the number 25.</p>
+</div>
+
+<!-- Explanation for Conditional Statements -->
+<div class="explanation">
+    <h3>2. Conditional Statements (if-else)</h3>
+    <p>Conditional statements allow you to check if something is true or false and act accordingly.</p>
+    <p>For example, in JavaScript:</p>
+    <p><code>if (score > 90) { grade = "A"; } else { grade = "B"; }</code></p>
+    <p>This checks if the <code>score</code> is greater than 90. If it is, the <code>grade</code> is set to <code>"A"</code>, otherwise, it is set to <code>"B"</code>.</p>
+</div>
+
+<!-- Explanation for Loops -->
+<div class="explanation">
+    <h3>3. Loops</h3>
+    <p>A loop allows you to repeat a set of actions. The most common loop is the <code>for</code> loop.</p>
+    <p>For example, in C#:</p>
+    <p><code>for (int i = 0; i &lt; 5; i++) { Console.WriteLine(i); }</code></p>
+    <p>This means, "Start at 0, increase <code>i</code> by 1 each time, and stop when <code>i</code> is no longer less than 5."</p>
+    <p>The loop will print the numbers 0 to 4.</p>
+</div>
+
+<!-- Explanation for Functions -->
+<div class="explanation">
+    <h3>4. Functions</h3>
+    <p>A function is a block of code that performs a specific task. You can call a function to run the code inside it.</p>
+    <p>For example, in Python:</p>
+    <p><code>def greet(name): print("Hello, " + name + "!")</code></p>
+    <p>This defines a function called <code>greet</code> that takes one input <code>name</code> and prints a greeting. You would call the function like this: <code>greet("John")</code>.</p>
+</div>
+
+<p><strong>Make sure you understand these concepts before moving to the next page!</strong></p>
+
+<p class="hint"><strong>Hint:</strong> You’ll need to fill in the blanks on the next page based on what you’ve learned here. Don’t worry if you can’t remember everything—there will be hints on the next page too!</p>
+
+<!-- Page break -->
+<div class="page-break"></div>
+
+<!-- Page 2 starts here -->
+<h1>Code Breakers Challenges</h1>
+
+<p>Now it’s time to apply what you’ve learned! Fill in the blanks in each challenge. Work quickly and accurately—time is ticking!</p>
+
+<!-- Challenge 1 -->
+<div class="challenge-container">
+    <h3>Challenge 1: Variable Declaration</h3>
+    <p>Fill in the missing code to declare variables in <strong>Python</strong>:</p>
+    <p><code>name = <span class="fill-in"></span></code> <span class="hint">// Use quotes for text</span></p>
+    <p><code>age = <span class="fill-in"></span></code> <span class="hint">// Numbers don't need quotes</span></p>
+    <p><code>height = <span class="fill-in"></span></code> <span class="hint">// Use a decimal for height</span></p>
+</div>
+
+<!-- Challenge 2 -->
+<div class="challenge-container">
+    <h3>Challenge 2: Conditional Statements</h3>
+    <p>Fill in the blanks to complete this <strong>JavaScript</strong> if-else statement:</p>
+    <p><code>let score = 85;</code></p>
+    <p><code>if (<span class="fill-in"></span> > 90) {</code> <span class="hint">// What are we comparing?</span></p>
+    <p><code>&nbsp;&nbsp;&nbsp;&nbsp;grade = "A";</code></p>
+    <p><code>} else {</code></p>
+    <p><code>&nbsp;&nbsp;&nbsp;&nbsp;grade = <span class="fill-in"></span>;</code> <span class="hint">// What happens if it's not an A?</span></p>
+    <p><code>}</code></p>
+</div>
+
+<!-- Challenge 3 -->
+<div class="challenge-container">
+    <h3>Challenge 3: Loops</h3>
+    <p>Complete the <strong>loop</strong> in <strong>C#</strong>:</p>
+    <p><code>for (<span class="fill-in"></span> i = 0; i < <span class="fill-in"></span>; i++) {</code> <span class="hint">// What’s the starting and stopping point?</span></p>
+    <p><code>&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine(i);</code></p>
+    <p><code>}</code></p>
+</div>
+
+<!-- Challenge 4 -->
+<div class="challenge-container">
+    <h3>Challenge 4: Functions</h3>
+    <p>Fill in the blanks to complete this <strong>Python</strong> function:</p>
+    <p><code>def <span class="fill-in"></span>(name):</code> <span class="hint">// What's the function name?</span></p>
+    <p><code>&nbsp;&nbsp;&nbsp;&nbsp;print("Hello, " + name + "!")</code></p>
+    <p><code><span class="fill-in"></span>("John")</code> <span class="hint">// How do you call the function?</span></p>
+</div>
+
+<!-- Challenge 5 -->
+<div class="challenge-container">
+    <h3>Challenge 5: Arrays</h3>
+    <p>Fill in the blanks for this <strong>JavaScript</strong> array:</p>
+    <p><code>let fruits = [<span class="fill-in"></span>, <span class="fill-in"></span>, <span class="fill-in"></span>];</code> <span class="hint">// Name three fruits</span></p>
+</div>
+
+<!-- Expected Output Section -->
+<div class="output-container">
+    <div class="output-title">Expected Output Examples:</div>
+    <p>Challenge 1: "John", 30, 5.9</p>
+    <p>Challenge 2: "B" (since 85 is less than 90)</p>
+    <p>Challenge 3: Prints numbers 0 to 4</p>
+    <p>Challenge 4: "Hello, John!"</p>
+    <p>Challenge 5: ["apple", "banana", "cherry"]</p>
+
+</body>
+</html>

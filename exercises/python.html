@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python Fundamentals Exercise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin: 0;
+        font-size: 14px;
+        white-space: pre-wrap;
+        border: 1px solid #ccc;
+        overflow: auto;
+      }
+      .code-block {
+        margin-bottom: 20px;
+      }
+      .output-block {
+        background-color: #e0f7fa;
+        padding: 15px;
+        margin: 10px 0 30px 0;
+        font-size: 14px;
+        border: 1px solid #00796b;
+        overflow: auto;
+      }
+      .question {
+        color: blue;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+      .blank {
+        display: inline-block;
+        width: 150px;
+        border-bottom: 1px solid #000;
+        margin: 0 5px;
+      }
+      @media print {
+        .page-break {
+          page-break-before: always;
+        }
+      }
+      /* Hide the answer key on the first page */
+      .answer-key {
+        display: none;
+      }
+      h1 {
+        color: #2e6da4;
+      }
+      h2 {
+        color: #2e6da4;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+      }
+      .comment {
+        color: green;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Python Fundamentals Exercise</h1>
+
+    <p>
+      In this exercise, you will complete a Python program that covers
+      fundamental programming concepts. Follow the instructions and fill in the
+      blanks (<span class="blank"></span>) in the code. Detailed comments are
+      provided to guide you through each step.
+    </p>
+
+    <div class="code-block">
+      <h2>1. Variables and Data Types</h2>
+      <pre>
+# Section 1: Variables and Data Types
+# Learning Objective: Understand how to assign values to variables and work with different data types.
+
+# Assign your name to the variable 'name' (string data type)
+name = <span class="blank"></span>  <span class="comment"># e.g., "Alice"</span>
+
+# Assign your age to the variable 'age' (integer data type)
+age = <span class="blank"></span>   <span class="comment"># e.g., 15</span>
+
+# Assign your height in meters to the variable 'height' (float data type)
+height = <span class="blank"></span>  <span class="comment"># e.g., 1.65</span>
+
+# Print a sentence introducing yourself using the variables above
+print(f"My name is {<span class="blank"></span>} and I am {<span class="blank"></span>} years old.")
+print("I am", <span class="blank"></span>, "meters tall.")
+    </pre>
+
+      <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+My name is ____________ and I am _____ years old.
+I am _____ meters tall.
+        </pre>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <h2>2. Lists</h2>
+      <pre>
+# Section 2: Lists
+# Learning Objective: Learn how to create and iterate over lists.
+
+# Create a list of your three favorite fruits
+fruits = [<span class="blank" style="width: 350px;"></span>]  <span class="comment"># e.g., "apple", "banana", "cherry"</span>
+
+# Print a message and list each fruit using a loop
+print("My favorite fruits are:")
+for fruit in <span class="blank"></span>:  <span class="comment"># Use the list 'fruits'</span>
+    print("-", fruit)
+    </pre>
+
+      <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+My favorite fruits are:
+- ____________
+- ____________
+- ____________
+        </pre>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <h2>3. Dictionaries</h2>
+      <pre>
+# Section 3: Dictionaries
+# Learning Objective: Understand how to use dictionaries to store key-value pairs.
+
+# Create a dictionary with your information
+student = {
+    'name': name,
+    'age': age,
+    <span class="blank"></span>: <span class="blank"></span>  <span class="comment"># Add a key 'grade' with your current grade level (string)</span>
+}
+
+# Print the student dictionary
+print("Student Info:", student)
+    </pre>
+
+      <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+Student Info: {'name': ____________, 'age': _____, '________': '________'}
+        </pre>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <h2>4. Functions</h2>
+      <pre>
+# Section 4: Functions
+# Learning Objective: Learn how to define and use functions.
+
+# Define a function to greet a person
+def greet(<span class="blank"></span>):  <span class="comment"># Parameter: person's name</span>
+    """Function to greet a person"""
+    return f"Hello, {<span class="blank"></span>}!"
+
+# Call the function and store the result in 'message'
+message = greet(<span class="blank"></span>)  <span class="comment"># Pass your 'name' variable</span>
+
+# Print the greeting message
+print(message)
+    </pre>
+
+      <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+Hello, ____________!
+        </pre>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <h2>5. Control Flow</h2>
+      <pre>
+# Section 5: Control Flow
+# Learning Objective: Understand how to use conditional statements.
+
+# Assign a number to the variable 'number'
+number = <span class="blank"></span>  <span class="comment"># Choose any integer</span>
+
+# Use an if-else statement to check if the number is even or odd
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+    </pre>
+
+      <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+_____ is _____.
+        </pre>
+      </div>
+    </div>
+
+    <div class="code-block">
+      <h2>6. Classes and Objects</h2>
+      <pre>
+# Section 6: Classes and Objects
+# Learning Objective: Learn the basics of object-oriented programming in Python.
+
+# Define a class named 'Animal'
+class Animal:
+    # Initialize the class with 'name' and 'sound' attributes
+    def __init__(self, name, sound):
+        self.name = name      <span class="comment"># The name of the animal (string)</span>
+        self.sound = sound    <span class="comment"># The sound the animal makes (string)</span>
+
+    # Define a method to make the animal sound
+    def make_sound(self):
+        print(f"The {<span class="blank"></span>} says {<span class="blank"></span>}")
+
+# Create an instance of 'Animal' representing a dog
+dog = Animal(<span class="blank"></span>, <span class="blank"></span>)  <span class="comment"># e.g., "dog", "woof"</span>
+
+# Call the 'make_sound' method
+dog.make_sound()
+    </pre>
+
+      <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+The ____________ says ____________
+        </pre>
+      </div>
+    </div>
+
+    <p class="question">
+      <strong>Instructions:</strong> Carefully read the comments in the code
+      above. They explain what you need to fill in and why. As you fill in the
+      blanks, think about the Python concepts you're applying, such as data
+      types, loops, functions, control flow, and classes.
+    </p>
+
+    <!-- Page Break for Printing -->
+    <div class="page-break"></div>
+
+    <!-- Answer Key -->
+    <div class="answer-key">
+      <h1>Answer Key</h1>
+
+      <div class="code-block">
+        <h2>1. Variables and Data Types</h2>
+        <pre>
+# Section 1: Variables and Data Types
+# Learning Objective: Understand how to assign values to variables and work with different data types.
+
+# Assign your name to the variable 'name' (string data type)
+name = "<span>John</span>"  # e.g., "Alice"
+
+# Assign your age to the variable 'age' (integer data type)
+age = <span>16</span>   # e.g., 15
+
+# Assign your height in meters to the variable 'height' (float data type)
+height = <span>1.75</span>  # e.g., 1.65
+
+# Print a sentence introducing yourself using the variables above
+print(f"My name is {<span>name</span>} and I am {<span>age</span>} years old.")
+print("I am", <span>height</span>, "meters tall.")
+        </pre>
+
+        <div class="output-block">
+          <strong>Expected Output:</strong>
+          <pre>
+My name is John and I am 16 years old.
+I am 1.75 meters tall.
+            </pre
+          >
+        </div>
+      </div>
+
+      <div class="code-block">
+        <h2>2. Lists</h2>
+        <pre>
+# Section 2: Lists
+# Learning Objective: Learn how to create and iterate over lists.
+
+# Create a list of your three favorite fruits
+fruits = [<span>"apple", "banana", "cherry"</span>]  # e.g., "apple", "banana", "cherry"
+
+# Print a message and list each fruit using a loop
+print("My favorite fruits are:")
+for fruit in <span>fruits</span>:  # Use the list 'fruits'
+    print("-", fruit)
+        </pre>
+
+        <div class="output-block">
+          <strong>Expected Output:</strong>
+          <pre>
+My favorite fruits are:
+- apple
+- banana
+- cherry
+            </pre
+          >
+        </div>
+      </div>
+
+      <div class="code-block">
+        <h2>3. Dictionaries</h2>
+        <pre>
+# Section 3: Dictionaries
+# Learning Objective: Understand how to use dictionaries to store key-value pairs.
+
+# Create a dictionary with your information
+student = {
+    'name': name,
+    'age': age,
+    <span>'grade'</span>: <span>"11th"</span>  # Add a key 'grade' with your current grade level (string)
+}
+
+# Print the student dictionary
+print("Student Info:", student)
+        </pre>
+
+        <div class="output-block">
+          <strong>Expected Output:</strong>
+          <pre>
+Student Info: {'name': 'John', 'age': 16, 'grade': '11th'}
+            </pre
+          >
+        </div>
+      </div>
+
+      <div class="code-block">
+        <h2>4. Functions</h2>
+        <pre>
+# Section 4: Functions
+# Learning Objective: Learn how to define and use functions.
+
+# Define a function to greet a person
+def greet(<span>person_name</span>):  # Parameter: person's name
+    """Function to greet a person"""
+    return f"Hello, {<span>person_name</span>}!"
+
+# Call the function and store the result in 'message'
+message = greet(<span>name</span>)  # Pass your 'name' variable
+
+# Print the greeting message
+print(message)
+        </pre>
+
+        <div class="output-block">
+          <strong>Expected Output:</strong>
+          <pre>
+Hello, John!
+            </pre
+          >
+        </div>
+      </div>
+
+      <div class="code-block">
+        <h2>5. Control Flow</h2>
+        <pre>
+# Section 5: Control Flow
+# Learning Objective: Understand how to use conditional statements.
+
+# Assign a number to the variable 'number'
+number = <span>7</span>  # Choose any integer
+
+# Use an if-else statement to check if the number is even or odd
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+        </pre>
+
+        <div class="output-block">
+          <strong>Expected Output:</strong>
+          <pre>
+7 is odd.
+            </pre
+          >
+        </div>
+      </div>
+
+      <div class="code-block">
+        <h2>6. Classes and Objects</h2>
+        <pre>
+# Section 6: Classes and Objects
+# Learning Objective: Learn the basics of object-oriented programming in Python.
+
+# Define a class named 'Animal'
+class Animal:
+    # Initialize the class with 'name' and 'sound' attributes
+    def __init__(self, name, sound):
+        self.name = name      # The name of the animal (string)
+        self.sound = sound    # The sound the animal makes (string)
+
+    # Define a method to make the animal sound
+    def make_sound(self):
+        print(f"The {<span>self.name</span>} says {<span>self.sound</span>}")
+
+# Create an instance of 'Animal' representing a dog
+dog = Animal(<span>"dog"</span>, <span>"woof"</span>)  # e.g., "dog", "woof"
+
+# Call the 'make_sound' method
+dog.make_sound()
+        </pre>
+
+        <div class="output-block">
+          <strong>Expected Output:</strong>
+          <pre>
+The dog says woof
+            </pre
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

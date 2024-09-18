@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Code Breakers: The Quest for Points!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2e6da4;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #2e6da4;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .explanation {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .hint {
+            color: green;
+            font-style: italic;
+        }
+        .challenge-container {
+            margin-bottom: 30px;
+        }
+        .fill-in {
+            font-family: monospace;
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            width: 100px;
+        }
+        .output-container {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border: 1px solid #00796b;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .output-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>CSS Code Breakers: The Quest for Points!</h1>
+
+<h2>Welcome to CSS Code Breakers!</h2>
+<p>Get ready to test your CSS skills! In this challenge, you will complete basic CSS coding tasks as quickly and accurately as possible. Don’t worry—if you read carefully, you will learn everything you need to complete the challenges!</p>
+
+<h2>How to Play:</h2>
+<ol>
+    <li>The instructor will start the game. You will have a limited amount of time to complete each challenge.</li>
+    <li>Take a moment to read this page carefully. It contains everything you need to know to complete the challenges.</li>
+    <li>Once you turn the page, you won’t be able to turn back! So, study the instructions well.</li>
+    <li>Even if you don’t know CSS, reading this page carefully will give you all the information you need to solve the puzzles!</li>
+</ol>
+
+<h2>Concepts You Need to Know:</h2>
+<p>Let’s go over the basic concepts of CSS. Understanding these will help you fill in the blanks correctly!</p>
+
+<!-- Explanation for Selectors -->
+<div class="explanation">
+    <h3>1. CSS Selectors</h3>
+    <p>CSS selectors are used to select HTML elements you want to style. You can select elements by their tag name, class, or ID.</p>
+    <p>For example:</p>
+    <ul>
+        <li><strong>Tag selector:</strong> <code>h1</code> selects all <code>&lt;h1&gt;</code> elements.</li>
+        <li><strong>Class selector:</strong> <code>.class-name</code> selects all elements with the class <code>class-name</code>.</li>
+        <li><strong>ID selector:</strong> <code>#id-name</code> selects the element with the ID <code>id-name</code>.</li>
+    </ul>
+    <p>For example, <code>h1 { color: red; }</code> would make all <code>&lt;h1&gt;</code> elements red.</p>
+</div>
+
+<!-- Explanation for CSS Properties and Values -->
+<div class="explanation">
+    <h3>2. CSS Properties and Values</h3>
+    <p>CSS styles elements using <strong>properties</strong> and <strong>values</strong>. A property controls an aspect of the element’s style, and the value defines what that style should be.</p>
+    <p>For example, to set the text color to red, you use the <code>color</code> property and assign the value <code>red</code>:</p>
+    <p><code>h1 { color: red; }</code></p>
+    <p>Some common properties include:</p>
+    <ul>
+        <li><code>color</code>: Changes the text color.</li>
+        <li><code>background-color</code>: Changes the background color.</li>
+        <li><code>font-size</code>: Sets the size of the text.</li>
+    </ul>
+</div>
+
+<!-- Explanation for CSS Colors -->
+<div class="explanation">
+    <h3>3. CSS Colors</h3>
+    <p>Colors can be set using names like <code>red</code>, <code>blue</code>, or <code>green</code>, or by using HEX codes (e.g., <code>#ff0000</code> for red) or RGB values (e.g., <code>rgb(255, 0, 0)</code> for red).</p>
+    <p>For example, <code>color: #00ff00;</code> would make the text green.</p>
+</div>
+
+<!-- Explanation for Box Model -->
+<div class="explanation">
+    <h3>4. The Box Model</h3>
+    <p>In CSS, every element is a "box." The <strong>box model</strong> consists of four areas:</p>
+    <ul>
+        <li><strong>Content:</strong> The actual content of the box (like text or an image).</li>
+        <li><strong>Padding:</strong> Space between the content and the border.</li>
+        <li><strong>Border:</strong> The line around the padding (or content if there’s no padding).</li>
+        <li><strong>Margin:</strong> Space outside the border, between this element and others.</li>
+    </ul>
+    <p>For example:</p>
+    <p><code>div { padding: 10px; border: 1px solid black; margin: 20px; }</code></p>
+</div>
+
+<p><strong>Make sure you understand these concepts before moving to the next page!</strong></p>
+
+<p class="hint"><strong>Hint:</strong> You’ll need to fill in the blanks on the next page based on what you’ve learned here. Don’t worry if you can’t remember everything—there will be hints on the next page too!</p>
+
+<!-- Page break -->
+<div class="page-break"></div>
+
+<!-- Page 2 starts here -->
+<h1>CSS Code Breakers Challenges</h1>
+
+<p>Now it’s time to apply what you’ve learned! Fill in the blanks in each challenge. Work quickly and accurately—time is ticking!</p>
+
+<!-- Challenge 1 -->
+<div class="challenge-container">
+    <h3>Challenge 1: Selectors</h3>
+    <p>Fill in the missing CSS selector to make all <code>&lt;p&gt;</code> elements have blue text:</p>
+    <p><code><span class="fill-in"></span> { color: blue; }</code> <span class="hint">// What tag selects all paragraphs?</span></p>
+</div>
+
+<!-- Challenge 2 -->
+<div class="challenge-container">
+    <h3>Challenge 2: Changing Text Color</h3>
+    <p>Fill in the missing color value to make all headings <code>&lt;h1&gt;</code> have red text:</p>
+    <p><code>h1 { color: <span class="fill-in"></span>; }</code> <span class="hint">// What color code is used for red?</span></p>
+</div>
+
+<!-- Challenge 3 -->
+<div class="challenge-container">
+    <h3>Challenge 3: Setting Background Color</h3>
+    <p>Fill in the missing CSS property and value to set a yellow background for all elements with the class <code>.highlight</code>:</p>
+    <p><code>.highlight { <span class="fill-in"></span>: <span class="fill-in"></span>; }</code> <span class="hint">// Which property sets the background color?</span></p>
+</div>
+
+<!-- Challenge 4 -->
+<div class="challenge-container">
+    <h3>Challenge 4: Box Model</h3>
+    <p>Fill in the blanks to give the <code>&lt;div&gt;</code> element a padding of 20px, a 2px solid black border, and a margin of 10px:</p>
+    <p><code>div { padding: <span class="fill-in"></span>; border: <span class="fill-in"></span> solid black; margin: <span class="fill-in"></span>; }</code> <span class="hint">// Which values set padding, border, and margin?</span></p>
+</div>
+
+<!-- Expected Output Section -->
+<div class="output-container">
+    <div class="output-title">Expected Output Examples:</div>
+    <p>Challenge 1: All paragraphs (<code>&lt;p&gt;</code>) have blue text.</p>
+    <p>Challenge 2: All <code>&lt;h1&gt;</code> headings have red text.</p>
+    <p>Challenge 3: All elements with the class <code>.highlight</code> have a yellow background.</p>
+    <p>Challenge 4: The <code>&lt;div&gt;</code> element has 20px padding, a 2px solid black border, and a 10px margin.</p>
+
+</body>
+</html>

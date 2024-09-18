@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Code Breakers: Web Attacks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2e6da4;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #2e6da4;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .explanation {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .hint {
+            color: green;
+            font-style: italic;
+        }
+        .challenge-container {
+            margin-bottom: 30px;
+        }
+        .fill-in {
+            font-family: monospace;
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            width: 100px;
+        }
+        code {
+            display: block;
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 3px solid #ccc;
+        }
+        .output-container {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border: 1px solid #00796b;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .output-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cybersecurity Code Breakers: Web Attacks</h1>
+
+<h2>Welcome to Cybersecurity Code Breakers!</h2>
+<p>Get ready to learn about common web security vulnerabilities and how hackers can exploit websites. You will complete challenges that cover common web attacks like SQL injection, XSS, CSRF, and file upload vulnerabilities. Don’t worry—if you read carefully, you’ll learn everything you need to complete the challenges!</p>
+
+<h2>How to Play:</h2>
+<ol>
+    <li>The instructor will start the game. You will have a limited amount of time to complete each challenge.</li>
+    <li>Take a moment to read this page carefully. It contains everything you need to know to complete the challenges.</li>
+    <li>Once you turn the page, you won’t be able to turn back! So, study the instructions well.</li>
+    <li>Even if you don’t know much about web attacks, reading this page carefully will give you all the information you need to solve the puzzles!</li>
+</ol>
+
+<h2>Concepts You Need to Know:</h2>
+<p>Let’s go over some common web vulnerabilities that hackers use to exploit websites.</p>
+
+<!-- Explanation for SQL Injection -->
+<div class="explanation">
+    <h3>1. SQL Injection</h3>
+    <p>SQL Injection happens when an attacker manipulates a website's SQL query to execute unauthorized commands or retrieve sensitive data.</p>
+    <p>For example, imagine a website allows users to log in with their username. Here's a simple query to find the user:</p>
+    <code>SELECT * FROM users WHERE username = '$username';</code>
+    <p>An attacker could input <code>' OR 1=1 --</code> as the username, which tricks the query into always being true:</p>
+    <code>SELECT * FROM users WHERE username = '' OR 1=1 --';</code>
+    <p>This bypasses the login and grants access without a valid username!</p>
+</div>
+
+<!-- Explanation for XSS -->
+<div class="explanation">
+    <h3>2. Cross-Site Scripting (XSS)</h3>
+    <p>**XSS** allows an attacker to inject malicious scripts into web pages viewed by other users. These scripts can steal data, such as cookies or login information.</p>
+    <p>For example, a comment section might allow users to post text. If it’s not properly sanitized, an attacker could post this code:</p>
+    <code>&lt;script&gt;alert('Hacked!');&lt;/script&gt;</code>
+    <p>Any user who views the page would see this alert, or worse—the attacker could steal sensitive data.</p>
+</div>
+
+<!-- Explanation for CSRF -->
+<div class="explanation">
+    <h3>3. Cross-Site Request Forgery (CSRF)</h3>
+    <p>**CSRF** tricks a logged-in user into performing actions they didn’t intend to, like changing their account password or making unwanted transactions.</p>
+    <p>For example, an attacker might send a link to the victim that makes a **POST** request to change their password without their knowledge:</p>
+    <code>&lt;img src="http://example.com/change-password?newpassword=hacked" /&gt;</code>
+    <p>When the victim clicks the link, their browser automatically sends the request as if they wanted to change their password.</p>
+</div>
+
+<!-- Explanation for File Upload Vulnerabilities -->
+<div class="explanation">
+    <h3>4. File Upload Vulnerabilities</h3>
+    <p>Some websites allow users to upload files, but if the file type is not properly checked, attackers can upload malicious scripts disguised as images or documents.</p>
+    <p>For example, if the website only checks file extensions (like .jpg), an attacker could upload a file named <code>malicious.php.jpg</code> containing harmful PHP code that could be executed by the server.</p>
+</div>
+
+<p><strong>Make sure you understand these concepts before moving to the next page!</strong></p>
+
+<p class="hint"><strong>Hint:</strong> You’ll need to fill in the blanks on the next page based on what you’ve learned here. Don’t worry if you can’t remember everything—there will be hints on the next page too!</p>
+
+<!-- Page break -->
+<div class="page-break"></div>
+
+<!-- Page 2 starts here -->
+<h1>Cybersecurity Code Breakers Challenges</h1>
+
+<p>Now it’s time to apply what you’ve learned! Fill in the blanks in each challenge. Work quickly and accurately—time is ticking!</p>
+
+<!-- Challenge 1 -->
+<div class="challenge-container">
+    <h3>Challenge 1: SQL Injection</h3>
+    <p>In this code, what should you add to prevent SQL injection?</p>
+    <code>
+    $username = $_POST['username'];<br>
+    $query = "SELECT * FROM users WHERE username = '$username';";<br>
+    $result = mysqli_query($connection, $query);
+    </code>
+    <p>Answer: <span class="fill-in"></span> <span class="hint">// Use prepared statements to prevent SQL injection</span></p>
+</div>
+
+<!-- Challenge 2 -->
+<div class="challenge-container">
+    <h3>Challenge 2: Cross-Site Scripting (XSS)</h3>
+    <p>What should be done to prevent XSS in this comment box?</p>
+    <code>&lt;textarea name="comment"&gt;&lt;/textarea&gt;</code>
+    <p>Answer: <span class="fill-in"></span> <span class="hint">// Sanitize or escape user input to prevent script injections</span></p>
+</div>
+
+<!-- Challenge 3 -->
+<div class="challenge-container">
+    <h3>Challenge 3: CSRF</h3>
+    <p>What is missing in this form that makes it vulnerable to CSRF?</p>
+    <code>
+    &lt;form method="POST" action="/change-password"&gt;<br>
+    &nbsp;&nbsp;&lt;input type="password" name="newpassword" /&gt;<br>
+    &nbsp;&nbsp;&lt;input type="submit" value="Change Password" /&gt;<br>
+    &lt;/form&gt;
+    </code>
+    <p>Answer: <span class="fill-in"></span> <span class="hint">// Include a CSRF token in the form to prevent CSRF attacks</span></p>
+</div>
+
+<!-- Challenge 4 -->
+<div class="challenge-container">
+    <h3>Challenge 4: File Upload Vulnerabilities</h3>
+    <p>What should be done to prevent attackers from uploading malicious files?</p>
+    <code>
+    if ($_FILES['file']['type'] == 'image/jpeg') {<br>
+    &nbsp;&nbsp;move_uploaded_file($_FILES['file']['tmp_name'], 'uploads/' . $_FILES['file']['name']);<br>
+    }
+    </code>
+    <p>Answer: <span class="fill-in"></span> <span class="hint">// Validate the file content and not just the file extension</span></p>
+</div>
+
+<!-- Expected Output Section -->
+<div class="output-container">
+    <div class="output-title">Expected Output Examples:</div>
+    <p>Challenge 1: Use **prepared statements** to prevent SQL injection.</p>
+    <p>Challenge 2: Sanitize or escape user input to prevent XSS.</p>
+    <p>Challenge 3: Add a **CSRF token** to the form to prevent CSRF attacks.</p>
+    <p>Challenge 4: Validate file content and use **content-type** checking to ensure safe uploads.</p>
+
+</body>
+</html>

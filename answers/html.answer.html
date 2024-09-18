@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial - Student Version with Answer Key</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      .code-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+      }
+      pre {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin: 0;
+        font-size: 15px;
+        white-space: pre-wrap;
+        border: 1px solid #ccc;
+      }
+      .code-block {
+        width: 48%;
+      }
+      .question {
+        color: blue;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+      h2 {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+      }
+      .blank {
+        display: inline-block;
+        width: 80px;
+        border-bottom: 1px solid #000;
+        margin: 0 5px;
+      }
+      @media print {
+        .page-break {
+          page-break-before: always;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML, CSS, and JavaScript Comprehensive Example</h1>
+
+    <p>
+      Fill in the blanks below to complete the HTML document. Pay attention to
+      opening and closing tags, semicolons, and other syntax elements.
+    </p>
+
+    <div>
+      (See the working version of this code
+      <a href="html.live.html">here</a>.)
+    </div>
+
+    <div class="code-container">
+      <!-- Blanked-out Code Block -->
+      <div class="code-block">
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;<span class="blank"></span>&gt;
+        &lt;title&gt;My Interactive Webpage&lt;/title&gt;
+        &lt;style&gt;
+            /* CSS styles go here */
+            body {
+                background-color: <span class="blank"></span><span>;</span>
+            }
+            h1 {
+                color: <span class="blank"></span><span>;</span>
+            }
+        &lt;/<span class="blank"></span>&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;<span class="blank"></span>&gt;
+            Welcome to My Webpage
+        &lt;/h1&gt;
+
+        &lt;p id="intro"&gt;
+            Hello, this is an example paragraph.
+        &lt;/<span class="blank"></span>&gt;
+
+        &lt;button onclick="<span class="blank"></span>()"&gt;
+            Click Me
+        &lt;/<span class="blank"></span>&gt;
+
+        &lt;<span class="blank"></span>&gt;
+            // JavaScript code goes here
+            function <span class="blank"></span>() {
+                var para = document.<span class="blank"></span>("intro");
+                para.textContent = "You clicked the button!";
+                para.style.<span class="blank"></span> = "<span class="blank"></span>";
+            }
+        &lt;/script&gt;
+    &lt;/<span class="blank"></span>&gt;
+&lt;/<span class="blank"></span>&gt;
+        </pre>
+      </div>
+
+      <!-- Answer Key Block -->
+      <div class="code-block">
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My Interactive Webpage&lt;/title&gt;
+        &lt;style&gt;
+            /* CSS styles go here */
+            body {
+                background-color: lightblue;
+            }
+            h1 {
+                color: darkblue;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;
+            Welcome to My Webpage
+        &lt;/h1&gt;
+
+        &lt;p id="intro"&gt;
+            Hello, this is an example paragraph.
+        &lt;/p&gt;
+
+        &lt;button onclick="changeText()"&gt;
+            Click Me
+        &lt;/button&gt;
+
+        &lt;script&gt;
+            // JavaScript code goes here
+            function changeText() {
+                var para = document.getElementById("intro");
+                para.textContent = "You clicked the button!";
+                para.style.color = "red";
+            }
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+      </div>
+    </div>
+
+    <p class="question">
+      <strong>Instructions:</strong> Fill in the blanks to complete the HTML
+      document. Be sure to include all necessary opening and closing tags,
+      attribute values, and syntax elements like semicolons where required.
+    </p>
+
+    <script>
+      window.onload = function () {
+        var answerKey = document.querySelector(".answer-key");
+        answerKey.style.display = "block";
+      };
+    </script>
+  </body>
+</html>

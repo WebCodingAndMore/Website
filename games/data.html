@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Code Breakers: The Quest for Points!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2e6da4;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #2e6da4;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .explanation {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .hint {
+            color: green;
+            font-style: italic;
+        }
+        .challenge-container {
+            margin-bottom: 30px;
+        }
+        .fill-in {
+            font-family: monospace;
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            width: 100px;
+        }
+        .output-container {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border: 1px solid #00796b;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .output-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .binary-table {
+            margin: 10px 0;
+        }
+        .binary-table td {
+            padding: 5px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Data Code Breakers: The Quest for Points!</h1>
+
+<h2>Welcome to Data Code Breakers!</h2>
+<p>Get ready to learn about how computers understand and work with data! You will complete challenges that cover basic data concepts like binary numbers, adding binary, and ASCII characters. Don’t worry—if you read carefully, you’ll learn everything you need to complete the challenges!</p>
+
+<h2>How to Play:</h2>
+<ol>
+    <li>The instructor will start the game. You will have a limited amount of time to complete each challenge.</li>
+    <li>Take a moment to read this page carefully. It contains everything you need to know to complete the challenges.</li>
+    <li>Once you turn the page, you won’t be able to turn back! So, study the instructions well.</li>
+    <li>Even if you don’t know anything about binary or data, reading this page carefully will give you all the information you need to solve the puzzles!</li>
+</ol>
+
+<h2>Concepts You Need to Know:</h2>
+<p>Let’s go over the basic concepts of data. Understanding these will help you fill in the blanks correctly!</p>
+
+<!-- Explanation for Binary Numbers with Place Values -->
+<div class="explanation">
+    <h3>1. Binary Numbers</h3>
+    <p>Computers represent data using **binary**, a number system with only two digits: 0 and 1. These digits are called "bits."</p>
+    <p>Each bit in a binary number represents a different place value, similar to how each digit in a decimal number has a different place value (like 1s, 10s, 100s).</p>
+
+    <p>Here’s a breakdown of the binary number <code>01001010</code>:</p>
+
+    <table class="binary-table">
+        <tr>
+            <td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>
+        </tr>
+        <tr>
+            <td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td>
+        </tr>
+    </table>
+
+    <p>To convert the binary number <code>01001010</code> to decimal, add up the values of the places where there is a 1. In this case, it’s 64 + 8 + 2 = 74, so <code>01001010</code> = 74.</p>
+</div>
+
+<!-- Explanation for Adding Binary Numbers -->
+<div class="explanation">
+    <h3>2. Adding Binary Numbers</h3>
+    <p>Binary addition works similarly to decimal addition, but instead of carrying when you reach 10, you carry when you reach 2. Let’s add two binary numbers:</p>
+
+    <p><code>1011</code> (which is 11 in decimal) + <code>0100</code> (which is 6 in decimal).</p>
+
+    <p>Here’s what that looks like step by step:</p>
+
+    <table class="binary-table">
+        <tr>
+            <td><i>Carry</i></td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td> <!-- Extra column for carry -->
+        </tr>
+        <tr>
+            <td><b>1st Number</b></td><td></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+        </tr>
+        <tr>
+            <td><b>2nd Number</b></td><td></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+        </tr>
+        <tr>
+            <td><i>Sum</i></td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td> <!-- 5th column for sum -->
+        </tr>
+    </table>
+
+    <p>So, <code>1011 + 0110 = 10001</code>, which is 17 in decimal.</p>
+</div>
+
+<!-- Explanation for ASCII Characters -->
+<div class="explanation">
+    <h3>3. ASCII Characters</h3>
+    <p>**ASCII (American Standard Code for Information Interchange)** is a way to represent characters using numbers. Each character has a unique number assigned to it. For example:</p>
+    <ul>
+        <li><code>A</code> = 65</li>
+        <li><code>B</code> = 66</li>
+        <li><code>a</code> = 97</li>
+        <li><code>b</code> = 98</li>
+        <li><code>space</code> = 32</li>
+    </ul>
+    <p>To convert from a character to its binary or decimal representation, you can look up its ASCII code.</p>
+</div>
+
+<p><strong>Make sure you understand these concepts before moving to the next page!</strong></p>
+
+<p class="hint"><strong>Hint:</strong> You’ll need to fill in the blanks on the next page based on what you’ve learned here. Don’t worry if you can’t remember everything—there will be hints on the next page too!</p>
+
+<!-- Page break -->
+<div class="page-break"></div>
+
+<!-- Page 2 starts here -->
+<h1>Data Code Breakers Challenges</h1>
+
+<p>Now it’s time to apply what you’ve learned! Fill in the blanks in each challenge. Work quickly and accurately—time is ticking!</p>
+
+<!-- Challenge 1 -->
+<div class="challenge-container">
+    <h3>Challenge 1: Binary to Decimal</h3>
+    <p>Convert the binary number <code>00110101</code> to decimal:</p>
+    
+    <p>Here’s the breakdown:</p>
+    <table class="binary-table">
+        <tr>
+            <td>128</td><td>64</td><td>32</td><td>16</td><td>8</td><td>4</td><td>2</td><td>1</td>
+        </tr>
+        <tr>
+            <td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td>
+        </tr>
+    </table>
+    
+    <p>Answer: <span class="fill-in"></span> <span class="hint">// Add the values where there is a "1"</span></p>
+</div>
+
+<!-- Challenge 2 -->
+<div class="challenge-container">
+    <h3>Challenge 2: Decimal to Binary</h3>
+    <p>Convert the decimal number 83 to binary:</p>
+    <p>Answer: <code><span class="fill-in"></span></code> <span class="hint">// Break it down by place values: 128, 64, 32, 16, 8, 4, 2, 1</span></p>
+</div>
+
+<!-- Challenge 3 -->
+<div class="challenge-container">
+    <h3>Challenge 3: Adding Binary Numbers</h3>
+    <p>Add these two binary numbers: <code>1011</code> and <code>0101</code>:</p>
+    
+    <p>Step-by-step:</p>
+    <table class="binary-table">
+        <tr>
+            <td>Carry</td><td><span class="fill-in"></span></td><td><span class="fill-in"></span></td><td><span class="fill-in"></span></td><td><span class="fill-in"></span></td><td><span class="fill-in"></span></td> <!-- Extra carry column -->
+        </tr>
+        <tr>
+            <td>1st Number</td><td></td><td>1</td><td>0</td><td>1</td><td>1</td>
+        </tr>
+        <tr>
+            <td>2nd Number</td><td></td><td>0</td><td>1</td><td>0</td><td>1</td>
+        </tr>
+        <tr>
+            <td>Sum</td><td><span class="fill-in"></span></td><td><span class="fill-in"></span></td><td><span class="fill-in"></span></td><td><span class="fill-in"></span></td><td><span class="fill-in"></span></td> <!-- 5th column for sum -->
+        </tr>
+    </table>
+
+    <p>Answer: <code><span class="fill-in"></span></code></p>
+</div>
+
+<!-- Challenge 4 -->
+<div class="challenge-container">
+    <h3>Challenge 4: ASCII Characters</h3>
+    <p>Fill in the missing binary or decimal values for these characters:</p>
+    <p><code>C = 67 = <span class="fill-in"></span></code> <span class="hint">// What's the binary representation of 67?</span></p>
+    <p><code>z = <span class="fill-in"></span> = 01111010</code> <span class="hint">// What's the decimal value of "z"?</span></p>
+</div>
+
+<!-- Expected Output Section 
+<div class="output-container">
+    <div class="output-title">Expected Output Examples:</div>
+    <p>Challenge 1: <code>53</code> (binary <code>00110101</code> = 32 + 16 + 4 + 1).</p>
+    <p>Challenge 2: <code>1010011</code> (binary for 83).</p>
+    <p>Challenge 3: <code>1011 + 0101 = 10000</code>.</p>
+    <p>Challenge 4: <code>C = 01000011</code>, <code>z = 122</code>.</p>
+-->
+</body>
+</html>

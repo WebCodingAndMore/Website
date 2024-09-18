@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Code Breakers: The Quest for Points!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2e6da4;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #2e6da4;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .explanation {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .hint {
+            color: green;
+            font-style: italic;
+        }
+        .challenge-container {
+            margin-bottom: 30px;
+        }
+        .fill-in {
+            font-family: monospace;
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            width: 100px;
+        }
+        .output-container {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border: 1px solid #00796b;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .output-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>HTML Code Breakers: The Quest for Points!</h1>
+
+<h2>Welcome to HTML Code Breakers!</h2>
+<p>Get ready to test your HTML skills! In this challenge, you will complete basic HTML coding tasks as quickly and accurately as possible. Don’t worry—if you read carefully, you will learn everything you need to complete the challenges!</p>
+
+<h2>How to Play:</h2>
+<ol>
+    <li>The instructor will start the game. You will have a limited amount of time to complete each challenge.</li>
+    <li>Take a moment to read this page carefully. It contains everything you need to know to complete the challenges.</li>
+    <li>Once you turn the page, you won’t be able to turn back! So, study the instructions well.</li>
+    <li>Even if you don’t know HTML, reading this page carefully will give you all the information you need to solve the puzzles!</li>
+</ol>
+
+<h2>Concepts You Need to Know:</h2>
+<p>Let’s go over the basic concepts of HTML. Understanding these will help you fill in the blanks correctly!</p>
+
+<!-- Explanation for Tags -->
+<div class="explanation">
+    <h3>1. HTML Tags</h3>
+    <p>HTML is made up of tags that tell the browser what each part of a webpage should do.</p>
+    <p>An HTML tag looks like this: <code>&lt;tagname&gt;content&lt;/tagname&gt;</code>. The opening tag <code>&lt;tagname&gt;</code> starts the element, and the closing tag <code>&lt;/tagname&gt;</code> ends the element.</p>
+    <p>For example, to create a heading, you use <code>&lt;h1&gt;</code> for a large heading:</p>
+    <p><code>&lt;h1&gt;Welcome to My Website!&lt;/h1&gt;</code></p>
+    <p>The tag <code>&lt;h1&gt;</code> is an opening tag, and <code>&lt;/h1&gt;</code> is a closing tag. Everything between these tags will be displayed as a large heading.</p>
+</div>
+
+<!-- Explanation for Basic HTML Structure -->
+<div class="explanation">
+    <h3>2. Basic HTML Structure</h3>
+    <p>All HTML documents have the same basic structure. It starts with the <code>&lt;!DOCTYPE html&gt;</code> declaration, followed by the <code>&lt;html&gt;</code> tag, which contains the entire webpage.</p>
+    <p>Inside the <code>&lt;html&gt;</code> tag, you will find two sections: <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>.</p>
+    <ul>
+        <li>The <code>&lt;head&gt;</code> section contains information about the webpage, such as its title.</li>
+        <li>The <code>&lt;body&gt;</code> section contains the content of the webpage that will be displayed to the user.</li>
+    </ul>
+    <p>For example:</p>
+    <p><code>&lt;html&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;head&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;title&gt;My Webpage&lt;/title&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;/head&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;body&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;/body&gt;</code></p>
+    <p><code>&lt;/html&gt;</code></p>
+</div>
+
+<!-- Explanation for Links -->
+<div class="explanation">
+    <h3>3. Links</h3>
+    <p>Links allow users to navigate to different web pages. You create a link using the <code>&lt;a&gt;</code> tag. The <code>href</code> attribute tells the browser where the link should go.</p>
+    <p>For example, to link to Google, you would write:</p>
+    <p><code>&lt;a href="https://www.google.com"&gt;Go to Google&lt;/a&gt;</code></p>
+    <p>The text <code>Go to Google</code> will appear as a clickable link.</p>
+</div>
+
+<!-- Explanation for Lists -->
+<div class="explanation">
+    <h3>4. Lists</h3>
+    <p>There are two types of lists in HTML:</p>
+    <ul>
+        <li><strong>Ordered lists</strong> (<code>&lt;ol&gt;</code>) which are numbered</li>
+        <li><strong>Unordered lists</strong> (<code>&lt;ul&gt;</code>) which use bullet points</li>
+    </ul>
+    <p>Each item in a list is created with the <code>&lt;li&gt;</code> tag. For example:</p>
+    <p><code>&lt;ul&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Apple&lt;/li&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Banana&lt;/li&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Cherry&lt;/li&gt;</code></p>
+    <p><code>&lt;/ul&gt;</code></p>
+</div>
+
+<p><strong>Make sure you understand these concepts before moving to the next page!</strong></p>
+
+<p class="hint"><strong>Hint:</strong> You’ll need to fill in the blanks on the next page based on what you’ve learned here. Don’t worry if you can’t remember everything—there will be hints on the next page too!</p>
+
+<!-- Page break -->
+<div class="page-break"></div>
+
+<!-- Page 2 starts here -->
+<h1>HTML Code Breakers Challenges</h1>
+
+<p>Now it’s time to apply what you’ve learned! Fill in the blanks in each challenge. Work quickly and accurately—time is ticking!</p>
+
+<!-- Challenge 1 -->
+<div class="challenge-container">
+    <h3>Challenge 1: Basic HTML Structure</h3>
+    <p>Fill in the missing HTML tags to complete this basic webpage structure:</p>
+    <p><code>&lt;!DOCTYPE html&gt;</code></p>
+    <p><code>&lt;<span class="fill-in"></span>&gt;</code> <span class="hint">// Start the HTML document</span></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;<span class="fill-in"></span>&gt;</code> <span class="hint">// This section contains the webpage metadata</span></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;<span class="fill-in"></span>&gt;My Webpage&lt;/title&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;/head&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;<span class="fill-in"></span>&gt;</code> <span class="hint">// This section contains the webpage content</span></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;/body&gt;</code></p>
+    <p><code>&lt;/html&gt;</code></p>
+</div>
+
+<!-- Challenge 2 -->
+<div class="challenge-container">
+    <h3>Challenge 2: Links</h3>
+    <p>Create a link to Wikipedia. Fill in the missing code:</p>
+    <p><code>&lt;<span class="fill-in"></span> href="<span class="fill-in"></span><span class="fill-in"></span><span class="fill-in"></span>"&gt;Go to Wikipedia&lt;/a&gt;</code> <span class="hint">// What tag creates a link?</span></p>
+</div>
+
+<!-- Challenge 3 -->
+<div class="challenge-container">
+    <h3>Challenge 3: Headings and Paragraphs</h3>
+    <p>Complete the following HTML to display a heading and paragraph:</p>
+    <p><code>&lt;<span class="fill-in"></span>&gt;Welcome to My Blog&lt;/h1&gt;</code> <span class="hint">// What tag creates a large heading?</span></p>
+    <p><code>&lt;<span class="fill-in"></span>&gt;This is my first blog post.&lt;/p&gt;</code> <span class="hint">// What tag creates a paragraph?</span></p>
+</div>
+
+<!-- Challenge 4 -->
+<div class="challenge-container">
+    <h3>Challenge 4: Lists</h3>
+    <p>Complete this unordered list of fruits:</p>
+    <p><code>&lt;<span class="fill-in"></span>&gt;</code> <span class="hint">// What tag starts an unordered list?</span></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;<span class="fill-in"></span>&gt;Apple&lt;/li&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Banana&lt;/li&gt;</code></p>
+    <p>&nbsp;&nbsp;&nbsp;<code>&lt;li&gt;Cherry&lt;/li&gt;</code></p>
+    <p><code>&lt;/ul&gt;</code></p>
+</div>
+
+<!-- Expected Output Section -->
+<div class="output-container">
+    <div class="output-title">Expected Output Examples:</div>
+    <p>Challenge 1: A webpage structure with a title "My Webpage" and heading "Hello, World!"</p>
+    <p>Challenge 2: A link that says "Go to Wikipedia" and goes to <code>https://www.wikipedia.org</code>.</p>
+    <p>Challenge 3: A heading that says "Welcome to My Blog" and a paragraph with the text "This is my first blog post."</p>
+    <p>Challenge 4: A bulleted list with "Apple", "Banana", and "Cherry".</p>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Breakers: The Quest for Points!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            color: #2e6da4;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #2e6da4;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .explanation {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .hint {
+            color: green;
+            font-style: italic;
+        }
+        .challenge-container {
+            margin-bottom: 30px;
+        }
+        .fill-in {
+            font-family: monospace;
+            display: inline-block;
+            border-bottom: 1px solid #000;
+            width: 100px;
+        }
+        .output-container {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border: 1px solid #00796b;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .output-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        @media print {
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript Code Breakers: The Quest for Points!</h1>
+
+<h2>Welcome to JavaScript Code Breakers!</h2>
+<p>Get ready to test your JavaScript skills! In this challenge, you will complete basic JavaScript coding tasks as quickly and accurately as possible. Don’t worry—if you read carefully, you will learn everything you need to complete the challenges!</p>
+
+<h2>How to Play:</h2>
+<ol>
+    <li>The instructor will start the game. You will have a limited amount of time to complete each challenge.</li>
+    <li>Take a moment to read this page carefully. It contains everything you need to know to complete the challenges.</li>
+    <li>Once you turn the page, you won’t be able to turn back! So, study the instructions well.</li>
+    <li>Even if you don’t know JavaScript, reading this page carefully will give you all the information you need to solve the puzzles!</li>
+</ol>
+
+<h2>Concepts You Need to Know:</h2>
+<p>Let’s go over the basic concepts of JavaScript. Understanding these will help you fill in the blanks correctly!</p>
+
+<!-- Explanation for Variables -->
+<div class="explanation">
+    <h3>1. Variables</h3>
+    <p>Variables store data that you can use later in your program. In JavaScript, you can declare variables using the keywords <code>let</code>, <code>const</code>, or <code>var</code>.</p>
+    <p>For example, to store a number, you would write:</p>
+    <p><code>let age = 25;</code> means the variable <code>age</code> stores the value <code>25</code>.</p>
+</div>
+
+<!-- Explanation for Conditional Statements -->
+<div class="explanation">
+    <h3>2. Conditional Statements (if-else)</h3>
+    <p>Conditional statements allow you to execute certain code only if a condition is true.</p>
+    <p>For example:</p>
+    <p><code>if (age &gt; 18) { console.log("You are an adult."); }</code></p>
+    <p>This checks if <code>age</code> is greater than 18. If it is, the message "You are an adult." is printed to the console.</p>
+</div>
+
+<!-- Explanation for Loops -->
+<div class="explanation">
+    <h3>3. Loops</h3>
+    <p>Loops allow you to repeat a block of code a certain number of times. The most common loop is the <code>for</code> loop.</p>
+    <p>For example, to print the numbers 0 through 4, you would write:</p>
+    <p><code>for (let i = 0; i &lt; 5; i++) { console.log(i); }</code></p>
+    <p>This loop starts at <code>0</code>, and each time it runs, it increases <code>i</code> by 1. The loop stops when <code>i</code> is no longer less than 5.</p>
+</div>
+
+<!-- Explanation for Functions -->
+<div class="explanation">
+    <h3>4. Functions</h3>
+    <p>Functions are blocks of code that you can call to perform a specific task. You define a function using the keyword <code>function</code>, followed by the function name and parentheses.</p>
+    <p>For example, you can define a function to greet someone by name:</p>
+    <p><code>function greet(name) { console.log("Hello, " + name + "!"); }</code></p>
+    <p>To call this function and greet someone, you would write: <code>greet("John");</code></p>
+</div>
+
+<p><strong>Make sure you understand these concepts before moving to the next page!</strong></p>
+
+<p class="hint"><strong>Hint:</strong> You’ll need to fill in the blanks on the next page based on what you’ve learned here. Don’t worry if you can’t remember everything—there will be hints on the next page too!</p>
+
+<!-- Page break -->
+<div class="page-break"></div>
+
+<!-- Page 2 starts here -->
+<h1>JavaScript Code Breakers Challenges</h1>
+
+<p>Now it’s time to apply what you’ve learned! Fill in the blanks in each challenge. Work quickly and accurately—time is ticking!</p>
+
+<!-- Challenge 1 -->
+<div class="challenge-container">
+    <h3>Challenge 1: Variables</h3>
+    <p>Fill in the missing keyword to declare a variable named <code>name</code> and assign it the value "Alice":</p>
+    <p><code><span class="fill-in"></span> name = "Alice";</code> <span class="hint">// What keyword declares a variable?</span></p>
+</div>
+
+<!-- Challenge 2 -->
+<div class="challenge-container">
+    <h3>Challenge 2: Conditional Statements</h3>
+    <p>Fill in the missing condition and block of code to check if a number is greater than 10:</p>
+    <p><code>let number = 13;</code></p>
+    <p><code>if (<span class="fill-in"></span><span class="fill-in"></span>) {</code> <span class="hint">// What are you comparing?</span></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>console.log("The number is greater than 10");</code></p>
+    <p><code>}</code></p>
+</div>
+
+<!-- Challenge 3 -->
+<div class="challenge-container">
+    <h3>Challenge 3: Loops</h3>
+    <p>Complete the loop that prints numbers from 1 to 3:</p>
+    <p><code>for (<span class="fill-in"></span> i = 1; i &lt;= 3; i++) {</code> <span class="hint">// How do you start and stop the loop?</span></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>console.log(i);</code></p>
+    <p><code>}</code></p>
+</div>
+
+<!-- Challenge 4 -->
+<div class="challenge-container">
+    <h3>Challenge 4: Functions</h3>
+    <p>Fill in the blanks to complete this function that multiplies two numbers:</p>
+    <p><code>function <span class="fill-in"></span>(a, b) {</code> <span class="hint">// What's the function name?</span></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>return <span class="fill-in"></span> * <span class="fill-in"></span>;</code> <span class="hint">// How do you multiply the numbers?</span></p>
+    <p><code>}</code></p>
+</div>
+
+<!-- Expected Output Section -->
+<div class="output-container">
+    <div class="output-title">Expected Output Examples:</div>
+    <p>Challenge 1: A variable named <code>name</code> is declared with the value "Alice".</p>
+    <p>Challenge 2: If a number is greater than 10, it prints "The number is greater than 10".</p>
+    <p>Challenge 3: The loop prints numbers 1 through 3.</p>
+    <p>Challenge 4: The function multiplies two numbers and returns the result.</p>
+
+</body>
+</html

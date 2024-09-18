@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Programming Concepts in 9 Languages</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #2e6da4;
+        text-align: center;
+      }
+      h2 {
+        color: #2e6da4;
+        margin-top: 40px;
+        text-align: center;
+      }
+      .concept-container {
+        margin-bottom: 40px;
+      }
+      .languages-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      pre {
+        background-color: #f9f9f9;
+        padding: 15px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        white-space: pre-wrap;
+      }
+      .quadrant {
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      .syntax-comment {
+        color: #008000;
+      }
+      .syntax-string {
+        color: #a31515;
+      }
+      .syntax-number {
+        color: #098658;
+      }
+      .syntax-keyword {
+        color: #0000ff;
+      }
+      .syntax-function {
+        color: #795e26;
+      }
+      .syntax-variable {
+        color: #001080;
+      }
+      .output-container {
+        background-color: #e0f7fa;
+        padding: 15px;
+        border: 1px solid #00796b;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      .output-title {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      @media print {
+        .languages-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      /* @media print {
+        .concept-container {
+          page-break-inside: avoid;
+          break-inside: avoid;
+        }
+
+        .languages-container {
+          grid-template-columns: repeat(3, 1fr);
+          page-break-inside: avoid;
+        }
+
+        h2,
+        .output-container {
+          page-break-inside: avoid;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Basic Programming Concepts Across Multiple Languages</h1>
+
+    <!-- Concept 1: Variables and Printing -->
+    <div class="concept-container">
+      <h2>Concept 1: Variables and Printing</h2>
+      <p>
+        In this section, you'll see how different programming languages assign
+        values to variables and print output. Pay attention to how each language
+        uses different syntax but follows the same fundamental concept.
+      </p>
+
+      <div class="languages-container">
+        <!-- Python Quadrant -->
+        <div class="quadrant">
+          <h3>Python</h3>
+          <pre>
+<span class="syntax-comment"># Python uses a simple syntax to assign variables</span>
+<span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>
+<span class="syntax-variable">age</span> = <span class="syntax-number">25</span>
+<span class="syntax-comment"># Print the values using the print() function</span>
+<span class="syntax-function">print</span>(<span class="syntax-string">"Name:"</span>, <span class="syntax-variable">name</span>)
+<span class="syntax-function">print</span>(<span class="syntax-string">"Age:"</span>, <span class="syntax-variable">age</span>)
+          </pre>
+        </div>
+
+        <!-- JavaScript Quadrant -->
+        <div class="quadrant">
+          <h3>JavaScript</h3>
+          <pre>
+<span class="syntax-comment">// JavaScript assigns variables using 'let' or 'const'</span>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;
+<span class="syntax-keyword">let</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;
+<span class="syntax-comment">// Output values using console.log</span>
+<span class="syntax-function">console</span>.<span class="syntax-function">log</span>(<span class="syntax-string">"Name:"</span>, <span class="syntax-variable">name</span>);
+<span class="syntax-function">console</span>.<span class="syntax-function">log</span>(<span class="syntax-string">"Age:"</span>, <span class="syntax-variable">age</span>);
+          </pre>
+        </div>
+
+        <!-- C++ Quadrant -->
+        <div class="quadrant">
+          <h3>C++</h3>
+          <pre>
+<span class="syntax-comment">// C++ uses 'string' and 'int' for variable types</span>
+<span class="syntax-keyword">#include</span> <span class="syntax-string">&lt;iostream&gt;</span>
+<span class="syntax-keyword">using</span> <span class="syntax-keyword">namespace</span> std;
+
+<span class="syntax-keyword">int</span> <span class="syntax-function">main</span>() {
+    <span class="syntax-keyword">string</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;
+    <span class="syntax-keyword">int</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;
+    <span class="syntax-comment">// Use cout to print the values</span>
+    <span class="syntax-function">cout</span> << <span class="syntax-string">"Name: "</span> << <span class="syntax-variable">name</span> << <span class="syntax-function">endl</span>;
+    <span class="syntax-function">cout</span> << <span class="syntax-string">"Age: "</span> << <span class="syntax-variable">age</span> << <span class="syntax-function">endl</span>;
+    <span class="syntax-keyword">return</span> <span class="syntax-number">0</span>;
+}
+          </pre>
+        </div>
+
+        <!-- Rust Quadrant -->
+        <div class="quadrant">
+          <h3>Rust</h3>
+          <pre>
+<span class="syntax-comment">// Rust uses let to declare variables</span>
+<span class="syntax-keyword">fn</span> <span class="syntax-function">main</span>() {
+    <span class="syntax-keyword">let</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;
+    <span class="syntax-keyword">let</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;
+    <span class="syntax-comment">// Print using println!</span>
+    <span class="syntax-function">println!</span>(<span class="syntax-string">"Name: {}"</span>, <span class="syntax-variable">name</span>);
+    <span class="syntax-function">println!</span>(<span class="syntax-string">"Age: {}"</span>, <span class="syntax-variable">age</span>);
+}
+          </pre>
+        </div>
+
+        <!-- C# Quadrant -->
+        <div class="quadrant">
+          <h3>C#</h3>
+          <pre>
+<span class="syntax-comment">// C# uses string and int</span>
+<span class="syntax-keyword">using</span> System;
+
+<span class="syntax-keyword">class</span> Program {
+    <span class="syntax-keyword">static void</span> <span class="syntax-function">Main</span>() {
+        <span class="syntax-keyword">string</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;
+        <span class="syntax-keyword">int</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;
+        <span class="syntax-function">Console</span>.<span class="syntax-function">WriteLine</span>(<span class="syntax-string">"Name: "</span> + <span class="syntax-variable">name</span>);
+        <span class="syntax-function">Console</span>.<span class="syntax-function">WriteLine</span>(<span class="syntax-string">"Age: "</span> + <span class="syntax-variable">age</span>);
+    }
+}
+          </pre>
+        </div>
+
+        <!-- Go Quadrant -->
+        <div class="quadrant">
+          <h3>Go</h3>
+          <pre>
+<span class="syntax-comment">// Go uses var or := for variable declaration</span>
+<span class="syntax-keyword">package</span> <span class="syntax-variable">main</span>
+<span class="syntax-keyword">import</span> <span class="syntax-string">"fmt"</span>
+
+<span class="syntax-keyword">func</span> <span class="syntax-function">main</span>() {
+    <span class="syntax-keyword">name</span> := <span class="syntax-string">"Alice"</span>
+    <span class="syntax-keyword">age</span> := <span class="syntax-number">25</span>
+    <span class="syntax-comment">// Print the values using fmt.Println</span>
+    <span class="syntax-function">fmt.Println</span>(<span class="syntax-string">"Name:"</span>, <span class="syntax-variable">name</span>)
+    <span class="syntax-function">fmt.Println</span>(<span class="syntax-string">"Age:"</span>, <span class="syntax-variable">age</span>)
+}
+          </pre>
+        </div>
+
+        <!-- Perl Quadrant -->
+        <div class="quadrant">
+          <h3>Perl</h3>
+          <pre>
+<span class="syntax-comment"># Perl declares variables using my</span>
+<span class="syntax-keyword">my</span> <span class="syntax-variable">$name</span> = <span class="syntax-string">"Alice"</span>;
+<span class="syntax-keyword">my</span> <span class="syntax-variable">$age</span> = <span class="syntax-number">25</span>;
+<span class="syntax-comment"># Print values using print</span>
+<span class="syntax-function">print</span> <span class="syntax-string">"Name: $name\n"</span>;
+<span class="syntax-function">print</span> <span class="syntax-string">"Age: $age\n"</span>;
+          </pre>
+        </div>
+
+        <!-- BASIC Quadrant -->
+        <div class="quadrant">
+          <h3>BASIC</h3>
+          <pre>
+<span class="syntax-comment">REM BASIC uses simple PRINT statements</span>
+<span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>
+<span class="syntax-variable">age</span> = <span class="syntax-number">25</span>
+<span class="syntax-comment">REM Print values using PRINT</span>
+<span class="syntax-function">PRINT</span> <span class="syntax-string">"Name: "</span>; <span class="syntax-variable">name</span>
+<span class="syntax-function">PRINT</span> <span class="syntax-string">"Age: "</span>; <span class="syntax-variable">age</span>
+          </pre>
+        </div>
+
+        <!-- Ruby Quadrant -->
+        <div class="quadrant">
+          <h3>Ruby</h3>
+          <pre>
+<span class="syntax-comment"># Ruby uses simple variable assignment</span>
+<span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>
+<span class="syntax-variable">age</span> = <span class="syntax-number">25</span>
+<span class="syntax-comment"># Print values using puts</span>
+<span class="syntax-function">puts</span> <span class="syntax-string">"Name: #{name}"</span>
+<span class="syntax-function">puts</span> <span class="syntax-string">"Age: #{age}"</span>
+          </pre>
+        </div>
+      </div>
+
+      <!-- Expected Output Section -->
+      <div class="output-container">
+        <div class="output-title">Expected Output:</div>
+        <pre>
+Name: Alice
+Age: _____  (Hint: Fill in the number!)
+        </pre>
+      </div>
+    </div>
+
+    <!-- Concept 2: Conditionals -->
+    <div class="concept-container">
+      <h2>Concept 2: Conditionals</h2>
+      <p>
+        In this section, you’ll see how different programming languages handle
+        conditional statements using "if-else" to make decisions.
+      </p>
+
+      <div class="languages-container">
+        <!-- Python -->
+        <div class="quadrant">
+          <h3>Python</h3>
+          <pre>
+  <span class="syntax-variable">num</span> = <span class="syntax-number">10</span>
+  <span class="syntax-keyword">if</span> <span class="syntax-variable">num</span> % <span class="syntax-number">2</span> == <span class="syntax-number">0</span>:
+      <span class="syntax-function">print</span>(f"{<span class="syntax-variable">num</span>} is even")
+  <span class="syntax-keyword">else</span>:
+      <span class="syntax-function">print</span>(f"{<span class="syntax-variable">num</span>} is odd")
+        </pre>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="quadrant">
+          <h3>JavaScript</h3>
+          <pre>
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">num</span> = <span class="syntax-number">10</span>;
+  <span class="syntax-keyword">if</span> (<span class="syntax-variable">num</span> % <span class="syntax-number">2</span> === <span class="syntax-number">0</span>) {
+      <span class="syntax-function">console.log</span>(<span class="syntax-variable">num</span> + " is even");
+  } <span class="syntax-keyword">else</span> {
+      <span class="syntax-function">console.log</span>(<span class="syntax-variable">num</span> + " is odd");
+  }
+        </pre>
+        </div>
+
+        <!-- C++ -->
+        <div class="quadrant">
+          <h3>C++</h3>
+          <pre>
+  <span class="syntax-keyword">int</span> <span class="syntax-variable">num</span> = <span class="syntax-number">10</span>;
+  <span class="syntax-keyword">if</span> (<span class="syntax-variable">num</span> % <span class="syntax-number">2</span> == <span class="syntax-number">0</span>) {
+      <span class="syntax-function">cout</span> << <span class="syntax-variable">num</span> << <span class="syntax-string">" is even"</span> << <span class="syntax-function">endl</span>;
+  } <span class="syntax-keyword">else</span> {
+      <span class="syntax-function">cout</span> << <span class="syntax-variable">num</span> << <span class="syntax-string">" is odd"</span> << <span class="syntax-function">endl</span>;
+  }
+        </pre>
+        </div>
+
+        <!-- C# -->
+        <div class="quadrant">
+          <h3>C#</h3>
+          <pre>
+  <span class="syntax-keyword">int</span> <span class="syntax-variable">num</span> = <span class="syntax-number">10</span>;
+  <span class="syntax-keyword">if</span> (<span class="syntax-variable">num</span> % <span class="syntax-number">2</span> == <span class="syntax-number">0</span>) {
+      <span class="syntax-function">Console.WriteLine</span>(<span class="syntax-variable">num</span> + " is even");
+  } <span class="syntax-keyword">else</span> {
+      <span class="syntax-function">Console.WriteLine</span>(<span class="syntax-variable">num</span> + " is odd");
+  }
+        </pre>
+        </div>
+
+        <!-- Rust -->
+        <div class="quadrant">
+          <h3>Rust</h3>
+          <pre>
+  <span class="syntax-keyword">fn main</span>() {
+      <span class="syntax-keyword">let</span> <span class="syntax-variable">num</span> = <span class="syntax-number">10</span>;
+      <span class="syntax-keyword">if</span> <span class="syntax-variable">num</span> % <span class="syntax-number">2</span> == <span class="syntax-number">0</span> {
+          <span class="syntax-function">println!</span>(<span class="syntax-string">"{} is even"</span>, <span class="syntax-variable">num</span>);
+      } <span class="syntax-keyword">else</span> {
+          <span class="syntax-function">println!</span>(<span class="syntax-string">"{} is odd"</span>, <span class="syntax-variable">num</span>);
+      }
+  }
+        </pre>
+        </div>
+
+        <!-- Go -->
+        <div class="quadrant">
+          <h3>Go</h3>
+          <pre>
+  <span class="syntax-keyword">package main</span>
+  <span class="syntax-keyword">import</span> <span class="syntax-string">"fmt"</span>
+  
+  <span class="syntax-keyword">func</span> <span class="syntax-function">main</span>() {
+      <span class="syntax-variable">num</span> := <span class="syntax-number">10</span>
+      <span class="syntax-keyword">if</span> <span class="syntax-variable">num</span> % <span class="syntax-number">2</span> == <span class="syntax-number">0</span> {
+          <span class="syntax-function">fmt.Println</span>(<span class="syntax-variable">num</span>, <span class="syntax-string">"is even"</span>)
+      } <span class="syntax-keyword">else</span> {
+          <span class="syntax-function">fmt.Println</span>(<span class="syntax-variable">num</span>, <span class="syntax-string">"is odd"</span>)
+      }
+  }
+        </pre>
+        </div>
+
+        <!-- Perl -->
+        <div class="quadrant">
+          <h3>Perl</h3>
+          <pre>
+  <span class="syntax-keyword">my</span> <span class="syntax-variable">$num</span> = <span class="syntax-number">10</span>;
+  <span class="syntax-keyword">if</span> (<span class="syntax-variable">$num</span> % <span class="syntax-number">2</span> == <span class="syntax-number">0</span>) {
+      <span class="syntax-function">print</span> <span class="syntax-string">"$num is even\n"</span>;
+  } <span class="syntax-keyword">else</span> {
+      <span class="syntax-function">print</span> <span class="syntax-string">"$num is odd\n"</span>;
+  }
+        </pre>
+        </div>
+
+        <!-- BASIC -->
+        <div class="quadrant">
+          <h3>BASIC</h3>
+          <pre>
+  <span class="syntax-comment">REM BASIC conditionals use IF THEN ELSE</span>
+  <span class="syntax-variable">num</span> = <span class="syntax-number">10</span>
+  <span class="syntax-comment">REM check if number is even or odd</span>
+  <span class="syntax-keyword">IF</span> <span class="syntax-variable">num</span> <span class="syntax-keyword">MOD</span> <span class="syntax-number">2</span> = <span class="syntax-number">0</span> <span class="syntax-keyword">THEN</span>
+      <span class="syntax-function">PRINT</span> <span class="syntax-string">num & " is even"</span>
+  <span class="syntax-keyword">ELSE</span>
+      <span class="syntax-function">PRINT</span> <span class="syntax-string">num & " is odd"</span>
+  <span class="syntax-keyword">END IF</span>
+        </pre>
+        </div>
+
+        <!-- Ruby -->
+        <div class="quadrant">
+          <h3>Ruby</h3>
+          <pre>
+  <span class="syntax-variable">num</span> = <span class="syntax-number">10</span>
+  <span class="syntax-keyword">if</span> <span class="syntax-variable">num</span> % <span class="syntax-number">2</span> == <span class="syntax-number">0</span>
+      <span class="syntax-function">puts</span> <span class="syntax-variable">"#{num} is even"</span>
+  <span class="syntax-keyword">else</span>
+      <span class="syntax-function">puts</span> <span class="syntax-variable">"#{num} is odd"</span>
+  <span class="syntax-keyword">end</span>
+        </pre>
+        </div>
+      </div>
+
+      <!-- Expected Output Section -->
+      <div class="output-container">
+        <div class="output-title">Expected Output:</div>
+        <pre>
+  10 is _____  (Hint: Fill in "even" or "odd")
+      </pre
+        >
+      </div>
+      <!-- Concept 3: Loops -->
+      <div class="concept-container">
+        <h2>Concept 3: Loops</h2>
+        <p>
+          In this section, you'll learn how different programming languages
+          handle loops, allowing you to repeat tasks multiple times.
+        </p>
+
+        <div class="languages-container">
+          <!-- Python -->
+          <div class="quadrant">
+            <h3>Python</h3>
+            <pre>
+  <span class="syntax-keyword">for</span> <span class="syntax-variable">i</span> <span class="syntax-keyword">in range</span>(<span class="syntax-number">1</span>, <span class="syntax-number">4</span>):
+      <span class="syntax-function">print</span>(f"Loop iteration: {<span class="syntax-variable">i</span>}")
+        </pre>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="quadrant">
+            <h3>JavaScript</h3>
+            <pre>
+  <span class="syntax-keyword">for</span> (<span class="syntax-keyword">let</span> <span class="syntax-variable">i</span> = <span class="syntax-number">1</span>; <span class="syntax-variable">i</span> <= <span class="syntax-number">3</span>; <span class="syntax-variable">i</span>++) {
+      <span class="syntax-function">console.log</span>(<span class="syntax-string">"Loop iteration: "</span> + <span class="syntax-variable">i</span>);
+  }
+        </pre>
+          </div>
+
+          <!-- C++ -->
+          <div class="quadrant">
+            <h3>C++</h3>
+            <pre>
+  <span class="syntax-keyword">for</span> (<span class="syntax-keyword">int</span> <span class="syntax-variable">i</span> = <span class="syntax-number">1</span>; <span class="syntax-variable">i</span> <= <span class="syntax-number">3</span>; <span class="syntax-variable">i</span>++) {
+      <span class="syntax-function">cout</span> << <span class="syntax-string">"Loop iteration: "</span> << <span class="syntax-variable">i</span> << <span class="syntax-function">endl</span>;
+  }
+        </pre>
+          </div>
+
+          <!-- C# -->
+          <div class="quadrant">
+            <h3>C#</h3>
+            <pre>
+  <span class="syntax-keyword">for</span> (<span class="syntax-keyword">int</span> <span class="syntax-variable">i</span> = <span class="syntax-number">1</span>; <span class="syntax-variable">i</span> <= <span class="syntax-number">3</span>; <span class="syntax-variable">i</span>++) {
+      <span class="syntax-function">Console.WriteLine</span>(<span class="syntax-string">"Loop iteration: "</span> + <span class="syntax-variable">i</span>);
+  }
+        </pre>
+          </div>
+
+          <!-- Rust -->
+          <div class="quadrant">
+            <h3>Rust</h3>
+            <pre>
+  <span class="syntax-keyword">fn main</span>() {
+      <span class="syntax-keyword">for</span> <span class="syntax-variable">i</span> <span class="syntax-keyword">in</span> <span class="syntax-number">1..=3</span> {
+          <span class="syntax-function">println!</span>(<span class="syntax-string">"Loop iteration: {}"</span>, <span class="syntax-variable">i</span>);
+      }
+  }
+        </pre>
+          </div>
+
+          <!-- Go -->
+          <div class="quadrant">
+            <h3>Go</h3>
+            <pre>
+  <span class="syntax-keyword">package main</span>
+  <span class="syntax-keyword">import</span> <span class="syntax-string">"fmt"</span>
+  
+  <span class="syntax-keyword">func</span> <span class="syntax-function">main</span>() {
+      <span class="syntax-keyword">for</span> <span class="syntax-variable">i</span> := <span class="syntax-number">1</span>; <span class="syntax-variable">i</span> <= <span class="syntax-number">3</span>; <span class="syntax-variable">i</span>++ {
+          <span class="syntax-function">fmt.Println</span>(<span class="syntax-string">"Loop iteration: "</span>, <span class="syntax-variable">i</span>)
+      }
+  }
+        </pre>
+          </div>
+
+          <!-- Perl -->
+          <div class="quadrant">
+            <h3>Perl</h3>
+            <pre>
+  <span class="syntax-keyword">for</span> <span class="syntax-variable">$i</span> (<span class="syntax-number">1</span>..<span class="syntax-number">3</span>) {
+      <span class="syntax-function">print</span> <span class="syntax-string">"Loop iteration: $i\n"</span>;
+  }
+        </pre>
+          </div>
+
+          <!-- BASIC -->
+          <div class="quadrant">
+            <h3>BASIC</h3>
+            <pre>
+  <span class="syntax-keyword">FOR</span> <span class="syntax-variable">i</span> = <span class="syntax-number">1</span> <span class="syntax-keyword">TO</span> <span class="syntax-number">3</span>
+      <span class="syntax-function">PRINT</span> <span class="syntax-string">"Loop iteration: "</span>; <span class="syntax-variable">i</span>
+  <span class="syntax-keyword">NEXT</span> <span class="syntax-variable">i</span>
+        </pre>
+          </div>
+
+          <!-- Ruby -->
+          <div class="quadrant">
+            <h3>Ruby</h3>
+            <pre>
+  <span class="syntax-number">1</span>.<span class="syntax-function">upto</span>(<span class="syntax-number">3</span>) <span class="syntax-keyword">do</span> <span class="syntax-variable">i</span>
+      <span class="syntax-function">puts</span> <span class="syntax-string">"Loop iteration: #{i}"</span>
+  <span class="syntax-keyword">end</span>
+        </pre>
+          </div>
+        </div>
+
+        <!-- Expected Output Section -->
+        <div class="output-container">
+          <div class="output-title">Expected Output:</div>
+          <pre>
+  Loop iteration: 1
+  Loop iteration: 2
+  Loop iteration: 3
+      </pre
+          >
+        </div>
+      </div>
+
+      <!-- Concept 4: Functions -->
+      <div class="concept-container">
+        <h2>Concept 4: Functions</h2>
+        <p>
+          In this section, you’ll learn how different programming languages
+          define and call functions to perform tasks.
+        </p>
+
+        <div class="languages-container">
+          <!-- Python -->
+          <div class="quadrant">
+            <h3>Python</h3>
+            <pre>
+  <span class="syntax-keyword">def</span> <span class="syntax-function">greet</span>(<span class="syntax-variable">name</span>):
+      <span class="syntax-function">print</span>(f"Hello, {<span class="syntax-variable">name</span>}!")
+  
+  <span class="syntax-function">greet</span>(<span class="syntax-string">"Alice"</span>)
+        </pre>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="quadrant">
+            <h3>JavaScript</h3>
+            <pre>
+  <span class="syntax-keyword">function</span> <span class="syntax-function">greet</span>(<span class="syntax-variable">name</span>) {
+      <span class="syntax-function">console.log</span>(<span class="syntax-string">"Hello, "</span> + <span class="syntax-variable">name</span> + <span class="syntax-string">"!"</span>);
+  }
+  
+  <span class="syntax-function">greet</span>(<span class="syntax-string">"Alice"</span>);
+        </pre>
+          </div>
+
+          <!-- C++ -->
+          <div class="quadrant">
+            <h3>C++</h3>
+            <pre>
+  <span class="syntax-keyword">void</span> <span class="syntax-function">greet</span>(<span class="syntax-keyword">string</span> <span class="syntax-variable">name</span>) {
+      <span class="syntax-function">cout</span> << <span class="syntax-string">"Hello, "</span> << <span class="syntax-variable">name</span> << <span class="syntax-string">"!"</span> << <span class="syntax-function">endl</span>;
+  }
+  
+  <span class="syntax-keyword">int</span> <span class="syntax-function">main</span>() {
+      <span class="syntax-function">greet</span>(<span class="syntax-string">"Alice"</span>);
+      <span class="syntax-keyword">return</span> <span class="syntax-number">0</span>;
+  }
+        </pre>
+          </div>
+
+          <!-- C# -->
+          <div class="quadrant">
+            <h3>C#</h3>
+            <pre>
+  <span class="syntax-keyword">void</span> <span class="syntax-function">Greet</span>(<span class="syntax-keyword">string</span> <span class="syntax-variable">name</span>) {
+      <span class="syntax-function">Console.WriteLine</span>(<span class="syntax-string">"Hello, "</span> + <span class="syntax-variable">name</span> + <span class="syntax-string">"!"</span>);
+  }
+  
+  <span class="syntax-function">Greet</span>(<span class="syntax-string">"Alice"</span>);
+        </pre>
+          </div>
+
+          <!-- Rust -->
+          <div class="quadrant">
+            <h3>Rust</h3>
+            <pre>
+  <span class="syntax-keyword">fn greet</span>(<span class="syntax-variable">name</span>: &str) {
+      <span class="syntax-function">println!</span>(<span class="syntax-string">"Hello, {}!"</span>, <span class="syntax-variable">name</span>);
+  }
+  
+  <span class="syntax-keyword">fn main</span>() {
+      <span class="syntax-function">greet</span>(<span class="syntax-string">"Alice"</span>);
+  }
+        </pre>
+          </div>
+
+          <!-- Go -->
+          <div class="quadrant">
+            <h3>Go</h3>
+            <pre>
+  <span class="syntax-keyword">package</span> <span class="syntax-variable">main</span>
+  <span class="syntax-keyword">import</span> <span class="syntax-string">"fmt"</span>
+  
+  <span class="syntax-keyword">func</span> <span class="syntax-function">greet</span>(<span class="syntax-variable">name</span> <span class="syntax-keyword">string</span>) {
+      <span class="syntax-function">fmt.Println</span>(<span class="syntax-string">"Hello, "</span>, <span class="syntax-variable">name</span>, <span class="syntax-string">"!"</span>)
+  }
+  
+  <span class="syntax-function">greet</span>(<span class="syntax-string">"Alice"</span>)
+        </pre>
+          </div>
+
+          <!-- Perl -->
+          <div class="quadrant">
+            <h3>Perl</h3>
+            <pre>
+  <span class="syntax-keyword">sub</span> <span class="syntax-function">greet</span> {
+      <span class="syntax-keyword">my</span> <span class="syntax-variable">$name</span> = <span class="syntax-variable">$_[0]</span>;
+      <span class="syntax-function">print</span> <span class="syntax-string">"Hello, $name!\n"</span>;
+  }
+  
+  <span class="syntax-function">greet</span>(<span class="syntax-string">"Alice"</span>);
+        </pre>
+          </div>
+
+          <!-- BASIC -->
+          <div class="quadrant">
+            <h3>BASIC</h3>
+            <pre>
+  <span class="syntax-comment">REM BASIC subroutine for greeting</span>
+  <span class="syntax-keyword">SUB</span> <span class="syntax-function">GREET</span>(<span class="syntax-variable">name</span>)
+      <span class="syntax-function">PRINT</span> <span class="syntax-string">"Hello, "</span>; <span class="syntax-variable">name</span>; <span class="syntax-string">"!"</span>
+  <span class="syntax-keyword">END SUB</span>
+  
+  <span class="syntax-function">CALL GREET</span>(<span class="syntax-string">"Alice"</span>)
+        </pre>
+          </div>
+
+          <!-- Ruby -->
+          <div class="quadrant">
+            <h3>Ruby</h3>
+            <pre>
+  <span class="syntax-keyword">def</span> <span class="syntax-function">greet</span>(<span class="syntax-variable">name</span>)
+      <span class="syntax-function">puts</span> <span class="syntax-string">"Hello, #{name}!"</span>
+  <span class="syntax-keyword">end</span>
+  
+  <span class="syntax-function">greet</span>(<span class="syntax-string">"Alice"</span>)
+        </pre>
+          </div>
+        </div>
+
+        <!-- Expected Output Section -->
+        <div class="output-container">
+          <div class="output-title">Expected Output:</div>
+          <pre>
+  Hello, Alice!
+      </pre
+          >
+        </div>
+      </div>
+
+      <!-- Concept 5: Data Types -->
+      <div class="concept-container">
+        <h2>Concept 5: Data Types</h2>
+        <p>
+          In this section, you’ll learn how different programming languages
+          handle basic data types like strings, integers, floats, and booleans.
+        </p>
+
+        <div class="languages-container">
+          <!-- Python -->
+          <div class="quadrant">
+            <h3>Python</h3>
+            <pre>
+<span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>   <span class="syntax-comment"># string</span>
+<span class="syntax-variable">age</span> = <span class="syntax-number">25</span>         <span class="syntax-comment"># integer</span>
+<span class="syntax-variable">height</span> = <span class="syntax-number">1.75</span>    <span class="syntax-comment"># float</span>
+<span class="syntax-variable">is_student</span> = <span class="syntax-keyword">True</span> <span class="syntax-comment"># boolean</span>
+      </pre>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="quadrant">
+            <h3>JavaScript</h3>
+            <pre>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;  <span class="syntax-comment">// string</span>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;        <span class="syntax-comment">// integer</span>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">height</span> = <span class="syntax-number">1.75</span>;   <span class="syntax-comment">// float</span>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">isStudent</span> = <span class="syntax-keyword">true</span>; <span class="syntax-comment">// boolean</span>
+      </pre>
+          </div>
+
+          <!-- C++ -->
+          <div class="quadrant">
+            <h3>C++</h3>
+            <pre>
+<span class="syntax-keyword">string</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;  <span class="syntax-comment">// string</span>
+<span class="syntax-keyword">int</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;          <span class="syntax-comment">// integer</span>
+<span class="syntax-keyword">float</span> <span class="syntax-variable">height</span> = <span class="syntax-number">1.75</span>;    <span class="syntax-comment">// float</span>
+<span class="syntax-keyword">bool</span> <span class="syntax-variable">is_student</span> = <span class="syntax-keyword">true</span>; <span class="syntax-comment">// boolean</span>
+      </pre>
+          </div>
+
+          <!-- C# -->
+          <div class="quadrant">
+            <h3>C#</h3>
+            <pre>
+<span class="syntax-keyword">string</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;  <span class="syntax-comment">// string</span>
+<span class="syntax-keyword">int</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;           <span class="syntax-comment">// integer</span>
+<span class="syntax-keyword">double</span> <span class="syntax-variable">height</span> = <span class="syntax-number">1.75</span>;   <span class="syntax-comment">// float</span>
+<span class="syntax-keyword">bool</span> <span class="syntax-variable">isStudent</span> = <span class="syntax-keyword">true</span>; <span class="syntax-comment">// boolean</span>
+      </pre>
+          </div>
+
+          <!-- Rust -->
+          <div class="quadrant">
+            <h3>Rust</h3>
+            <pre>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;   <span class="syntax-comment">// string</span>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;         <span class="syntax-comment">// integer</span>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">height</span> = <span class="syntax-number">1.75</span>;    <span class="syntax-comment">// float</span>
+<span class="syntax-keyword">let</span> <span class="syntax-variable">is_student</span> = <span class="syntax-keyword">true</span>; <span class="syntax-comment">// boolean</span>
+      </pre>
+          </div>
+
+          <!-- Go -->
+          <div class="quadrant">
+            <h3>Go</h3>
+            <pre>
+<span class="syntax-keyword">var</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>  <span class="syntax-comment">// string</span>
+<span class="syntax-keyword">var</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>         <span class="syntax-comment">// integer</span>
+<span class="syntax-keyword">var</span> <span class="syntax-variable">height</span> = <span class="syntax-number">1.75</span>    <span class="syntax-comment">// float</span>
+<span class="syntax-keyword">var</span> <span class="syntax-variable">isStudent</span> = <span class="syntax-keyword">true</span>  <span class="syntax-comment">// boolean</span>
+      </pre>
+          </div>
+
+          <!-- Perl -->
+          <div class="quadrant">
+            <h3>Perl</h3>
+            <pre>
+<span class="syntax-keyword">my</span> <span class="syntax-variable">$name</span> = <span class="syntax-string">"Alice"</span>;   <span class="syntax-comment"># string</span>
+<span class="syntax-keyword">my</span> <span class="syntax-variable">$age</span> = <span class="syntax-number">25</span>;         <span class="syntax-comment"># integer</span>
+<span class="syntax-keyword">my</span> <span class="syntax-variable">$height</span> = <span class="syntax-number">1.75</span>;    <span class="syntax-comment"># float</span>
+<span class="syntax-keyword">my</span> <span class="syntax-variable">$is_student</span> = <span class="syntax-keyword">1</span>;  <span class="syntax-comment"># boolean (1 for true)</span>
+      </pre>
+          </div>
+
+          <!-- BASIC -->
+          <div class="quadrant">
+            <h3>BASIC</h3>
+            <pre>
+<span class="syntax-comment">REM BASIC types are simple assignments</span>
+<span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>
+<span class="syntax-variable">age</span> = <span class="syntax-number">25</span>
+<span class="syntax-variable">height</span> = <span class="syntax-number">1.75</span>
+<span class="syntax-variable">isStudent</span> = <span class="syntax-number">1</span> <span class="syntax-comment">REM 1 for true</span>
+      </pre>
+          </div>
+
+          <!-- Ruby -->
+          <div class="quadrant">
+            <h3>Ruby</h3>
+            <pre>
+<span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>    <span class="syntax-comment"># string</span>
+<span class="syntax-variable">age</span> = <span class="syntax-number">25</span>          <span class="syntax-comment"># integer</span>
+<span class="syntax-variable">height</span> = <span class="syntax-number">1.75</span>     <span class="syntax-comment"># float</span>
+<span class="syntax-variable">is_student</span> = <span class="syntax-keyword">true</span>  <span class="syntax-comment"># boolean</span>
+      </pre>
+          </div>
+        </div>
+
+        <!-- Expected Output Section -->
+        <div class="output-container">
+          <div class="output-title">Expected Output:</div>
+          <pre>
+Name: Alice
+Age: 25
+Height: 1.75
+Is student: true
+    </pre
+          >
+        </div>
+      </div>
+
+      <!-- Concept 6: Arrays (or Lists) -->
+      <div class="concept-container">
+        <h2>Concept 6: Arrays (or Lists)</h2>
+        <p>
+          In this section, you’ll see how different programming languages handle
+          arrays (also called lists in some languages).
+        </p>
+
+        <div class="languages-container">
+          <!-- Python -->
+          <div class="quadrant">
+            <h3>Python</h3>
+            <pre>
+  <span class="syntax-variable">fruits</span> = [<span class="syntax-string">"apple"</span>, <span class="syntax-string">"banana"</span>, <span class="syntax-string">"cherry"</span>]
+  <span class="syntax-function">print</span>(<span class="syntax-variable">fruits</span>)
+        </pre>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="quadrant">
+            <h3>JavaScript</h3>
+            <pre>
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">fruits</span> = [<span class="syntax-string">"apple"</span>, <span class="syntax-string">"banana"</span>, <span class="syntax-string">"cherry"</span>];
+  <span class="syntax-function">console.log</span>(<span class="syntax-variable">fruits</span>);
+        </pre>
+          </div>
+
+          <!-- C++ -->
+          <div class="quadrant">
+            <h3>C++</h3>
+            <pre>
+  <span class="syntax-keyword">string</span> <span class="syntax-variable">fruits</span>[] = {<span class="syntax-string">"apple"</span>, <span class="syntax-string">"banana"</span>, <span class="syntax-string">"cherry"</span>};
+  <span class="syntax-function">cout</span> << <span class="syntax-variable">fruits</span>[<span class="syntax-number">0</span>] << <span class="syntax-string">", "</span> << <span class="syntax-variable">fruits</span>[<span class="syntax-number">1</span>] << <span class="syntax-string">", "</span> << <span class="syntax-variable">fruits</span>[<span class="syntax-number">2</span>];
+        </pre>
+          </div>
+
+          <!-- C# -->
+          <div class="quadrant">
+            <h3>C#</h3>
+            <pre>
+  <span class="syntax-keyword">string</span>[] <span class="syntax-variable">fruits</span> = {<span class="syntax-string">"apple"</span>, <span class="syntax-string">"banana"</span>, <span class="syntax-string">"cherry"</span>};
+  <span class="syntax-function">Console.WriteLine</span>(<span class="syntax-string">string.Join</span>(<span class="syntax-string">", "</span>, <span class="syntax-variable">fruits</span>));
+        </pre>
+          </div>
+
+          <!-- Rust -->
+          <div class="quadrant">
+            <h3>Rust</h3>
+            <pre>
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">fruits</span> = [<span class="syntax-string">"apple"</span>, <span class="syntax-string">"banana"</span>, <span class="syntax-string">"cherry"</span>];
+  <span class="syntax-function">println!</span>(<span class="syntax-string">"{:?}"</span>, <span class="syntax-variable">fruits</span>);
+        </pre>
+          </div>
+
+          <!-- Go -->
+          <div class="quadrant">
+            <h3>Go</h3>
+            <pre>
+  <span class="syntax-keyword">var</span> <span class="syntax-variable">fruits</span> = []<span class="syntax-keyword">string</span>{<span class="syntax-string">"apple"</span>, <span class="syntax-string">"banana"</span>, <span class="syntax-string">"cherry"</span>}
+  <span class="syntax-function">fmt.Println</span>(<span class="syntax-variable">fruits</span>)
+        </pre>
+          </div>
+
+          <!-- Perl -->
+          <div class="quadrant">
+            <h3>Perl</h3>
+            <pre>
+  <span class="syntax-keyword">my</span> <span class="syntax-variable">@fruits</span> = (<span class="syntax-string">"apple"</span>, <span class="syntax-string">"banana"</span>, <span class="syntax-string">"cherry"</span>);
+  <span class="syntax-function">print</span> <span class="syntax-variable">join</span>(<span class="syntax-string">", "</span>, <span class="syntax-variable">@fruits</span>);
+        </pre>
+          </div>
+
+          <!-- BASIC -->
+          <div class="quadrant">
+            <h3>BASIC</h3>
+            <pre>
+  <span class="syntax-comment">REM BASIC does not have advanced arrays, so we use strings</span>
+  <span class="syntax-variable">fruits</span> = <span class="syntax-string">"apple, banana, cherry"</span>
+  <span class="syntax-function">PRINT</span> <span class="syntax-variable">fruits</span>
+        </pre>
+          </div>
+
+          <!-- Ruby -->
+          <div class="quadrant">
+            <h3>Ruby</h3>
+            <pre>
+  <span class="syntax-variable">fruits</span> = [<span class="syntax-string">"apple"</span>, <span class="syntax-string">"banana"</span>, <span class="syntax-string">"cherry"</span>]
+  <span class="syntax-function">puts</span> <span class="syntax-variable">fruits</span>.join(<span class="syntax-string">", "</span>)
+        </pre>
+          </div>
+        </div>
+
+        <!-- Expected Output Section -->
+        <div class="output-container">
+          <div class="output-title">Expected Output:</div>
+          <pre>
+  apple, banana, cherry
+      </pre
+          >
+        </div>
+      </div>
+
+      <!-- Concept 7: User Input -->
+      <div class="concept-container">
+        <h2>Concept 7: User Input</h2>
+        <p>
+          In this section, you’ll learn how different programming languages
+          handle user input.
+        </p>
+
+        <div class="languages-container">
+          <!-- Python -->
+          <div class="quadrant">
+            <h3>Python</h3>
+            <pre>
+  <span class="syntax-variable">name</span> = <span class="syntax-function">input</span>(<span class="syntax-string">"Enter your name: "</span>)
+  <span class="syntax-function">print</span>(<span class="syntax-string">"Hello, "</span> + <span class="syntax-variable">name</span>)
+        </pre>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="quadrant">
+            <h3>JavaScript</h3>
+            <pre>
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">name</span> = <span class="syntax-function">prompt</span>(<span class="syntax-string">"Enter your name:"</span>);
+  <span class="syntax-function">alert</span>(<span class="syntax-string">"Hello, "</span> + <span class="syntax-variable">name</span>);
+        </pre>
+          </div>
+
+          <!-- C++ -->
+          <div class="quadrant">
+            <h3>C++</h3>
+            <pre>
+  <span class="syntax-keyword">string</span> <span class="syntax-variable">name</span>;
+  <span class="syntax-function">cout</span> << <span class="syntax-string">"Enter your name: "</span>;
+  <span class="syntax-function">cin</span> >> <span class="syntax-variable">name</span>;
+  <span class="syntax-function">cout</span> << <span class="syntax-string">"Hello, "</span> << <span class="syntax-variable">name</span> << <span class="syntax-string">"!"</span>;
+        </pre>
+          </div>
+
+          <!-- C# -->
+          <div class="quadrant">
+            <h3>C#</h3>
+            <pre>
+  <span class="syntax-function">Console.Write</span>(<span class="syntax-string">"Enter your name: "</span>);
+  <span class="syntax-keyword">string</span> <span class="syntax-variable">name</span> = <span class="syntax-function">Console.ReadLine</span>();
+  <span class="syntax-function">Console.WriteLine</span>(<span class="syntax-string">"Hello, "</span> + <span class="syntax-variable">name</span>);
+        </pre>
+          </div>
+
+          <!-- Rust -->
+          <div class="quadrant">
+            <h3>Rust</h3>
+            <pre>
+  <span class="syntax-keyword">use std::io</span>;
+  
+  <span class="syntax-keyword">fn main</span>() {
+      <span class="syntax-keyword">let mut</span> <span class="syntax-variable">name</span> = <span class="syntax-function">String::new</span>();
+      <span class="syntax-function">println!</span>(<span class="syntax-string">"Enter your name: "</span>);
+      <span class="syntax-function">io::stdin</span>().<span class="syntax-function">read_line</span>(&mut <span class="syntax-variable">name</span>).<span class="syntax-function">unwrap</span>();
+      <span class="syntax-function">println!</span>(<span class="syntax-string">"Hello, {}!"</span>, <span class="syntax-variable">name</span>);
+  }
+        </pre>
+          </div>
+
+          <!-- Go -->
+          <div class="quadrant">
+            <h3>Go</h3>
+            <pre>
+  <span class="syntax-keyword">var</span> <span class="syntax-variable">name</span> <span class="syntax-keyword">string</span>
+  <span class="syntax-function">fmt.Print</span>(<span class="syntax-string">"Enter your name: "</span>)
+  <span class="syntax-function">fmt.Scanln</span>(&<span class="syntax-variable">name</span>)
+  <span class="syntax-function">fmt.Println</span>(<span class="syntax-string">"Hello, "</span>, <span class="syntax-variable">name</span>)
+        </pre>
+          </div>
+
+          <!-- Perl -->
+          <div class="quadrant">
+            <h3>Perl</h3>
+            <pre>
+  <span class="syntax-function">print</span> <span class="syntax-string">"Enter your name: "</span>;
+  <span class="syntax-keyword">my</span> <span class="syntax-variable">$name</span> = <span class="syntax-function"><>;</span>
+  <span class="syntax-function">chomp</span>(<span class="syntax-variable">$name</span>);
+  <span class="syntax-function">print</span> <span class="syntax-string">"Hello, $name\n"</span>;
+        </pre>
+          </div>
+
+          <!-- BASIC -->
+          <div class="quadrant">
+            <h3>BASIC</h3>
+            <pre>
+  <span class="syntax-comment">REM BASIC gets input using INPUT command</span>
+  <span class="syntax-function">INPUT</span> <span class="syntax-string">"Enter your name: "</span>, <span class="syntax-variable">name</span>
+  <span class="syntax-function">PRINT</span> <span class="syntax-string">"Hello, "</span>; <span class="syntax-variable">name</span>;
+        </pre>
+          </div>
+
+          <!-- Ruby -->
+          <div class="quadrant">
+            <h3>Ruby</h3>
+            <pre>
+  <span class="syntax-function">print</span> <span class="syntax-string">"Enter your name: "</span>
+  <span class="syntax-variable">name</span> = <span class="syntax-function">gets.chomp</span>
+  <span class="syntax-function">puts</span> <span class="syntax-string">"Hello, #{name}"</span>
+        </pre>
+          </div>
+        </div>
+
+        <!-- Expected Output Section -->
+        <div class="output-container">
+          <div class="output-title">Expected Output:</div>
+          <pre>
+  Enter your name: _____
+  Hello, _____!
+      </pre
+          >
+        </div>
+      </div>
+      <!-- Concept 8: String Manipulation -->
+      <div class="concept-container">
+        <h2>Concept 8: String Manipulation</h2>
+        <p>
+          In this section, you’ll see how different programming languages handle
+          string manipulation tasks like concatenation and formatting.
+        </p>
+
+        <div class="languages-container">
+          <!-- Python -->
+          <div class="quadrant">
+            <h3>Python</h3>
+            <pre>
+  <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>
+  <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>
+  <span class="syntax-variable">sentence</span> = f"My name is {<span class="syntax-variable">name</span>} and I am {<span class="syntax-variable">age</span>} years old."
+  <span class="syntax-function">print</span>(<span class="syntax-variable">sentence</span>)
+        </pre>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="quadrant">
+            <h3>JavaScript</h3>
+            <pre>
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">sentence</span> = <span class="syntax-string">`My name is ${name} and I am ${age} years old.`</span>;
+  <span class="syntax-function">console.log</span>(<span class="syntax-variable">sentence</span>);
+        </pre>
+          </div>
+
+          <!-- C++ -->
+          <div class="quadrant">
+            <h3>C++</h3>
+            <pre>
+  <span class="syntax-keyword">string</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;
+  <span class="syntax-keyword">int</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;
+  <span class="syntax-function">cout</span> << <span class="syntax-string">"My name is "</span> << <span class="syntax-variable">name</span> << <span class="syntax-string">" and I am "</span> << <span class="syntax-variable">age</span> << <span class="syntax-string">" years old."</span>;
+        </pre>
+          </div>
+
+          <!-- C# -->
+          <div class="quadrant">
+            <h3>C#</h3>
+            <pre>
+  <span class="syntax-keyword">string</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;
+  <span class="syntax-keyword">int</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;
+  <span class="syntax-function">Console.WriteLine</span>(<span class="syntax-string">"My name is {0} and I am {1} years old."</span>, <span class="syntax-variable">name</span>, <span class="syntax-variable">age</span>);
+        </pre>
+          </div>
+
+          <!-- Rust -->
+          <div class="quadrant">
+            <h3>Rust</h3>
+            <pre>
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>;
+  <span class="syntax-keyword">let</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>;
+  <span class="syntax-function">println!</span>(<span class="syntax-string">"My name is {} and I am {} years old."</span>, <span class="syntax-variable">name</span>, <span class="syntax-variable">age</span>);
+        </pre>
+          </div>
+
+          <!-- Go -->
+          <div class="quadrant">
+            <h3>Go</h3>
+            <pre>
+  <span class="syntax-keyword">var</span> <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>
+  <span class="syntax-keyword">var</span> <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>
+  <span class="syntax-function">fmt.Printf</span>(<span class="syntax-string">"My name is %s and I am %d years old.\n"</span>, <span class="syntax-variable">name</span>, <span class="syntax-variable">age</span>)
+        </pre>
+          </div>
+
+          <!-- Perl -->
+          <div class="quadrant">
+            <h3>Perl</h3>
+            <pre>
+  <span class="syntax-keyword">my</span> <span class="syntax-variable">$name</span> = <span class="syntax-string">"Alice"</span>;
+  <span class="syntax-keyword">my</span> <span class="syntax-variable">$age</span> = <span class="syntax-number">25</span>;
+  <span class="syntax-function">print</span> <span class="syntax-string">"My name is $name and I am $age years old.\n"</span>;
+        </pre>
+          </div>
+
+          <!-- BASIC -->
+          <div class="quadrant">
+            <h3>BASIC</h3>
+            <pre>
+  <span class="syntax-function">PRINT</span> <span class="syntax-string">"My name is "</span>; <span class="syntax-variable">name</span>; <span class="syntax-string">" and I am "</span>; <span class="syntax-variable">age</span>; <span class="syntax-string">" years old."</span>
+        </pre>
+          </div>
+
+          <!-- Ruby -->
+          <div class="quadrant">
+            <h3>Ruby</h3>
+            <pre>
+  <span class="syntax-variable">name</span> = <span class="syntax-string">"Alice"</span>
+  <span class="syntax-variable">age</span> = <span class="syntax-number">25</span>
+  <span class="syntax-function">puts</span> <span class="syntax-string">"My name is #{name} and I am #{age} years old."</span>
+        </pre>
+          </div>
+        </div>
+
+        <!-- Expected Output Section -->
+        <div class="output-container">
+          <div class="output-title">Expected Output:</div>
+          <pre>
+  My name is Alice and I am 25 years old.
+      </pre
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

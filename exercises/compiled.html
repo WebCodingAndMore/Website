@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C# to MSIL, Assembly, and Binary Breakdown</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      h1 {
+        color: #2e6da4;
+        text-align: center;
+      }
+      h2 {
+        color: #2e6da4;
+        margin-top: 40px;
+        text-align: center;
+      }
+      .table-container {
+        display: table;
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .table-row {
+        display: table-row;
+      }
+      .table-column {
+        display: table-cell;
+        vertical-align: top;
+        padding: 10px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+      }
+      .table-column pre {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin: 0;
+        white-space: pre-wrap;
+      }
+      .syntax-comment {
+        color: green;
+      }
+      .syntax-string {
+        color: #a31515;
+      }
+      .syntax-number {
+        color: #098658;
+      }
+      .syntax-keyword {
+        color: #0000ff;
+      }
+      .syntax-function {
+        color: #795e26;
+      }
+      .syntax-variable {
+        color: #001080;
+      }
+      .output-container {
+        background-color: #e0f7fa;
+        padding: 15px;
+        border: 1px solid #00796b;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+      .output-title {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .comment {
+        color: green;
+        font-style: italic;
+      }
+      @media print {
+        .table-container {
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>C# to MSIL, Assembly, and Binary Breakdown</h1>
+
+    <!-- Section 1: The breakdown table -->
+    <div class="table-container">
+      <div class="table-row">
+        <!-- C# Code Column -->
+        <div class="table-column">
+          <h3>C# Code</h3>
+          <pre>
+<span class="syntax-keyword">using</span> System;
+
+<span class="syntax-keyword">class</span> <span class="syntax-variable">Program</span> {
+    <span class="syntax-keyword">static void</span> <span class="syntax-function">Main</span>() {
+        <span class="syntax-comment">// Declare a variable</span>
+        <span class="syntax-keyword">int</span> <span class="syntax-variable">num</span> = <span class="syntax-number">5</span>;
+
+        <span class="syntax-comment">// Call a method and loop</span>
+        <span class="syntax-function">PrintNumbers</span>(<span class="syntax-variable">num</span>);
+    }
+
+    <span class="syntax-comment">// Method to print numbers</span>
+    <span class="syntax-keyword">static void</span> <span class="syntax-function">PrintNumbers</span>(<span class="syntax-keyword">int</span> <span class="syntax-variable">limit</span>) {
+        <span class="syntax-keyword">for</span> (<span class="syntax-keyword">int</span> <span class="syntax-variable">i</span> = <span class="syntax-number">0</span>; <span class="syntax-variable">i</span> &lt; <span class="syntax-variable">limit</span>; <span class="syntax-variable">i</span>++) {
+            <span class="syntax-function">Console.WriteLine</span>(<span class="syntax-variable">i</span>);
+        }
+    }
+}
+            </pre>
+        </div>
+
+        <!-- MSIL Code Column -->
+        <div class="table-column">
+          <h3>MSIL (Intermediate Language)</h3>
+          <pre>
+<span class="syntax-comment">// Declare a variable</span>
+.locals init ([0] int32 num)
+
+<span class="syntax-comment">// Call a method</span>
+ldc.i4.5         <span class="comment"> // Load constant 5 onto the stack</span>
+stloc.0          <span class="comment"> // Store it in local variable 0 (num)</span>
+ldloc.0          <span class="comment"> // Load num</span>
+call void Program::PrintNumbers(int32)
+
+<span class="syntax-comment">// Method PrintNumbers</span>
+.method private hidebysig static void PrintNumbers(int32 limit) cil managed {
+    .locals init ([0] int32 i)
+
+    ldc.i4.0     <span class="comment">// Load constant 0 onto stack (i=0)</span>
+    stloc.0      <span class="comment">// Store in i</span>
+
+    br.s IL_0005 <span class="comment">// Jump to comparison</span>
+
+    IL_0002:     <span class="comment">// Loop start</span>
+    ldloc.0      <span class="comment">// Load i</span>
+    call void [mscorlib]System.Console::WriteLine(int32)
+
+    ldloc.0      <span class="comment">// Increment i</span>
+    ldc.i4.1
+    add
+    stloc.0
+
+    ldloc.0
+    ldarg.0      <span class="comment">// Compare i to limit</span>
+    blt.s IL_0002 <span class="comment">// Loop if i < limit</span>
+
+    ret
+}
+            </pre>
+        </div>
+
+        <!-- Assembly Code Column -->
+        <div class="table-column">
+          <h3>Assembly Code</h3>
+          <pre>
+<span class="comment">; Assembly Code after JIT</span>
+mov eax, 5             <span class="comment">; Move 5 into register eax (num)</span>
+mov [ebp-4], eax       <span class="comment">; Store eax (num) on the stack</span>
+
+call PrintNumbers      <span class="comment">; Call PrintNumbers function</span>
+
+PrintNumbers:
+mov eax, 0             <span class="comment">; Initialize i to 0</span>
+mov [ebp-8], eax       <span class="comment">; Store i in stack</span>
+
+.LoopStart:
+cmp eax, [ebp+8]       <span class="comment">; Compare i to limit</span>
+jge .EndLoop           <span class="comment">; If i >= limit, jump to EndLoop</span>
+
+push eax
+call WriteLine         <span class="comment">; Call Console.WriteLine(i)</span>
+
+inc eax                <span class="comment">; Increment i</span>
+jmp .LoopStart         <span class="comment">; Jump back to LoopStart</span>
+
+.EndLoop:
+ret
+            </pre>
+        </div>
+
+        <!-- Binary Code Column -->
+        <div class="table-column">
+          <h3>Binary</h3>
+          <pre>
+<span class="comment">; Equivalent binary representation</span>
+10111000 00000101      <span class="comment">; mov eax, 5</span>
+10001101 11111100      <span class="comment">; mov [ebp-4], eax</span>
+11101000 00001101      <span class="comment">; call PrintNumbers</span>
+
+<span class="comment">; Inside PrintNumbers</span>
+10111000 00000000      <span class="comment">; mov eax, 0</span>
+10001101 11111000      <span class="comment">; mov [ebp-8], eax</span>
+00111000 00011010      <span class="comment">; cmp eax, [ebp+8]</span>
+01111101 00000011      <span class="comment">; jge .EndLoop</span>
+11000010 00000010      <span class="comment">; call WriteLine</span>
+11111100               <span class="comment">; inc eax</span>
+11101001 00001101      <span class="comment">; jmp .LoopStart</span>
+
+<span class="comment">; Binary code is represented here in simplified form for illustration purposes</span>
+            </pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expected Output Section -->
+    <div class="output-container">
+      <div class="output-title">Expected Output:</div>
+      <pre>
+0
+1
+2
+3
+4
+    </pre
+      >
+    </div>
+  </body>
+</html>

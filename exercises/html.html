@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>HTML Tutorial - Student Version</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-        pre {
-            background-color: #f9f9f9;
-            padding: 15px;
-            margin: 0;
-            font-size: 15px;
-            white-space: pre-wrap;
-            border: 1px solid #ccc;
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+      }
+      pre {
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin: 0;
+        font-size: 15px;
+        white-space: pre-wrap;
+        border: 1px solid #ccc;
+      }
+      .code-block {
+        margin-bottom: 40px;
+      }
+      .question {
+        color: blue;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+      h2 {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 5px;
+      }
+      .blank {
+        display: inline-block;
+        width: 80px;
+        border-bottom: 1px solid #000;
+        margin: 0 5px;
+      }
+      @media print {
+        .page-break {
+          page-break-before: always;
         }
-        .code-block { margin-bottom: 40px; }
-        .question { color: blue; font-style: italic; margin-bottom: 20px; }
-        h2 { border-bottom: 2px solid #ccc; padding-bottom: 5px; }
-        .blank {
-            display: inline-block;
-            width: 80px;
-            border-bottom: 1px solid #000;
-            margin: 0 5px;
-        }
-        @media print {
-            .page-break { page-break-before: always; }
-        }
-        /* Hide the answer key on the first page */
-        .answer-key { display: none; }
+      }
+      /* Hide the answer key on the first page */
+      .answer-key {
+        display: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>HTML, CSS, and JavaScript Comprehensive Example</h1>
 
-<h1>HTML, CSS, and JavaScript Comprehensive Example</h1>
+    <p>
+      Fill in the blanks below to complete the HTML document. Pay attention to
+      opening and closing tags, semicolons, and other syntax elements.
+    </p>
 
-<p>
-    Fill in the blanks below to complete the HTML document. Pay attention to opening and closing tags, semicolons, and other syntax elements.
-</p>
+    <div>
+      (See the working version of this code
+      <a href="html.live.html">here</a>.)
+    </div>
 
-<div class="code-block">
-    <pre>
+    <div class="code-block">
+      <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;<span class="blank"></span>&gt;
@@ -76,21 +98,22 @@
     &lt;/<span class="blank"></span>&gt;
 &lt;/<span class="blank"></span>&gt;
     </pre>
-</div>
+    </div>
 
+    <p class="question">
+      <strong>Instructions:</strong> Fill in the blanks to complete the HTML
+      document. Be sure to include all necessary opening and closing tags,
+      attribute values, and syntax elements like semicolons where required.
+    </p>
 
-<p class="question">
-    <strong>Instructions:</strong> Fill in the blanks to complete the HTML document. Be sure to include all necessary opening and closing tags, attribute values, and syntax elements like semicolons where required.
-</p>
+    <!-- Page Break for Printing -->
+    <div class="page-break"></div>
 
-<!-- Page Break for Printing -->
-<div class="page-break"></div>
+    <!-- Answer Key
+    <div class="answer-key">
+      <h1>Answer Key</h1>
 
-<!-- Answer Key -->
-<div class="answer-key">
-    <h1>Answer Key</h1>
-
-    <div class="code-block">
+      <div class="code-block">
         <pre>
 &lt;!DOCTYPE html&gt;
 &lt;<span>html</span>&gt;
@@ -130,16 +153,15 @@
     &lt;/<span>body</span>&gt;
 &lt;/<span>html</span>&gt;
         </pre>
-    </div>
-</div>
+      </div>
+    </div> -->
 
-<script>
-    // Show the answer key only after the page break when printing
-    window.onload = function() {
-        var answerKey = document.querySelector('.answer-key');
-        answerKey.style.display = 'block';
-    };
-</script>
-
-</body>
+    <script>
+      // Show the answer key only after the page break when printing
+      window.onload = function () {
+        var answerKey = document.querySelector(".answer-key");
+        answerKey.style.display = "block";
+      };
+    </script>
+  </body>
 </html>

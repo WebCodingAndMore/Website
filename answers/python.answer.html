@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Fundamentals Exercise</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        h1 { color: #2e6da4; }
+        h2 { color: #2e6da4; border-bottom: 2px solid #ccc; padding-bottom: 5px; }
+        .code-section { margin-bottom: 40px; }
+        .code-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .code-block {
+            width: 48%;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 15px;
+            margin: 0;
+            font-size: 14px;
+            white-space: pre;
+            border: 1px solid #ccc;
+            overflow: auto;
+        }
+        .code-with-blanks pre {
+            background-color: #fffbe6;
+        }
+        .code-with-answers pre {
+            background-color: #e8f5e9;
+        }
+        .blank {
+            display: inline-block;
+            width: 150px;
+            border-bottom: 1px solid #000;
+            margin: 0 5px;
+        }
+        .comment { color: green; font-style: italic; }
+        .output-block {
+            background-color: #e0f7fa;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 14px;
+            border: 1px solid #00796b;
+            overflow: auto;
+        }
+        .output-block pre {
+            margin: 0;
+        }
+        @media print {
+            .page-break { page-break-before: always; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Python Fundamentals Exercise</h1>
+
+<p>
+    In this exercise, you will complete a Python program that covers fundamental programming concepts.
+    Follow the instructions and fill in the blanks (<span class="blank"></span>) in the code.
+    Detailed comments are provided to guide you through each step.
+</p>
+
+<div class="code-section">
+    <h2>1. Variables and Data Types</h2>
+    <div class="code-container">
+        <!-- Code with Blanks -->
+        <div class="code-block code-with-blanks">
+            <pre>
+# Variables and Data Types
+# Learning Objective: Understand how to assign values to variables and work with different data types.
+
+# Assign your name to the variable 'name' (string data type)
+name = <span class="blank"></span>  <span class="comment"># e.g., "Alice"</span>
+
+# Assign your age to the variable 'age' (integer data type)
+age = <span class="blank"></span>   <span class="comment"># e.g., 15</span>
+
+# Assign your height in meters to the variable 'height' (float data type)
+height = <span class="blank"></span>  <span class="comment"># e.g., 1.65</span>
+
+# Print a sentence introducing yourself using the variables above
+print(f"My name is {<span class="blank"></span>} and I am {<span class="blank"></span>} years old.")
+print("I am", <span class="blank"></span>, "meters tall.")
+            </pre>
+        </div>
+
+        <!-- Code with Answers -->
+        <div class="code-block code-with-answers">
+            <pre>
+# Variables and Data Types
+# Learning Objective: Understand how to assign values to variables and work with different data types.
+
+# Assign your name to the variable 'name' (string data type)
+name = "John"  # e.g., "Alice"
+
+# Assign your age to the variable 'age' (integer data type)
+age = 16   # e.g., 15
+
+# Assign your height in meters to the variable 'height' (float data type)
+height = 1.75  # e.g., 1.65
+
+# Print a sentence introducing yourself using the variables above
+print(f"My name is {name} and I am {age} years old.")
+print("I am", height, "meters tall.")
+            </pre>
+        </div>
+    </div>
+
+    <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+My name is John and I am 16 years old.
+I am 1.75 meters tall.
+        </pre>
+    </div>
+</div>
+
+<div class="code-section">
+    <h2>2. Lists</h2>
+    <div class="code-container">
+        <!-- Code with Blanks -->
+        <div class="code-block code-with-blanks">
+            <pre>
+# Lists
+# Learning Objective: Learn how to create and iterate over lists.
+
+# Create a list of your three favorite fruits
+fruits = [<span class="blank" style="width: 350px;"></span>]  <span class="comment"># e.g., "apple", "banana", "cherry"</span>
+
+# Print a message and list each fruit using a loop
+print("My favorite fruits are:")
+for fruit in <span class="blank"></span>:  <span class="comment"># Use the list 'fruits'</span>
+    print("-", fruit)
+            </pre>
+        </div>
+
+        <!-- Code with Answers -->
+        <div class="code-block code-with-answers">
+            <pre>
+# Lists
+# Learning Objective: Learn how to create and iterate over lists.
+
+# Create a list of your three favorite fruits
+fruits = ["apple", "banana", "cherry"]  # e.g., "apple", "banana", "cherry"
+
+# Print a message and list each fruit using a loop
+print("My favorite fruits are:")
+for fruit in fruits:  # Use the list 'fruits'
+    print("-", fruit)
+            </pre>
+        </div>
+    </div>
+
+    <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+My favorite fruits are:
+- apple
+- banana
+- cherry
+        </pre>
+    </div>
+</div>
+
+<div class="code-section">
+    <h2>3. Dictionaries</h2>
+    <div class="code-container">
+        <!-- Code with Blanks -->
+        <div class="code-block code-with-blanks">
+            <pre>
+# Dictionaries
+# Learning Objective: Understand how to use dictionaries to store key-value pairs.
+
+# Create a dictionary with your information
+student = {
+    'name': name,
+    'age': age,
+    <span class="blank"></span>: <span class="blank"></span>  <span class="comment"># Add a key 'grade' with your current grade level (string)</span>
+}
+
+# Print the student dictionary
+print("Student Info:", student)
+            </pre>
+        </div>
+
+        <!-- Code with Answers -->
+        <div class="code-block code-with-answers">
+            <pre>
+# Dictionaries
+# Learning Objective: Understand how to use dictionaries to store key-value pairs.
+
+# Create a dictionary with your information
+student = {
+    'name': name,
+    'age': age,
+    'grade': "11th"  # Add a key 'grade' with your current grade level (string)
+}
+
+# Print the student dictionary
+print("Student Info:", student)
+            </pre>
+        </div>
+    </div>
+
+    <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+Student Info: {'name': 'John', 'age': 16, 'grade': '11th'}
+        </pre>
+    </div>
+</div>
+
+<div class="code-section">
+    <h2>4. Functions</h2>
+    <div class="code-container">
+        <!-- Code with Blanks -->
+        <div class="code-block code-with-blanks">
+            <pre>
+# Functions
+# Learning Objective: Learn how to define and use functions.
+
+# Define a function to greet a person
+def greet(<span class="blank"></span>):  <span class="comment"># Parameter: person's name</span>
+    """Function to greet a person"""
+    return f"Hello, {<span class="blank"></span>}!"
+
+# Call the function and store the result in 'message'
+message = greet(<span class="blank"></span>)  <span class="comment"># Pass your 'name' variable</span>
+
+# Print the greeting message
+print(message)
+            </pre>
+        </div>
+
+        <!-- Code with Answers -->
+        <div class="code-block code-with-answers">
+            <pre>
+# Functions
+# Learning Objective: Learn how to define and use functions.
+
+# Define a function to greet a person
+def greet(person_name):  # Parameter: person's name
+    """Function to greet a person"""
+    return f"Hello, {person_name}!"
+
+# Call the function and store the result in 'message'
+message = greet(name)  # Pass your 'name' variable
+
+# Print the greeting message
+print(message)
+            </pre>
+        </div>
+    </div>
+
+    <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+Hello, John!
+        </pre>
+    </div>
+</div>
+
+<div class="code-section">
+    <h2>5. Control Flow</h2>
+    <div class="code-container">
+        <!-- Code with Blanks -->
+        <div class="code-block code-with-blanks">
+            <pre>
+# Control Flow
+# Learning Objective: Understand how to use conditional statements.
+
+# Assign a number to the variable 'number'
+number = <span class="blank"></span>  <span class="comment"># Choose any integer</span>
+
+# Use an if-else statement to check if the number is even or odd
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+            </pre>
+        </div>
+
+        <!-- Code with Answers -->
+        <div class="code-block code-with-answers">
+            <pre>
+# Control Flow
+# Learning Objective: Understand how to use conditional statements.
+
+# Assign a number to the variable 'number'
+number = 7  # Choose any integer
+
+# Use an if-else statement to check if the number is even or odd
+if number % 2 == 0:
+    print(f"{number} is even.")
+else:
+    print(f"{number} is odd.")
+            </pre>
+        </div>
+    </div>
+
+    <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+7 is odd.
+        </pre>
+    </div>
+</div>
+
+<div class="code-section">
+    <h2>6. Classes and Objects</h2>
+    <div class="code-container">
+        <!-- Code with Blanks -->
+        <div class="code-block code-with-blanks">
+            <pre>
+# Classes and Objects
+# Learning Objective: Learn the basics of object-oriented programming in Python.
+
+# Define a class named 'Animal'
+class Animal:
+    # Initialize the class with 'name' and 'sound' attributes
+    def __init__(self, name, sound):
+        self.name = name      <span class="comment"># The name of the animal (string)</span>
+        self.sound = sound    <span class="comment"># The sound the animal makes (string)</span>
+
+    # Define a method to make the animal sound
+    def make_sound(self):
+        print(f"The {<span class="blank"></span>} says {<span class="blank"></span>}")
+
+# Create an instance of 'Animal' representing a dog
+dog = Animal(<span class="blank"></span>, <span class="blank"></span>)  <span class="comment"># e.g., "dog", "woof"
+
+# Call the 'make_sound' method
+dog.make_sound()
+            </pre>
+        </div>
+
+        <!-- Code with Answers -->
+        <div class="code-block code-with-answers">
+            <pre>
+# Classes and Objects
+# Learning Objective: Learn the basics of object-oriented programming in Python.
+
+# Define a class named 'Animal'
+class Animal:
+    # Initialize the class with 'name' and 'sound' attributes
+    def __init__(self, name, sound):
+        self.name = name      # The name of the animal (string)
+        self.sound = sound    # The sound the animal makes (string)
+
+    # Define a method to make the animal sound
+    def make_sound(self):
+        print(f"The {self.name} says {self.sound}")
+
+# Create an instance of 'Animal' representing a dog
+dog = Animal("dog", "woof")  # e.g., "dog", "woof"
+
+# Call the 'make_sound' method
+dog.make_sound()
+            </pre>
+        </div>
+    </div>
+
+    <div class="output-block">
+        <strong>Expected Output:</strong>
+        <pre>
+The dog says woof
+        </pre>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Coding Challenge</title>
+    <!-- CodeMirror CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #eef2f3;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;
+        min-height: 100vh;
+      }
+      #challenge-container {
+        background-color: #fff;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 100%;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      .controls-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .controls-top label {
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .controls-top select {
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+      .problem-statement {
+        margin-bottom: 20px;
+      }
+      .problem-statement h2 {
+        color: #444;
+      }
+      .code-editor {
+        width: 100%;
+        height: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .controls-bottom {
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .controls-bottom button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .controls-bottom button#run-button {
+        background-color: #28a745;
+        color: white;
+      }
+      .controls-bottom button#run-button:hover {
+        background-color: #218838;
+      }
+      .controls-bottom button#reset-button {
+        background-color: #dc3545;
+        color: white;
+      }
+      .controls-bottom button#reset-button:hover {
+        background-color: #c82333;
+      }
+      .feedback {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 4px;
+        display: none;
+      }
+      .feedback.success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+      .feedback.failure {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+      .feedback .test-case {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+      }
+      .feedback .test-case.passed {
+        border-left: 5px solid #28a745;
+      }
+      .feedback .test-case.failed {
+        border-left: 5px solid #dc3545;
+      }
+      .feedback .test-case p {
+        margin: 5px 0;
+      }
+      pre {
+        background-color: #f1f1f1;
+        padding: 10px;
+        border-radius: 4px;
+        overflow-x: auto;
+      }
+      @media (max-width: 600px) {
+        .controls-top,
+        .controls-bottom {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .controls-top label,
+        .controls-top select,
+        .controls-bottom button {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="challenge-container">
+      <h1>JavaScript Coding Challenge</h1>
+      <div class="controls-top">
+        <div>
+          <label for="problem-select">Select Problem:</label>
+          <select id="problem-select">
+            <!-- Options will be populated dynamically -->
+          </select>
+        </div>
+        <button id="reset-button">Reset</button>
+      </div>
+      <div class="problem-statement">
+        <h2 id="problem-title">Select a problem to begin</h2>
+        <p id="problem-description">
+          Please select a problem from the dropdown above to see the details
+          here.
+        </p>
+        <pre id="problem-boilerplate">
+ 
+  // Your function will appear here after selecting a problem. 
+      </pre
+        >
+        <p id="problem-hint">
+          <em>Hint:</em> Once you select a problem, a hint will appear here.
+        </p>
+      </div>
+      <textarea id="code-editor" class="code-editor">
+// Your code here</textarea
+      >
+      <div class="controls-bottom">
+        <button id="run-button">Run</button>
+      </div>
+      <div id="feedback" class="feedback"></div>
+    </div>
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <!-- CodeMirror JavaScript Mode -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/javascript/javascript.min.js"></script>
+    <script>
+      // Fetch the problems from json
+      fetch("javascript.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              "Network response was not ok " + response.statusText
+            );
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const problems = data;
+
+          // Initialize CodeMirror
+          const editor = CodeMirror.fromTextArea(
+            document.getElementById("code-editor"),
+            {
+              mode: "javascript",
+              lineNumbers: true,
+              theme: "default",
+              indentUnit: 2,
+              tabSize: 2,
+              lineWrapping: true,
+            }
+          );
+
+          // Populate the dropdown with problems
+          const problemSelect = document.getElementById("problem-select");
+          problems.forEach((problem) => {
+            const option = document.createElement("option");
+            option.value = problem.id;
+            option.textContent = `${problem.id} (${problem.difficulty}) - ${problem.name}`;
+            problemSelect.appendChild(option);
+          });
+
+          // Function to load a problem based on selected ID
+          function loadProblem(problemId) {
+            const problem = problems.find((p) => p.id == problemId);
+            if (problem) {
+              document.getElementById("problem-title").innerHTML = problem.name;
+              document.getElementById("problem-description").innerHTML =
+                problem.description;
+              document.getElementById("problem-boilerplate").textContent =
+                problem.boilerplate;
+              document.getElementById(
+                "problem-hint"
+              ).innerHTML = `<em>Hint:</em> ${problem.hint}`;
+              // Set the code editor with the boilerplate code
+              editor.setValue(problem.boilerplate);
+              // Clear previous feedback
+              const feedback = document.getElementById("feedback");
+              feedback.style.display = "none";
+              feedback.innerHTML = "";
+            }
+          }
+
+          // Load the first problem by default
+          if (problems.length > 0) {
+            loadProblem(problems[0].id);
+          }
+
+          // Event listener for dropdown change
+          problemSelect.addEventListener("change", (e) => {
+            loadProblem(e.target.value);
+          });
+
+          // Event listener for Reset button
+          const resetButton = document.getElementById("reset-button");
+          resetButton.addEventListener("click", () => {
+            const selectedProblemId = problemSelect.value;
+            loadProblem(selectedProblemId);
+          });
+
+          // Event listener for Run button
+          const runButton = document.getElementById("run-button");
+          runButton.addEventListener("click", () => {
+            const selectedProblemId = problemSelect.value;
+            const problem = problems.find((p) => p.id == selectedProblemId);
+            if (!problem) return;
+
+            const userCode = editor.getValue();
+
+            // Wrap the user's code in a function to prevent access to the global scope
+            const wrappedCode = `
+  ${userCode}
+  // Test the ${problem.functionName} function
+  (function() {
+    const results = [];
+    const testCases = ${JSON.stringify(problem.testCases)};
+    testCases.forEach((test, index) => {
+      try {
+        const output = ${problem.functionName}(...test.args);
+        const passed = output === test.expected;
+        results.push({ index: index + 1, passed, output, expected: test.expected, args: test.args });
+      } catch (error) {
+        results.push({ index: index + 1, passed: false, output: 'Error', expected: test.expected, args: test.args });
+      }
+    });
+    return results;
+  })();
+          `;
+
+            let testResults;
+            try {
+              testResults = eval(wrappedCode);
+            } catch (error) {
+              displayFeedback(
+                "failure",
+                `<strong>Error:</strong> ${error.message}`
+              );
+              return;
+            }
+
+            // Check if testResults is an array
+            if (!Array.isArray(testResults)) {
+              displayFeedback(
+                "failure",
+                `<strong>Error:</strong> Test results are not properly returned. Ensure your function returns the expected output.`
+              );
+              return;
+            }
+
+            // Display detailed results for each test case
+            let allPassed = testResults.every((test) => test.passed);
+            let feedbackHTML = "";
+
+            testResults.forEach((test) => {
+              if (test.passed) {
+                feedbackHTML += `
+                <div class="test-case passed">
+                  <p><strong>Test Case ${test.index}:</strong></p>
+                  <p>Input: ${problem.functionName}(${test.args.join(", ")})</p>
+                  <p>Expected Output: ${formatOutput(test.expected)}</p>
+                  <p>Actual Output: ${formatOutput(test.output)}</p>
+                  <p style="color: #28a745;"><strong>Passed</strong></p>
+                </div>
+              `;
+              } else {
+                feedbackHTML += `
+                <div class="test-case failed">
+                  <p><strong>Test Case ${test.index}:</strong></p>
+                  <p>Input: ${problem.functionName}(${test.args.join(", ")})</p>
+                  <p>Expected Output: ${formatOutput(test.expected)}</p>
+                  <p>Actual Output: ${formatOutput(test.output)}</p>
+                  <p style="color: #dc3545;"><strong>Failed</strong></p>
+                </div>
+              `;
+              }
+            });
+
+            if (allPassed) {
+              displayFeedback(
+                "success",
+                "✅ All test cases passed! Great job!"
+              );
+            } else {
+              displayFeedback(
+                "failure",
+                "❌ Some test cases failed:<br>" + feedbackHTML
+              );
+            }
+          });
+
+          // Helper function to format output for display
+          function formatOutput(output) {
+            if (typeof output === "string") {
+              return `"${output}"`;
+            }
+            return output;
+          }
+
+          // Helper function to display feedback
+          function displayFeedback(type, message) {
+            const feedback = document.getElementById("feedback");
+            feedback.className = `feedback ${type}`;
+            feedback.innerHTML = message;
+            feedback.style.display = "block";
+          }
+        })
+        .catch((error) => {
+          console.error("Error loading problems:", error);
+          alert(
+            "Failed to load problems. Please ensure problems.json is in the correct directory and properly formatted."
+          );
+        });
+    </script>
+  </body>
+</html>

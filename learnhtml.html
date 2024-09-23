@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Coding Challenges | Web Coding and More</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CodeMirror CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css"
+    />
+    <!-- Optional: CodeMirror Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/eclipse.min.css"
+    />
+    <!-- HTMLHint CSS (Optional for better feedback styling) -->
+    <style>
+      /* Adjust feedback styles to match your site */
+      .feedback {
+        margin-top: 20px;
+        padding: 15px;
+        border-radius: 4px;
+        display: none;
+      }
+      .feedback.success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+      }
+      .feedback.failure {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
+      }
+      .feedback .error {
+        margin-bottom: 10px;
+      }
+      /* Styling for the challenge container */
+      #challenge-container {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 900px;
+        margin: 20px auto;
+      }
+      /* Button styles */
+      .btn {
+        background-color: #ff6600;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-size: 1rem;
+      }
+      .btn:hover {
+        background-color: #ff4500;
+      }
+      /* Responsive adjustments */
+      @media (max-width: 600px) {
+        .controls-top,
+        .controls-bottom {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .controls-top label,
+        .controls-top select,
+        .controls-bottom button {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmlhint/0.14.2/htmlhint.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Coding Challenges</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/syllabus.html">Syllabus</a>
+      </nav>
+    </header>
+
+    <main>
+      <div id="challenge-container">
+        <h2>Learn HTML Through Interactive Challenges</h2>
+        <div
+          class="controls-top"
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <label for="problem-select"
+              ><strong>Select Challenge:</strong></label
+            >
+            <select
+              id="problem-select"
+              style="
+                padding: 8px;
+                font-size: 1rem;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+              "
+            >
+              <!-- Options will be populated dynamically -->
+            </select>
+          </div>
+          <button id="reset-button" class="btn">Reset</button>
+        </div>
+
+        <div class="problem-statement" style="margin-top: 20px">
+          <h3 id="problem-title">Select a challenge to begin</h3>
+          <p id="problem-description">
+            Please select a challenge from the dropdown above to see the details
+            here.
+          </p>
+          <pre
+            id="problem-boilerplate"
+            style="
+              background-color: #f9f9f9;
+              padding: 15px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+            "
+          >
+<!-- Boilerplate code will be populated dynamically -->
+          </pre>
+          <p id="problem-hint">
+            <em>Hint:</em> Once you select a challenge, a hint will appear here.
+          </p>
+        </div>
+
+        <textarea
+          id="code-editor"
+          style="
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          "
+        >
+<!-- User's code will appear here -->
+        </textarea>
+
+        <div
+          class="controls-bottom"
+          style="display: flex; justify-content: flex-end; margin-top: 10px"
+        >
+          <button id="test-button" class="btn">Test</button>
+        </div>
+
+        <div id="feedback" class="feedback"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Web Coding and More</p>
+      <nav>
+        <a href="https://github.com/WebCodingAndMore/Website"
+          >View This Website's Code</a
+        >
+      </nav>
+    </footer>
+
+    <!-- CodeMirror JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+    <!-- CodeMirror HTML Mode -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/htmlmixed/htmlmixed.min.js"></script>
+    <!-- HTMLHint JS for HTML Validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/htmlhint/0.14.2/htmlhint.min.js"></script>
+    <!-- LearnHTML Script -->
+    <script>
+      // Initialize CodeMirror for the HTML editor
+      const editor = CodeMirror.fromTextArea(
+        document.getElementById("code-editor"),
+        {
+          mode: "htmlmixed",
+          lineNumbers: true,
+          theme: "eclipse",
+          indentUnit: 2,
+          tabSize: 2,
+          lineWrapping: true,
+        }
+      );
+
+      // Fetch the HTML challenges from learnhtml.json
+      fetch("learnhtml.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(
+              "Network response was not ok " + response.statusText
+            );
+          }
+          return response.json();
+        })
+        .then((challenges) => {
+          // Populate the dropdown with challenges
+          const problemSelect = document.getElementById("problem-select");
+          challenges.forEach((challenge) => {
+            const option = document.createElement("option");
+            option.value = challenge.id;
+            option.textContent = `ID ${challenge.id} (${challenge.difficulty}) - ${challenge.name}`;
+            problemSelect.appendChild(option);
+          });
+
+          // Function to load a challenge based on selected ID
+          function loadChallenge(challengeId) {
+            const challenge = challenges.find((c) => c.id == challengeId);
+            if (challenge) {
+              document.getElementById("problem-title").innerHTML =
+                challenge.name;
+              document.getElementById("problem-description").innerHTML =
+                challenge.description;
+              document.getElementById("problem-boilerplate").textContent =
+                challenge.boilerplate;
+              document.getElementById(
+                "problem-hint"
+              ).innerHTML = `<em>Hint:</em> ${challenge.hint}`;
+              // Set the CodeMirror editor with the boilerplate code
+              editor.setValue(challenge.boilerplate);
+              // Clear previous feedback
+              const feedback = document.getElementById("feedback");
+              feedback.style.display = "none";
+              feedback.innerHTML = "";
+            }
+          }
+
+          // Load the first challenge by default
+          if (challenges.length > 0) {
+            loadChallenge(challenges[0].id);
+          }
+
+          // Event listener for dropdown change
+          problemSelect.addEventListener("change", (e) => {
+            loadChallenge(e.target.value);
+          });
+
+          // Event listener for Reset button
+          const resetButton = document.getElementById("reset-button");
+          resetButton.addEventListener("click", () => {
+            const selectedChallengeId = problemSelect.value;
+            loadChallenge(selectedChallengeId);
+          });
+
+          // Event listener for Test button
+          const testButton = document.getElementById("test-button");
+          testButton.addEventListener("click", () => {
+            const userCode = editor.getValue();
+
+            // Use HTMLHint to validate the user's HTML code
+            const messages = HTMLHint.verify(userCode, {
+              "tag-pair": true,
+              "doctype-first": true,
+              "attr-lowercase": true,
+              "attr-value-double-quotes": true,
+              "tagname-lowercase": true,
+              "id-unique": true,
+              "src-not-empty": true,
+              "href-not-empty": true,
+              "alt-require": true,
+            });
+
+            if (messages.length === 0) {
+              displayFeedback("success", "✅ Your HTML is valid! Great job!");
+            } else {
+              let feedbackHTML =
+                "❌ Your HTML has the following issues:<br><ul>";
+              messages.forEach((msg) => {
+                feedbackHTML += `<li>Line ${msg.line}, Column ${msg.col}: ${msg.message}</li>`;
+              });
+              feedbackHTML += "</ul>";
+              displayFeedback("failure", feedbackHTML);
+            }
+          });
+
+          // Helper function to display feedback
+          function displayFeedback(type, message) {
+            const feedback = document.getElementById("feedback");
+            feedback.className = `feedback ${type}`;
+            feedback.innerHTML = message;
+            feedback.style.display = "block";
+          }
+        })
+        .catch((error) => {
+          console.error("Error loading challenges:", error);
+          alert(
+            "Failed to load challenges. Please ensure learnhtml.json is in the correct directory and properly formatted."
+          );
+        });
+    </script>
+  </body>
+</html>

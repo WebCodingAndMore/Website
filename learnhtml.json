@@ -1,0 +1,288 @@
+[
+    {
+      "id": 1,
+      "name": "Complete the HTML Structure",
+      "difficulty": "Easy",
+      "description": "Fill in the blanks to complete the basic HTML structure, including the `<!DOCTYPE>`, `<html>`, `<head>`, and `<body>` tags.",
+      "hint": "Ensure that all necessary tags are properly opened and closed.",
+      "functionName": "completeHTMLStructure",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title><_____></title>\n    <meta charset=\"<_____>\">\n  </head>\n  <body>\n    <h1><_____></h1>\n    <p><_____></p>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["My Page", "UTF-8", "Welcome to My Page", "This is a sample paragraph."],
+          "expected": true
+        },
+        {
+          "args": ["", "", "", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Add an Image",
+      "difficulty": "Easy",
+      "description": "Insert an image into the webpage using the `<img>` tag. Fill in the `src` and `alt` attributes.",
+      "hint": "Use the `<img>` tag with `src` for the image source and `alt` for alternative text.",
+      "functionName": "addImage",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Image Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Add your image below -->\n    <img src=\"<_____>\" alt=\"<_____>\">\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["images/photo.jpg", "A beautiful scenery"],
+          "expected": true
+        },
+        {
+          "args": ["", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Create a Hyperlink",
+      "difficulty": "Easy",
+      "description": "Create a hyperlink that navigates to `https://www.example.com`. Fill in the `href` attribute and link text.",
+      "hint": "Use the `<a>` tag with the `href` attribute to create a clickable link.",
+      "functionName": "createHyperlink",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Hyperlink Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Create your hyperlink below -->\n    <a href=\"<_____>\"><_____></a>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["https://www.example.com", "Visit Example.com"],
+          "expected": true
+        },
+        {
+          "args": ["", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Create an Unordered List",
+      "difficulty": "Easy",
+      "description": "Create an unordered list with three list items: Apple, Banana, and Cherry.",
+      "hint": "Use the `<ul>` tag for unordered lists and `<li>` tags for list items.",
+      "functionName": "createUnorderedList",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Unordered List Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Create your unordered list below -->\n    <ul>\n      <li><_____></li>\n      <li><_____></li>\n      <li><_____></li>\n    </ul>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["Apple", "Banana", "Cherry"],
+          "expected": true
+        },
+        {
+          "args": ["", "", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Create an Ordered List",
+      "difficulty": "Easy",
+      "description": "Create an ordered list with three list items: First, Second, and Third.",
+      "hint": "Use the `<ol>` tag for ordered lists and `<li>` tags for list items.",
+      "functionName": "createOrderedList",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Ordered List Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Create your ordered list below -->\n    <ol>\n      <li><_____></li>\n      <li><_____></li>\n      <li><_____></li>\n    </ol>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["First", "Second", "Third"],
+          "expected": true
+        },
+        {
+          "args": ["", "", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Create a Table",
+      "difficulty": "Easy",
+      "description": "Create a table with two columns: Name and Age. Add two rows of data: Alice, 30 and Bob, 25.",
+      "hint": "Use the `<table>`, `<tr>`, `<th>`, and `<td>` tags to structure the table.",
+      "functionName": "createTable",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Table Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Create your table below -->\n    <table border=\"1\">\n      <tr>\n        <th>Name</th>\n        <th>Age</th>\n      </tr>\n      <tr>\n        <td><_____></td>\n        <td><_____></td>\n      </tr>\n      <tr>\n        <td><_____></td>\n        <td><_____></td>\n      </tr>\n    </table>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["Alice", "30", "Bob", "25"],
+          "expected": true
+        },
+        {
+          "args": ["", "", "", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Add a Form",
+      "difficulty": "Easy",
+      "description": "Create a simple form with one text input for 'Name' and a submit button.",
+      "hint": "Use the `<form>`, `<label>`, `<input>`, and `<button>` tags to build the form.",
+      "functionName": "addForm",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Form Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Create your form below -->\n    <form action=\"#\" method=\"post\">\n      <label for=\"name\">Name:</label>\n      <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"<_____>\">\n      <button type=\"submit\"><_____></button>\n    </form>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["Enter your name", "Submit"],
+          "expected": true
+        },
+        {
+          "args": ["", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Use Semantic Tags",
+      "difficulty": "Medium",
+      "description": "Replace the `<div>` tags with appropriate semantic HTML5 tags for header, main content, and footer.",
+      "hint": "Use `<header>`, `<main>`, and `<footer>` tags to improve the semantic structure of the webpage.",
+      "functionName": "useSemanticTags",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Semantic Tags Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <div>\n      <h1>Welcome to My Website</h1>\n    </div>\n    <div>\n      <p>This is the main content area.</p>\n    </div>\n    <div>\n      <p>&copy; 2024 My Website</p>\n    </div>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["header", "main", "footer"],
+          "expected": true
+        },
+        {
+          "args": ["div", "div", "div"],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Create a Navigation Bar",
+      "difficulty": "Medium",
+      "description": "Build a navigation bar with three links: Home, About, and Contact, using the `<nav>` and `<ul>` tags.",
+      "hint": "Use the `<nav>` tag to define the navigation section and an unordered list for the links.",
+      "functionName": "createNavBar",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Navigation Bar Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Create your navigation bar below -->\n    <nav>\n      <ul>\n        <li><a href=\"#\"><_____></a></li>\n        <li><a href=\"#\"><_____></a></li>\n        <li><a href=\"#\"><_____></a></li>\n      </ul>\n    </nav>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["Home", "About", "Contact"],
+          "expected": true
+        },
+        {
+          "args": ["", "", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Embed a Video Element",
+      "difficulty": "Medium",
+      "description": "Embed a video into the webpage using the `<video>` tag. Fill in the `src`, `controls`, and `width` attributes.",
+      "hint": "Use the `<video>` tag with appropriate attributes to embed a video player.",
+      "functionName": "embedVideoElement",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Video Element Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Embed your video below -->\n    <video src=\"<_____>\" controls width=\"<_____>\">\n      Your browser does not support the video tag.\n    </video>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["videos/sample.mp4", "640"],
+          "expected": true
+        },
+        {
+          "args": ["", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Embed an Audio Element",
+      "difficulty": "Medium",
+      "description": "Embed an audio file into the webpage using the `<audio>` tag. Fill in the `src` and `controls` attributes.",
+      "hint": "Use the `<audio>` tag with the `src` attribute to specify the audio file and `controls` to display playback controls.",
+      "functionName": "embedAudioElement",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Audio Element Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Embed your audio below -->\n    <audio src=\"<_____>\" controls>\n      Your browser does not support the audio element.\n    </audio>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["audios/song.mp3"],
+          "expected": true
+        },
+        {
+          "args": ["", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Add a Form with Validation",
+      "difficulty": "Medium",
+      "description": "Create a form with two input fields: 'Email' and 'Password'. Add a submit button. Ensure the email field uses proper validation.",
+      "hint": "Use the `<input>` type 'email' for email validation and 'password' for the password field.",
+      "functionName": "addFormWithValidation",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Form with Validation Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Create your form below -->\n    <form action=\"#\" method=\"post\">\n      <label for=\"email\">Email:</label>\n      <input type=\"<_____>\" id=\"email\" name=\"email\" required>\n      \n      <label for=\"password\">Password:</label>\n      <input type=\"<_____>\" id=\"password\" name=\"password\" required>\n      \n      <button type=\"submit\"><_____></button>\n    </form>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["email", "password", "Submit"],
+          "expected": true
+        },
+        {
+          "args": ["", "", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Implement Responsive Design",
+      "difficulty": "Medium",
+      "description": "Add a viewport meta tag to ensure the webpage is responsive on different devices.",
+      "hint": "Use the `<meta>` tag with `name` set to `viewport` and appropriate `content` attributes.",
+      "functionName": "implementResponsiveDesign",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Responsive Design Example</title>\n    <!-- Add the viewport meta tag below -->\n    <meta <_____>=\"<_____>\">\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Body content goes here -->\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["name", "viewport", "content", "width=device-width, initial-scale=1.0"],
+          "expected": true
+        },
+        {
+          "args": ["", "", "", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Create a Footer with Social Links",
+      "difficulty": "Medium",
+      "description": "Create a footer section that includes links to Facebook, Twitter, and Instagram. Use appropriate `<a>` tags within a `<footer>` element.",
+      "hint": "Use the `<footer>` tag and nested `<a>` tags for social media links.",
+      "functionName": "createFooterWithSocialLinks",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Footer Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Footer goes here -->\n    <footer>\n      <a href=\"<_____>\">Facebook</a>\n      <a href=\"<_____>\">Twitter</a>\n      <a href=\"<_____>\">Instagram</a>\n    </footer>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["https://www.facebook.com", "https://www.twitter.com", "https://www.instagram.com"],
+          "expected": true
+        },
+        {
+          "args": ["", "", ""],
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Embed a Google Map",
+      "difficulty": "Medium",
+      "description": "Embed a Google Map into the webpage using the `<iframe>` tag. Fill in the `src` and `width` attributes.",
+      "hint": "Use the `<iframe>` tag with the `src` attribute pointing to the Google Maps URL and specify the `width` for sizing.",
+      "functionName": "embedGoogleMap",
+      "boilerplate": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Google Map Embed Example</title>\n    <meta charset=\"UTF-8\">\n  </head>\n  <body>\n    <!-- Embed your Google Map below -->\n    <iframe src=\"<_____>\" width=\"<_____>\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>\n  </body>\n</html>",
+      "testCases": [
+        {
+          "args": ["https://www.google.com/maps/embed?pb=!1m18!...", "600"],
+          "expected": true
+        },
+        {
+          "args": ["", ""],
+          "expected": false
+        }
+      ]
+    }
+  ]
+  

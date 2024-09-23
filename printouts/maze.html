@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze Sequence Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+    }
+    #game-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1000px;
+      width: 100%;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    #game-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    @media (min-width: 800px) {
+      #game-container {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+    #maze-container {
+      display: grid;
+      grid-template-columns: repeat(11, 40px);
+      grid-template-rows: repeat(11, 40px);
+      gap: 2px;
+      margin: 20px;
+      position: relative;
+    }
+    .cell {
+      width: 40px;
+      height: 40px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      position: relative;
+    }
+    .portal {
+      background-color: #555;
+      color: white;
+      font-weight: bold;
+    }
+    .ticket {
+      background-color: #ffeb3b;
+      font-weight: bold;
+    }
+    .flag {
+      background-color: #4caf50;
+      color: white;
+      font-weight: bold;
+    }
+    .player {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      border-radius: 50%;
+      z-index: 2; /* Ensure players are on top */
+      transition: background-color 0.3s;
+    }
+    .player.red {
+      background-color: red;
+    }
+    .player.blue {
+      background-color: blue;
+    }
+    .player.green {
+      background-color: green !important; /* Temporary color on capture */
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+    @media (min-width: 800px) {
+      .controls {
+        margin-left: 40px;
+        align-items: flex-start;
+      }
+    }
+    .controls > * {
+      margin: 10px 0;
+      width: 100%;
+    }
+    .controls label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+    .controls input[type="text"],
+    .controls input[type="password"] {
+      font-size: 16px;
+      padding: 8px;
+      text-transform: uppercase;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .controls select, .controls button {
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    .controls button#run-program {
+      background-color: #4caf50;
+      color: white;
+    }
+    .controls button#run-program:hover {
+      background-color: #45a049;
+    }
+    .controls button#new-game {
+      background-color: #2196f3;
+      color: white;
+    }
+    .controls button#new-game:hover {
+      background-color: #1976d2;
+    }
+    .timer {
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .instructions {
+      margin-top: 20px;
+      color: #555;
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+    }
+    .capture-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      width: 100%;
+      max-width: 800px;
+      flex-wrap: wrap;
+    }
+    .capture-area.red, .capture-area.blue, .capture-area.team {
+      justify-content: flex-start;
+      margin-bottom: 10px;
+    }
+    .capture-area.blue {
+      justify-content: flex-end;
+    }
+    .capture-area.team {
+      justify-content: center;
+    }
+    .capture-area .captured-flags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 5px;
+    }
+    .captured-flags .flag {
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+    .capture-label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-wrapper">
+    <h1>Maze Sequence Game</h1>
+    <div id="game-container">
+      <div id="maze-container"></div>
+      <div class="controls">
+        <label for="mode-select">Select Mode:</label>
+        <select id="mode-select">
+          <option value="one-player">One Player</option>
+          <option value="team">Team Mode</option>
+          <option value="competitive">Competitive Mode</option>
+          <option value="tag">Tag Mode</option>
+        </select>
+        <button id="new-game" onclick="initializeGame()">New Game</button>
+        <label for="command-input-red">Red Player Commands:</label>
+        <input type="text" id="command-input-red" placeholder="e.g., R2U3L2D" maxlength="70" />
+        <label for="command-input-blue" id="blue-command-label" style="display: none;">Blue Player Commands:</label>
+        <input type="text" id="command-input-blue" placeholder="e.g., R2U3L2D" maxlength="70" style="display: none;" />
+        <button id="run-program" onclick="runProgram()">Run Program</button>
+        <div class="timer">
+          <p>
+            Time: <span id="time-elapsed">0</span>s | Moves:
+            <span id="move-count-red">0</span> (Red) / 
+            <span id="move-count-blue">0</span> (Blue)
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="capture-area team" id="capture-area-team" style="display: none;">
+      <span class="capture-label">Captured Flags:</span>
+      <div class="captured-flags" id="captured-flags-team"></div>
+    </div>
+    <div class="capture-area red" id="capture-area-red" style="display: none;">
+      <span class="capture-label">Red Captured Flags:</span>
+      <div class="captured-flags" id="red-captured"></div>
+    </div>
+    <div class="capture-area blue" id="capture-area-blue" style="display: none;">
+      <span class="capture-label">Blue Captured Flags:</span>
+      <div class="captured-flags" id="blue-captured"></div>
+    </div>
+    <div class="instructions">
+      <h3>How to Play:</h3>
+      <p>
+        Enter a sequence of commands using <strong>R</strong> (right), <strong>L</strong> (left), 
+        <strong>U</strong> (up), <strong>D</strong> (down), and numbers for repeats. 
+        For example, <em>R2U3L2D</em> is equivalent to <em>RRUUULLD</em>.
+      </p>
+      <p>
+        Players can pick up tickets (T1, T2, ...) to gain teleportation abilities. 
+        If a player with a number lands on any portal, they will be teleported 
+        to the portal corresponding to their ticket number and lose the number.
+      </p>
+      <p>
+        Capture all the flags (F1, F2, ...) as quickly as possible. Depending on the mode, 
+        players may work together or compete against each other.
+      </p>
+      <p>
+        Use the "New Game" button to restart the game at any time.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const gridSize = 11;
+    const portalNumbers = 9;
+    const portalPositions = [
+      { number: 1, row: 0, col: 0 },     // Top left
+      { number: 2, row: 0, col: 5 },     // Top middle
+      { number: 3, row: 0, col: 10 },    // Top right
+      { number: 4, row: 5, col: 0 },     // Left middle
+      { number: 5, row: 5, col: 5 },     // Center
+      { number: 6, row: 5, col: 10 },    // Right middle
+      { number: 7, row: 10, col: 0 },    // Bottom left
+      { number: 8, row: 10, col: 5 },    // Bottom center
+      { number: 9, row: 10, col: 10 }    // Bottom right
+    ];
+    const numTickets = 9;
+    const numFlags = 5;
+
+    let portals = []; // Array of portal objects {number, row, col}
+    let tickets = []; // Array of ticket objects {number, row, col}
+    let flags = [];   // Array of flag objects {number, row, col}
+    let players = {
+      red: {
+        name: 'Red',
+        color: 'red',
+        row: null,
+        col: null,
+        hasNumber: null,
+        moveCount: 0,
+        capturedFlags: [],
+        commands: [],
+      },
+      blue: {
+        name: 'Blue',
+        color: 'blue',
+        row: null,
+        col: null,
+        hasNumber: null,
+        moveCount: 0,
+        capturedFlags: [],
+        commands: [],
+      }
+    };
+    let gameMode = 'one-player'; // 'one-player', 'team', 'competitive', 'tag'
+    let timeElapsed = 0;
+    let timerInterval;
+    let gameActive = true;
+
+    // Initialize the game
+    function initializeGame() {
+      clearInterval(timerInterval);
+      timeElapsed = 0;
+      document.getElementById("time-elapsed").textContent = timeElapsed;
+      document.getElementById("move-count-red").textContent = 0;
+      document.getElementById("move-count-blue").textContent = 0;
+      players.red.moveCount = 0;
+      players.blue.moveCount = 0;
+      players.red.capturedFlags = [];
+      players.blue.capturedFlags = [];
+      document.getElementById("red-captured").innerHTML = "";
+      document.getElementById("blue-captured").innerHTML = "";
+      document.getElementById("captured-flags-team").innerHTML = "";
+      gameActive = true;
+
+      // Get selected mode
+      gameMode = document.getElementById("mode-select").value;
+      setupControlsBasedOnMode();
+
+      // Reset portals, tickets, flags
+      portals = JSON.parse(JSON.stringify(portalPositions)); // Deep copy
+      tickets = [];
+      flags = [];
+
+      // Generate tickets
+      while (tickets.length < numTickets) {
+        const pos = getRandomEmptyPosition();
+        if (!isPortalFixed(pos)) {
+          tickets.push({
+            number: tickets.length + 1,
+            row: pos.row,
+            col: pos.col
+          });
+        }
+      }
+
+      // Generate flags
+      while (flags.length < numFlags) {
+        const pos = getRandomEmptyPosition();
+        if (!isPortalFixed(pos) && !isTicket(pos)) {
+          flags.push({
+            number: flags.length + 1,
+            row: pos.row,
+            col: pos.col
+          });
+        }
+      }
+
+      // Assign starting positions
+      assignStartingPositions();
+
+      // Render the maze
+      renderMaze();
+
+      // Start the game timer
+      startTimer();
+    }
+
+    // Setup controls visibility based on mode
+    function setupControlsBasedOnMode() {
+      const mode = gameMode;
+      const blueControls = document.getElementById("command-input-blue");
+      const blueLabel = document.getElementById("blue-command-label");
+      const captureAreaTeam = document.getElementById("capture-area-team");
+      const captureAreaRed = document.getElementById("capture-area-red");
+      const captureAreaBlue = document.getElementById("capture-area-blue");
+
+      // Hide all capture areas initially
+      captureAreaTeam.style.display = "none";
+      captureAreaRed.style.display = "none";
+      captureAreaBlue.style.display = "none";
+
+      if (mode === 'one-player') {
+        blueControls.style.display = "none";
+        blueLabel.style.display = "none";
+      } else {
+        blueControls.style.display = "block";
+        blueLabel.style.display = "block";
+      }
+
+      if (mode === 'team') {
+        captureAreaTeam.style.display = "flex";
+        captureAreaRed.style.display = "none";
+        captureAreaBlue.style.display = "none";
+      } else if (mode === 'competitive') {
+        captureAreaRed.style.display = "flex";
+        captureAreaBlue.style.display = "flex";
+        captureAreaTeam.style.display = "none";
+      } else if (mode === 'tag') {
+        captureAreaRed.style.display = "flex";
+        captureAreaBlue.style.display = "flex";
+        captureAreaTeam.style.display = "none";
+      }
+    }
+
+    // Start the game timer
+    function startTimer() {
+      timerInterval = setInterval(() => {
+        timeElapsed++;
+        document.getElementById("time-elapsed").textContent = timeElapsed;
+      }, 1000);
+    }
+
+    // Assign starting positions ensuring they are empty
+    function assignStartingPositions() {
+      // Reset players' positions
+      players.red.row = null;
+      players.red.col = null;
+      players.red.hasNumber = null;
+      players.blue.row = null;
+      players.blue.col = null;
+      players.blue.hasNumber = null;
+
+      // Assign Red player
+      let redPos = getRandomEmptyPosition();
+      players.red.row = redPos.row;
+      players.red.col = redPos.col;
+
+      if (gameMode !== 'one-player') {
+        // Assign Blue player
+        let bluePos = getRandomEmptyPosition([players.red]);
+        players.blue.row = bluePos.row;
+        players.blue.col = bluePos.col;
+      }
+    }
+
+    // Get a random empty position, optionally avoiding other players
+    function getRandomEmptyPosition(existingPlayers = []) {
+      let pos;
+      let attempts = 0;
+      do {
+        pos = randomPos();
+        attempts++;
+        if (attempts > 1000) break; // Prevent infinite loop
+      } while (
+        isOccupied(pos) ||
+        existingPlayers.some(p => p.row === pos.row && p.col === pos.col)
+      );
+      return pos;
+    }
+
+    // Generate a random position within the grid
+    function randomPos() {
+      return {
+        row: getRandomInt(0, gridSize - 1),
+        col: getRandomInt(0, gridSize - 1)
+      };
+    }
+
+    // Get a random integer between min and max (inclusive)
+    function getRandomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    // Check if a position is occupied by portals, tickets, flags, or players
+    function isOccupied(pos) {
+      return portals.some(p => p.row === pos.row && p.col === pos.col) ||
+             tickets.some(t => t.row === pos.row && t.col === pos.col) ||
+             flags.some(f => f.row === pos.row && f.col === pos.col) ||
+             (players.red.row === pos.row && players.red.col === pos.col) ||
+             (players.blue.row === pos.row && players.blue.col === pos.col);
+    }
+
+    // Check if a position is a fixed portal
+    function isPortalFixed(pos) {
+      return portals.some(p => p.row === pos.row && p.col === pos.col);
+    }
+
+    // Check if a position has a ticket
+    function isTicket(pos) {
+      return tickets.some(t => t.row === pos.row && t.col === pos.col);
+    }
+
+    // Render the maze grid
+    function renderMaze() {
+      const mazeContainer = document.getElementById("maze-container");
+      mazeContainer.innerHTML = "";
+
+      for (let row = 0; row < gridSize; row++) {
+        for (let col = 0; col < gridSize; col++) {
+          const cell = document.createElement("div");
+          cell.classList.add("cell");
+          cell.id = `cell-${row}-${col}`;
+
+          // Check for portal
+          const portal = portals.find(p => p.row === row && p.col === col);
+          if (portal) {
+            cell.classList.add("portal");
+            cell.textContent = `T${portal.number}`;
+          }
+
+          // Check for ticket
+          const ticket = tickets.find(t => t.row === row && t.col === col);
+          if (ticket) {
+            cell.classList.add("ticket");
+            cell.textContent = `T${ticket.number}`;
+          }
+
+          // Check for flag
+          const flag = flags.find(f => f.row === row && f.col === col);
+          if (flag) {
+            cell.classList.add("flag");
+            cell.textContent = `F${flag.number}`;
+          }
+
+          mazeContainer.appendChild(cell);
+        }
+      }
+
+      updatePlayers();
+    }
+
+    // Update player positions on the grid
+    function updatePlayers() {
+      // Clear existing players
+      document.querySelectorAll(".player").forEach(p => p.remove());
+
+      // Render Red Player
+      const redCell = document.getElementById(`cell-${players.red.row}-${players.red.col}`);
+      if (redCell) {
+        const redPlayer = document.createElement("div");
+        redPlayer.classList.add("player", "red");
+        redPlayer.textContent = players.red.hasNumber ? players.red.hasNumber : "";
+        redCell.appendChild(redPlayer);
+      }
+
+      // Render Blue Player if applicable
+      if (gameMode !== 'one-player') {
+        const blueCell = document.getElementById(`cell-${players.blue.row}-${players.blue.col}`);
+        if (blueCell) {
+          const bluePlayer = document.createElement("div");
+          bluePlayer.classList.add("player", "blue");
+          bluePlayer.textContent = players.blue.hasNumber ? players.blue.hasNumber : "";
+          blueCell.appendChild(bluePlayer);
+        }
+      }
+    }
+
+    // Run program for all players
+    function runProgram() {
+      if (!gameActive) return;
+
+      // Parse commands for Red
+      const redCommandsInput = document.getElementById("command-input-red").value.trim().toUpperCase();
+      players.red.commands = parseCommands(redCommandsInput);
+
+      // Parse commands for Blue if applicable
+      if (gameMode !== 'one-player') {
+        const blueCommandsInput = document.getElementById("command-input-blue").value.trim().toUpperCase();
+        players.blue.commands = parseCommands(blueCommandsInput);
+      }
+
+      // Start executing commands
+      executeCommands();
+    }
+
+    // Parse commands with repeat modifiers
+    function parseCommands(input) {
+      const commands = [];
+      let i = 0;
+      while (i < input.length) {
+        const char = input[i];
+        if (['R', 'L', 'U', 'D'].includes(char)) {
+          let repeat = 1;
+          let j = i + 1;
+          let numStr = '';
+          while (j < input.length && /\d/.test(input[j])) {
+            numStr += input[j];
+            j++;
+          }
+          if (numStr.length > 0) {
+            repeat = parseInt(numStr);
+            i = j;
+          } else {
+            i++;
+          }
+          for (let r = 0; r < repeat; r++) {
+            commands.push(char);
+          }
+        } else {
+          i++;
+        }
+      }
+      return commands;
+    }
+
+    // Execute commands step by step for all players
+    function executeCommands() {
+      const intervalTime = 500; // 0.5 seconds
+      const maxCommands = Math.max(players.red.commands.length, players.blue.commands.length);
+      let currentStep = 0;
+
+      timerInterval = setInterval(() => {
+        if (!gameActive) {
+          clearInterval(timerInterval);
+          return;
+        }
+
+        // Execute Red command
+        if (currentStep < players.red.commands.length) {
+          movePlayer('red', players.red.commands[currentStep]);
+        }
+
+        // Execute Blue command
+        if (gameMode !== 'one-player' && currentStep < players.blue.commands.length) {
+          movePlayer('blue', players.blue.commands[currentStep]);
+        }
+
+        currentStep++;
+
+        // Check if all commands have been executed
+        if (currentStep >= maxCommands) {
+          clearInterval(timerInterval);
+          // After last move, check if game should end
+          setTimeout(() => {
+            if (gameActive) {
+              endExecution();
+            }
+          }, intervalTime);
+        }
+      }, intervalTime);
+    }
+
+    // Move a player in a direction
+    function movePlayer(playerColor, direction) {
+      if (!gameActive) return;
+      const player = players[playerColor];
+      let { row, col } = player;
+
+      // Determine new position
+      if (direction === 'U') row--;
+      if (direction === 'D') row++;
+      if (direction === 'L') col--;
+      if (direction === 'R') col++;
+
+      // Check bounds
+      if (row < 0 || row >= gridSize || col < 0 || col >= gridSize) return;
+
+      // Check if the new position is occupied by the other player
+      if (gameMode !== 'one-player') {
+        if (
+          (playerColor === 'red' && players.blue.row === row && players.blue.col === col) ||
+          (playerColor === 'blue' && players.red.row === row && players.red.col === col)
+        ) {
+          // In Competitive and Tag modes, overlapping might have consequences
+          if (gameMode === 'competitive') {
+            endGame(true, "Players overlapped! Both lose.");
+          } else if (gameMode === 'tag') {
+            endGame(true, "Red player tagged Blue player! Red wins.");
+          }
+          return;
+        }
+      }
+
+      // Move the player
+      player.row = row;
+      player.col = col;
+      player.moveCount++;
+      if (playerColor === 'red') {
+        document.getElementById("move-count-red").textContent = player.moveCount;
+      } else {
+        document.getElementById("move-count-blue").textContent = player.moveCount;
+      }
+
+      updatePlayers();
+      handleLanding(playerColor);
+    }
+
+    // Handle actions after landing on a cell
+    function handleLanding(playerColor) {
+      const player = players[playerColor];
+      const cellId = `cell-${player.row}-${player.col}`;
+      const cell = document.getElementById(cellId);
+
+      // Check for ticket
+      const ticketIndex = tickets.findIndex(t => t.row === player.row && t.col === player.col);
+      if (ticketIndex !== -1) {
+        const ticket = tickets[ticketIndex];
+        player.hasNumber = ticket.number;
+        tickets.splice(ticketIndex, 1);
+        cell.classList.remove("ticket");
+        cell.textContent = '';
+      }
+
+      // Check for portal
+      const portal = portals.find(p => p.row === player.row && p.col === p.col);
+      if (portal) {
+        if (player.hasNumber === portal.number) {
+          // Teleport to the portal with the corresponding number
+          const targetPortal = portals.find(p => p.number === player.hasNumber);
+          if (targetPortal && (targetPortal.row !== player.row || targetPortal.col !== player.col)) {
+            player.row = targetPortal.row;
+            player.col = targetPortal.col;
+            player.hasNumber = null;
+            updatePlayers();
+          }
+        } else if (player.hasNumber !== null) {
+          // Teleport to the portal corresponding to the player's ticket number
+          const targetPortal = portals.find(p => p.number === player.hasNumber);
+          if (targetPortal && (targetPortal.row !== player.row || targetPortal.col !== player.col)) {
+            player.row = targetPortal.row;
+            player.col = targetPortal.col;
+            player.hasNumber = null;
+            updatePlayers();
+          }
+        }
+      }
+
+      // Check for flag
+      const flagIndex = flags.findIndex(f => f.row === player.row && f.col === player.col);
+      if (flagIndex !== -1) {
+        const flag = flags[flagIndex];
+        flags.splice(flagIndex, 1);
+        cell.classList.remove("flag");
+        cell.textContent = '';
+        captureFlag(playerColor, flag);
+      }
+
+      // After moving, check game conditions
+      handleGameConditions();
+    }
+
+    // Capture a flag
+    function captureFlag(playerColor, flag) {
+      if (gameMode === 'team' || gameMode === 'one-player') {
+        const capturedArea = (gameMode === 'one-player') ? 'captured-flags-team' : 'captured-flags-team';
+        const flagElement = document.createElement("div");
+        flagElement.classList.add("flag");
+        flagElement.textContent = `F${flag.number}`;
+        document.getElementById(capturedArea).appendChild(flagElement);
+        if (gameMode === 'one-player') {
+          players.red.capturedFlags.push(flag);
+        } else {
+          // In Team Mode, either player can capture
+          if (playerColor === 'red') {
+            players.red.capturedFlags.push(flag);
+          } else {
+            players.blue.capturedFlags.push(flag);
+          }
+        }
+      } else if (gameMode === 'competitive') {
+        const capturedArea = playerColor === 'red' ? 'red-captured' : 'blue-captured';
+        const flagElement = document.createElement("div");
+        flagElement.classList.add("flag");
+        flagElement.textContent = `F${flag.number}`;
+        document.getElementById(capturedArea).appendChild(flagElement);
+        players[playerColor].capturedFlags.push(flag);
+      } else if (gameMode === 'tag') {
+        if (playerColor === 'blue') {
+          const capturedArea = 'blue-captured';
+          const flagElement = document.createElement("div");
+          flagElement.classList.add("flag");
+          flagElement.textContent = `F${flag.number}`;
+          document.getElementById(capturedArea).appendChild(flagElement);
+          players.blue.capturedFlags.push(flag);
+        }
+        // Red player does not capture flags in Tag Mode
+      }
+
+      // Briefly change player color to green to indicate capture
+      const playerCell = document.getElementById(`cell-${players[playerColor].row}-${players[playerColor].col}`);
+      if (playerCell) {
+        const playerDiv = playerCell.querySelector(`.player.${playerColor}`);
+        if (playerDiv) {
+          playerDiv.classList.add("green");
+          setTimeout(() => {
+            playerDiv.classList.remove("green");
+          }, 300);
+        }
+      }
+    }
+
+    // Handle game conditions based on mode
+    function handleGameConditions() {
+      if (!gameActive) return;
+
+      if (gameMode === 'team' || gameMode === 'one-player') {
+        const totalCaptured = (gameMode === 'one-player') ? players.red.capturedFlags.length : (players.red.capturedFlags.length + players.blue.capturedFlags.length);
+        if (totalCaptured === numFlags) {
+          endGame(true, (gameMode === 'one-player') ? "Congratulations! You captured all flags!" : "All flags captured! Team wins!");
+        }
+      } else if (gameMode === 'competitive') {
+        const totalCaptured = players.red.capturedFlags.length + players.blue.capturedFlags.length;
+        if (totalCaptured === numFlags) {
+          const redCount = players.red.capturedFlags.length;
+          const blueCount = players.blue.capturedFlags.length;
+          if (redCount > blueCount) {
+            endGame(true, "Red player wins!");
+          } else if (blueCount > redCount) {
+            endGame(true, "Blue player wins!");
+          } else {
+            endGame(true, "It's a tie!");
+          }
+        }
+      } else if (gameMode === 'tag') {
+        if (players.blue.capturedFlags.length === numFlags) {
+          endGame(true, "Blue player captured all flags and wins!");
+        }
+      }
+    }
+
+    // End the game
+    function endGame(victory, message) {
+      gameActive = false;
+      clearInterval(timerInterval);
+      alert(message);
+      // Note: Inputs and buttons remain enabled as per user's request
+    }
+
+    // End execution after all commands
+    function endExecution() {
+      clearInterval(timerInterval);
+      // After last move, check if game should end
+      const totalCaptured = (gameMode === 'one-player') ? players.red.capturedFlags.length : (players.red.capturedFlags.length + players.blue.capturedFlags.length);
+      if (totalCaptured < numFlags && gameActive) {
+        endGame(true, "Program finished! Not all flags were captured.");
+      }
+    }
+
+    // Assign starting positions ensuring they are empty
+    function assignStartingPositions() {
+      // Reset players' positions
+      players.red.row = null;
+      players.red.col = null;
+      players.red.hasNumber = null;
+      players.blue.row = null;
+      players.blue.col = null;
+      players.blue.hasNumber = null;
+
+      // Assign Red player
+      let redPos = getRandomEmptyPosition();
+      players.red.row = redPos.row;
+      players.red.col = redPos.col;
+
+      if (gameMode !== 'one-player') {
+        // Assign Blue player
+        let bluePos = getRandomEmptyPosition([players.red]);
+        players.blue.row = bluePos.row;
+        players.blue.col = bluePos.col;
+      }
+    }
+
+    // Initialize the game on page load
+    window.onload = () => {
+      setupControls();
+      initializeGame();
+    }
+
+    // Setup controls and mode change listener
+    function setupControls() {
+      const modeSelect = document.getElementById("mode-select");
+      modeSelect.addEventListener("change", initializeGame);
+    }
+  </script>
+</body>
+</html>

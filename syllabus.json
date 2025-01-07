@@ -203,7 +203,7 @@
               "title": "Basics of Animation",
               "subTitle": "Adding Motion to Our Work",
               "description": "We'll look at a video about <a href=\"https://www.youtube.com/watch?v=iOlehM5kNSk\">how CGI works</a>. We will also explore 3D characters and animations on <a href=\"https://www.mixamo.com/\">Mixamo</a>, <a href=\"https://sketchfab.com/\">Sketchfab</a>, and <a href=\"https://threejs.org/\">Three.js</a>. We will use the <a href=\"https://threejs.org/editor/\">Three.js Editor</a> to create our own 3D models and we'll also <a href=\"https://www.fab.com/category/3d-model?q=free\">download free 3D models from fab.com</a>.",
-              "date": "2025-01-14",
+              "date": "2025-01-07",
               "tips": [
                 "The <a href=\"https://threejs.org/manual/\">Three.js Manual</a> gives some great information about how to use the Three.js editor.",
                 "Download 3D models at <a href=\"https://sketchfab.com/store\">Sketchfab</a>",
@@ -215,7 +215,7 @@
               "title": "Basics of Design",
               "subTitle": "How to Make Tech Look Good",
               "description": "We'll look at one of the most popular tools in design today called <a href=\"https://www.figma.com/\">Figma</a>.",
-              "date": "2025-01-07",
+              "date": "2025-01-14",
               "tips": []
             },
             {

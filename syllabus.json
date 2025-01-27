@@ -323,7 +323,10 @@
               "subTitle": "Learning how BlockChain Works",
               "description": "We'll look at how BitCoin works.",
               "date": "2025-04-08",
-              "tips": []
+              "tips": [
+                "<a href=\"https://www.youtube.com/watch?v=bBC-nXj3Ng4\">But how does bitcoin actually work?</a>",
+                "<a href=\"https://m.youtube.com/watch?v=_160oMzblY8\">Blockchain 101 - A Visual Demo</a> (<a href=\"https://m.youtube.com/watch?v=xIDL_akeras\">Part 2</a>)"
+              ]
             },
             {
               "title": "Basics of AI",
